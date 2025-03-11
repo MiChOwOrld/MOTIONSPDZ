@@ -1,0 +1,176 @@
+[
+{
+  "directory": "/home/micho/MOTION1/build/flatbuffers-build",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/home/micho/MOTION1/extern/flatbuffers/include -I/home/micho/MOTION1/extern/flatbuffers/grpc  -Wall -pedantic -Wextra -Wno-stringop-overflow -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -O3 -DNDEBUG -std=gnu++17 -Wold-style-cast -o CMakeFiles/flatc.dir/src/idl_parser.cpp.o -c /home/micho/MOTION1/extern/flatbuffers/src/idl_parser.cpp",
+  "file": "/home/micho/MOTION1/extern/flatbuffers/src/idl_parser.cpp",
+  "output": "flatbuffers-build/CMakeFiles/flatc.dir/src/idl_parser.cpp.o"
+},
+{
+  "directory": "/home/micho/MOTION1/build/flatbuffers-build",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/home/micho/MOTION1/extern/flatbuffers/include -I/home/micho/MOTION1/extern/flatbuffers/grpc  -Wall -pedantic -Wextra -Wno-stringop-overflow -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -O3 -DNDEBUG -std=gnu++17 -Wold-style-cast -o CMakeFiles/flatc.dir/src/idl_gen_text.cpp.o -c /home/micho/MOTION1/extern/flatbuffers/src/idl_gen_text.cpp",
+  "file": "/home/micho/MOTION1/extern/flatbuffers/src/idl_gen_text.cpp",
+  "output": "flatbuffers-build/CMakeFiles/flatc.dir/src/idl_gen_text.cpp.o"
+},
+{
+  "directory": "/home/micho/MOTION1/build/flatbuffers-build",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/home/micho/MOTION1/extern/flatbuffers/include -I/home/micho/MOTION1/extern/flatbuffers/grpc  -Wall -pedantic -Wextra -Wno-stringop-overflow -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -O3 -DNDEBUG -std=gnu++17 -Wold-style-cast -o CMakeFiles/flatc.dir/src/reflection.cpp.o -c /home/micho/MOTION1/extern/flatbuffers/src/reflection.cpp",
+  "file": "/home/micho/MOTION1/extern/flatbuffers/src/reflection.cpp",
+  "output": "flatbuffers-build/CMakeFiles/flatc.dir/src/reflection.cpp.o"
+},
+{
+  "directory": "/home/micho/MOTION1/build/flatbuffers-build",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/home/micho/MOTION1/extern/flatbuffers/include -I/home/micho/MOTION1/extern/flatbuffers/grpc  -Wall -pedantic -Wextra -Wno-stringop-overflow -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -O3 -DNDEBUG -std=gnu++17 -Wold-style-cast -o CMakeFiles/flatc.dir/src/util.cpp.o -c /home/micho/MOTION1/extern/flatbuffers/src/util.cpp",
+  "file": "/home/micho/MOTION1/extern/flatbuffers/src/util.cpp",
+  "output": "flatbuffers-build/CMakeFiles/flatc.dir/src/util.cpp.o"
+},
+{
+  "directory": "/home/micho/MOTION1/build/flatbuffers-build",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/home/micho/MOTION1/extern/flatbuffers/include -I/home/micho/MOTION1/extern/flatbuffers/grpc  -Wall -pedantic -Wextra -Wno-stringop-overflow -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -O3 -DNDEBUG -std=gnu++17 -Wold-style-cast -o CMakeFiles/flatc.dir/src/idl_gen_cpp.cpp.o -c /home/micho/MOTION1/extern/flatbuffers/src/idl_gen_cpp.cpp",
+  "file": "/home/micho/MOTION1/extern/flatbuffers/src/idl_gen_cpp.cpp",
+  "output": "flatbuffers-build/CMakeFiles/flatc.dir/src/idl_gen_cpp.cpp.o"
+},
+{
+  "directory": "/home/micho/MOTION1/build/flatbuffers-build",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/home/micho/MOTION1/extern/flatbuffers/include -I/home/micho/MOTION1/extern/flatbuffers/grpc  -Wall -pedantic -Wextra -Wno-stringop-overflow -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -O3 -DNDEBUG -std=gnu++17 -Wold-style-cast -o CMakeFiles/flatc.dir/src/idl_gen_csharp.cpp.o -c /home/micho/MOTION1/extern/flatbuffers/src/idl_gen_csharp.cpp",
+  "file": "/home/micho/MOTION1/extern/flatbuffers/src/idl_gen_csharp.cpp",
+  "output": "flatbuffers-build/CMakeFiles/flatc.dir/src/idl_gen_csharp.cpp.o"
+},
+{
+  "directory": "/home/micho/MOTION1/build/flatbuffers-build",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/home/micho/MOTION1/extern/flatbuffers/include -I/home/micho/MOTION1/extern/flatbuffers/grpc  -Wall -pedantic -Wextra -Wno-stringop-overflow -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -O3 -DNDEBUG -std=gnu++17 -Wold-style-cast -o CMakeFiles/flatc.dir/src/idl_gen_dart.cpp.o -c /home/micho/MOTION1/extern/flatbuffers/src/idl_gen_dart.cpp",
+  "file": "/home/micho/MOTION1/extern/flatbuffers/src/idl_gen_dart.cpp",
+  "output": "flatbuffers-build/CMakeFiles/flatc.dir/src/idl_gen_dart.cpp.o"
+},
+{
+  "directory": "/home/micho/MOTION1/build/flatbuffers-build",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/home/micho/MOTION1/extern/flatbuffers/include -I/home/micho/MOTION1/extern/flatbuffers/grpc  -Wall -pedantic -Wextra -Wno-stringop-overflow -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -O3 -DNDEBUG -std=gnu++17 -Wold-style-cast -o CMakeFiles/flatc.dir/src/idl_gen_kotlin.cpp.o -c /home/micho/MOTION1/extern/flatbuffers/src/idl_gen_kotlin.cpp",
+  "file": "/home/micho/MOTION1/extern/flatbuffers/src/idl_gen_kotlin.cpp",
+  "output": "flatbuffers-build/CMakeFiles/flatc.dir/src/idl_gen_kotlin.cpp.o"
+},
+{
+  "directory": "/home/micho/MOTION1/build/flatbuffers-build",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/home/micho/MOTION1/extern/flatbuffers/include -I/home/micho/MOTION1/extern/flatbuffers/grpc  -Wall -pedantic -Wextra -Wno-stringop-overflow -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -O3 -DNDEBUG -std=gnu++17 -Wold-style-cast -o CMakeFiles/flatc.dir/src/idl_gen_go.cpp.o -c /home/micho/MOTION1/extern/flatbuffers/src/idl_gen_go.cpp",
+  "file": "/home/micho/MOTION1/extern/flatbuffers/src/idl_gen_go.cpp",
+  "output": "flatbuffers-build/CMakeFiles/flatc.dir/src/idl_gen_go.cpp.o"
+},
+{
+  "directory": "/home/micho/MOTION1/build/flatbuffers-build",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/home/micho/MOTION1/extern/flatbuffers/include -I/home/micho/MOTION1/extern/flatbuffers/grpc  -Wall -pedantic -Wextra -Wno-stringop-overflow -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -O3 -DNDEBUG -std=gnu++17 -Wold-style-cast -o CMakeFiles/flatc.dir/src/idl_gen_java.cpp.o -c /home/micho/MOTION1/extern/flatbuffers/src/idl_gen_java.cpp",
+  "file": "/home/micho/MOTION1/extern/flatbuffers/src/idl_gen_java.cpp",
+  "output": "flatbuffers-build/CMakeFiles/flatc.dir/src/idl_gen_java.cpp.o"
+},
+{
+  "directory": "/home/micho/MOTION1/build/flatbuffers-build",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/home/micho/MOTION1/extern/flatbuffers/include -I/home/micho/MOTION1/extern/flatbuffers/grpc  -Wall -pedantic -Wextra -Wno-stringop-overflow -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -O3 -DNDEBUG -std=gnu++17 -Wold-style-cast -o CMakeFiles/flatc.dir/src/idl_gen_ts.cpp.o -c /home/micho/MOTION1/extern/flatbuffers/src/idl_gen_ts.cpp",
+  "file": "/home/micho/MOTION1/extern/flatbuffers/src/idl_gen_ts.cpp",
+  "output": "flatbuffers-build/CMakeFiles/flatc.dir/src/idl_gen_ts.cpp.o"
+},
+{
+  "directory": "/home/micho/MOTION1/build/flatbuffers-build",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/home/micho/MOTION1/extern/flatbuffers/include -I/home/micho/MOTION1/extern/flatbuffers/grpc  -Wall -pedantic -Wextra -Wno-stringop-overflow -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -O3 -DNDEBUG -std=gnu++17 -Wold-style-cast -o CMakeFiles/flatc.dir/src/idl_gen_php.cpp.o -c /home/micho/MOTION1/extern/flatbuffers/src/idl_gen_php.cpp",
+  "file": "/home/micho/MOTION1/extern/flatbuffers/src/idl_gen_php.cpp",
+  "output": "flatbuffers-build/CMakeFiles/flatc.dir/src/idl_gen_php.cpp.o"
+},
+{
+  "directory": "/home/micho/MOTION1/build/flatbuffers-build",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/home/micho/MOTION1/extern/flatbuffers/include -I/home/micho/MOTION1/extern/flatbuffers/grpc  -Wall -pedantic -Wextra -Wno-stringop-overflow -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -O3 -DNDEBUG -std=gnu++17 -Wold-style-cast -o CMakeFiles/flatc.dir/src/idl_gen_python.cpp.o -c /home/micho/MOTION1/extern/flatbuffers/src/idl_gen_python.cpp",
+  "file": "/home/micho/MOTION1/extern/flatbuffers/src/idl_gen_python.cpp",
+  "output": "flatbuffers-build/CMakeFiles/flatc.dir/src/idl_gen_python.cpp.o"
+},
+{
+  "directory": "/home/micho/MOTION1/build/flatbuffers-build",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/home/micho/MOTION1/extern/flatbuffers/include -I/home/micho/MOTION1/extern/flatbuffers/grpc  -Wall -pedantic -Wextra -Wno-stringop-overflow -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -O3 -DNDEBUG -std=gnu++17 -Wold-style-cast -o CMakeFiles/flatc.dir/src/idl_gen_lobster.cpp.o -c /home/micho/MOTION1/extern/flatbuffers/src/idl_gen_lobster.cpp",
+  "file": "/home/micho/MOTION1/extern/flatbuffers/src/idl_gen_lobster.cpp",
+  "output": "flatbuffers-build/CMakeFiles/flatc.dir/src/idl_gen_lobster.cpp.o"
+},
+{
+  "directory": "/home/micho/MOTION1/build/flatbuffers-build",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/home/micho/MOTION1/extern/flatbuffers/include -I/home/micho/MOTION1/extern/flatbuffers/grpc  -Wall -pedantic -Wextra -Wno-stringop-overflow -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -O3 -DNDEBUG -std=gnu++17 -Wold-style-cast -o CMakeFiles/flatc.dir/src/idl_gen_lua.cpp.o -c /home/micho/MOTION1/extern/flatbuffers/src/idl_gen_lua.cpp",
+  "file": "/home/micho/MOTION1/extern/flatbuffers/src/idl_gen_lua.cpp",
+  "output": "flatbuffers-build/CMakeFiles/flatc.dir/src/idl_gen_lua.cpp.o"
+},
+{
+  "directory": "/home/micho/MOTION1/build/flatbuffers-build",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/home/micho/MOTION1/extern/flatbuffers/include -I/home/micho/MOTION1/extern/flatbuffers/grpc  -Wall -pedantic -Wextra -Wno-stringop-overflow -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -O3 -DNDEBUG -std=gnu++17 -Wold-style-cast -o CMakeFiles/flatc.dir/src/idl_gen_rust.cpp.o -c /home/micho/MOTION1/extern/flatbuffers/src/idl_gen_rust.cpp",
+  "file": "/home/micho/MOTION1/extern/flatbuffers/src/idl_gen_rust.cpp",
+  "output": "flatbuffers-build/CMakeFiles/flatc.dir/src/idl_gen_rust.cpp.o"
+},
+{
+  "directory": "/home/micho/MOTION1/build/flatbuffers-build",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/home/micho/MOTION1/extern/flatbuffers/include -I/home/micho/MOTION1/extern/flatbuffers/grpc  -Wall -pedantic -Wextra -Wno-stringop-overflow -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -O3 -DNDEBUG -std=gnu++17 -Wold-style-cast -o CMakeFiles/flatc.dir/src/idl_gen_fbs.cpp.o -c /home/micho/MOTION1/extern/flatbuffers/src/idl_gen_fbs.cpp",
+  "file": "/home/micho/MOTION1/extern/flatbuffers/src/idl_gen_fbs.cpp",
+  "output": "flatbuffers-build/CMakeFiles/flatc.dir/src/idl_gen_fbs.cpp.o"
+},
+{
+  "directory": "/home/micho/MOTION1/build/flatbuffers-build",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/home/micho/MOTION1/extern/flatbuffers/include -I/home/micho/MOTION1/extern/flatbuffers/grpc  -Wall -pedantic -Wextra -Wno-stringop-overflow -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -O3 -DNDEBUG -std=gnu++17 -Wold-style-cast -o CMakeFiles/flatc.dir/src/idl_gen_grpc.cpp.o -c /home/micho/MOTION1/extern/flatbuffers/src/idl_gen_grpc.cpp",
+  "file": "/home/micho/MOTION1/extern/flatbuffers/src/idl_gen_grpc.cpp",
+  "output": "flatbuffers-build/CMakeFiles/flatc.dir/src/idl_gen_grpc.cpp.o"
+},
+{
+  "directory": "/home/micho/MOTION1/build/flatbuffers-build",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/home/micho/MOTION1/extern/flatbuffers/include -I/home/micho/MOTION1/extern/flatbuffers/grpc  -Wall -pedantic -Wextra -Wno-stringop-overflow -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -O3 -DNDEBUG -std=gnu++17 -Wold-style-cast -o CMakeFiles/flatc.dir/src/idl_gen_json_schema.cpp.o -c /home/micho/MOTION1/extern/flatbuffers/src/idl_gen_json_schema.cpp",
+  "file": "/home/micho/MOTION1/extern/flatbuffers/src/idl_gen_json_schema.cpp",
+  "output": "flatbuffers-build/CMakeFiles/flatc.dir/src/idl_gen_json_schema.cpp.o"
+},
+{
+  "directory": "/home/micho/MOTION1/build/flatbuffers-build",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/home/micho/MOTION1/extern/flatbuffers/include -I/home/micho/MOTION1/extern/flatbuffers/grpc  -Wall -pedantic -Wextra -Wno-stringop-overflow -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -O3 -DNDEBUG -std=gnu++17 -Wold-style-cast -o CMakeFiles/flatc.dir/src/idl_gen_swift.cpp.o -c /home/micho/MOTION1/extern/flatbuffers/src/idl_gen_swift.cpp",
+  "file": "/home/micho/MOTION1/extern/flatbuffers/src/idl_gen_swift.cpp",
+  "output": "flatbuffers-build/CMakeFiles/flatc.dir/src/idl_gen_swift.cpp.o"
+},
+{
+  "directory": "/home/micho/MOTION1/build/flatbuffers-build",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/home/micho/MOTION1/extern/flatbuffers/include -I/home/micho/MOTION1/extern/flatbuffers/grpc  -Wall -pedantic -Wextra -Wno-stringop-overflow -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -O3 -DNDEBUG -std=gnu++17 -Wold-style-cast -o CMakeFiles/flatc.dir/src/flatc.cpp.o -c /home/micho/MOTION1/extern/flatbuffers/src/flatc.cpp",
+  "file": "/home/micho/MOTION1/extern/flatbuffers/src/flatc.cpp",
+  "output": "flatbuffers-build/CMakeFiles/flatc.dir/src/flatc.cpp.o"
+},
+{
+  "directory": "/home/micho/MOTION1/build/flatbuffers-build",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/home/micho/MOTION1/extern/flatbuffers/include -I/home/micho/MOTION1/extern/flatbuffers/grpc  -Wall -pedantic -Wextra -Wno-stringop-overflow -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -O3 -DNDEBUG -std=gnu++17 -Wold-style-cast -o CMakeFiles/flatc.dir/src/flatc_main.cpp.o -c /home/micho/MOTION1/extern/flatbuffers/src/flatc_main.cpp",
+  "file": "/home/micho/MOTION1/extern/flatbuffers/src/flatc_main.cpp",
+  "output": "flatbuffers-build/CMakeFiles/flatc.dir/src/flatc_main.cpp.o"
+},
+{
+  "directory": "/home/micho/MOTION1/build/flatbuffers-build",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/home/micho/MOTION1/extern/flatbuffers/include -I/home/micho/MOTION1/extern/flatbuffers/grpc  -Wall -pedantic -Wextra -Wno-stringop-overflow -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -O3 -DNDEBUG -std=gnu++17 -Wold-style-cast -o CMakeFiles/flatc.dir/src/code_generators.cpp.o -c /home/micho/MOTION1/extern/flatbuffers/src/code_generators.cpp",
+  "file": "/home/micho/MOTION1/extern/flatbuffers/src/code_generators.cpp",
+  "output": "flatbuffers-build/CMakeFiles/flatc.dir/src/code_generators.cpp.o"
+},
+{
+  "directory": "/home/micho/MOTION1/build/flatbuffers-build",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/home/micho/MOTION1/extern/flatbuffers/include -I/home/micho/MOTION1/extern/flatbuffers/grpc  -Wall -pedantic -Wextra -Wno-stringop-overflow -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -O3 -DNDEBUG -std=gnu++17 -Wold-style-cast -o CMakeFiles/flatc.dir/grpc/src/compiler/cpp_generator.cc.o -c /home/micho/MOTION1/extern/flatbuffers/grpc/src/compiler/cpp_generator.cc",
+  "file": "/home/micho/MOTION1/extern/flatbuffers/grpc/src/compiler/cpp_generator.cc",
+  "output": "flatbuffers-build/CMakeFiles/flatc.dir/grpc/src/compiler/cpp_generator.cc.o"
+},
+{
+  "directory": "/home/micho/MOTION1/build/flatbuffers-build",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/home/micho/MOTION1/extern/flatbuffers/include -I/home/micho/MOTION1/extern/flatbuffers/grpc  -Wall -pedantic -Wextra -Wno-stringop-overflow -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -O3 -DNDEBUG -std=gnu++17 -Wold-style-cast -o CMakeFiles/flatc.dir/grpc/src/compiler/go_generator.cc.o -c /home/micho/MOTION1/extern/flatbuffers/grpc/src/compiler/go_generator.cc",
+  "file": "/home/micho/MOTION1/extern/flatbuffers/grpc/src/compiler/go_generator.cc",
+  "output": "flatbuffers-build/CMakeFiles/flatc.dir/grpc/src/compiler/go_generator.cc.o"
+},
+{
+  "directory": "/home/micho/MOTION1/build/flatbuffers-build",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/home/micho/MOTION1/extern/flatbuffers/include -I/home/micho/MOTION1/extern/flatbuffers/grpc  -Wall -pedantic -Wextra -Wno-stringop-overflow -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -O3 -DNDEBUG -std=gnu++17 -Wold-style-cast -o CMakeFiles/flatc.dir/grpc/src/compiler/java_generator.cc.o -c /home/micho/MOTION1/extern/flatbuffers/grpc/src/compiler/java_generator.cc",
+  "file": "/home/micho/MOTION1/extern/flatbuffers/grpc/src/compiler/java_generator.cc",
+  "output": "flatbuffers-build/CMakeFiles/flatc.dir/grpc/src/compiler/java_generator.cc.o"
+},
+{
+  "directory": "/home/micho/MOTION1/build/flatbuffers-build",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/home/micho/MOTION1/extern/flatbuffers/include -I/home/micho/MOTION1/extern/flatbuffers/grpc  -Wall -pedantic -Wextra -Wno-stringop-overflow -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -O3 -DNDEBUG -std=gnu++17 -Wold-style-cast -o CMakeFiles/flatc.dir/grpc/src/compiler/python_generator.cc.o -c /home/micho/MOTION1/extern/flatbuffers/grpc/src/compiler/python_generator.cc",
+  "file": "/home/micho/MOTION1/extern/flatbuffers/grpc/src/compiler/python_generator.cc",
+  "output": "flatbuffers-build/CMakeFiles/flatc.dir/grpc/src/compiler/python_generator.cc.o"
+},
+{
+  "directory": "/home/micho/MOTION1/build/flatbuffers-build",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/home/micho/MOTION1/extern/flatbuffers/include -I/home/micho/MOTION1/extern/flatbuffers/grpc  -Wall -pedantic -Wextra -Wno-stringop-overflow -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -O3 -DNDEBUG -std=gnu++17 -Wold-style-cast -o CMakeFiles/flatc.dir/grpc/src/compiler/swift_generator.cc.o -c /home/micho/MOTION1/extern/flatbuffers/grpc/src/compiler/swift_generator.cc",
+  "file": "/home/micho/MOTION1/extern/flatbuffers/grpc/src/compiler/swift_generator.cc",
+  "output": "flatbuffers-build/CMakeFiles/flatc.dir/grpc/src/compiler/swift_generator.cc.o"
+},
+{
+  "directory": "/home/micho/MOTION1/build/flatbuffers-build",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/home/micho/MOTION1/extern/flatbuffers/include -I/home/micho/MOTION1/extern/flatbuffers/grpc  -Wall -pedantic -Wextra -Wno-stringop-overflow -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -O3 -DNDEBUG -std=gnu++17 -Wold-style-cast -o CMakeFiles/flatc.dir/grpc/src/compiler/ts_generator.cc.o -c /home/micho/MOTION1/extern/flatbuffers/grpc/src/compiler/ts_generator.cc",
+  "file": "/home/micho/MOTION1/extern/flatbuffers/grpc/src/compiler/ts_generator.cc",
+  "output": "flatbuffers-build/CMakeFiles/flatc.dir/grpc/src/compiler/ts_generator.cc.o"
+}
+]
