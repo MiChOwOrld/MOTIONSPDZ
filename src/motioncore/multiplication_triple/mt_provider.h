@@ -25,9 +25,9 @@
 #pragma once
 
 #include <list>
-#include <vector>
-#include <cstdint>
-#include <atomic>
+#include <vector> //NEW
+#include <cstdint> //NEW
+#include <atomic> //NEW
 #include "oblivious_transfer/ot_flavors.h"
 #include "utility/bit_vector.h"
 #include "utility/fiber_condition.h"
@@ -41,7 +41,7 @@ class Logger;
 template <typename T, typename = std::enable_if_t<std::is_unsigned_v<T>>>
 struct IntegerMtVector {
   std::vector<T> a, b, c;  // c[i] = a[i] * b[i]
-  std::vector<T> mac_a, mac_b, mac_c;
+  std::vector<T> mac_a, mac_b, mac_c; //NEW
 };
 
 struct BinaryMtVector {
@@ -159,16 +159,16 @@ class MtProvider {
 
 
  private:
-   std::uint64_t alpha_{};  // NEW MACs: Variable for MAC computations
-   static std::uint64_t GenerateRandomAlpha();
+   std::uint64_t alpha_{};  // NEW 
+   static std::uint64_t GenerateRandomAlpha(); //NEW
    
   template <typename T, typename = std::enable_if_t<std::is_unsigned_v<T>>>
   inline IntegerMtVector<T> GetInteger(const IntegerMtVector<T>& mts, const std::size_t offset,
                                        const std::size_t n) const {
     assert(mts.a.size() == mts.b.size());
     assert(mts.c.size() == mts.b.size());
-    assert(mts.mac_a.size() == mts.mac_b.size());
-    assert(mts.mac_c.size() == mts.mac_b.size());
+    assert(mts.mac_a.size() == mts.mac_b.size()); //NEW
+    assert(mts.mac_c.size() == mts.mac_b.size()); //NEW
     assert(offset + n <= mts.a.size());
 
     return IntegerMtVector<T>{std::vector<T>(mts.a.begin() + offset, mts.a.begin + offset + n),
