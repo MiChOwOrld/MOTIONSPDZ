@@ -24,7 +24,7 @@
 #include "communication/message.h"
 #include "data_storage/ot_extension_data.h"
 #include "utility/fiber_condition.h"
-#include <vector>
+#include <vector> //NEW
 
 namespace encrypto::motion {
 
@@ -407,10 +407,10 @@ void XcOtBitReceiver::ComputeOutputs() {
 template <typename T>
 AcOtSender<T>::AcOtSender(std::size_t ot_id, std::size_t number_of_ots, std::size_t vector_size,
                           OtExtensionData& data)
-    : BasicOtSender(ot_id, number_of_ots, sizeof(T) * vector_size, data),
+    : BasicOtSender(ot_id, number_of_ots, sizeof(T) * vector_size, data), //NEW
       vector_size_(vector_size),
-      macs_(number_of_ots * vector_size),  // Αρχικοποίηση του MACs
-      mac_key_(0)                          // Αρχικοποίηση του MAC key
+      macs_(number_of_ots * vector_size),  // Αρχικοποίηση του MACs //NEW
+      mac_key_(0)                          // Αρχικοποίηση του MAC key //NEW
 {}
 
 template <typename T>
@@ -424,7 +424,7 @@ void AcOtSender<T>::ComputeOutputs() {
 
   // make space for all the OTs
   outputs_.resize(number_of_ots_ * vector_size_);
-  macs_.resize(number_of_ots_ * vector_size_);  // Ensure MACs size
+  macs_.resize(number_of_ots_ * vector_size_);  // Ensure MACs size //NEW
 
   // get the corrections bits
   std::vector<std::uint8_t> corrections_message{corrections_future_.get()};
@@ -434,25 +434,25 @@ void AcOtSender<T>::ComputeOutputs() {
 
   if (vector_size_ == 1) {
     for (std::size_t ot_i = 0; ot_i < number_of_ots_; ++ot_i) {
-      T output;
+      T output; //NEW
       if (corrections_span[ot_i]) {
         output = *reinterpret_cast<const T*>(data_.sender_data.y1.at(ot_id_ + ot_i).GetData().data());
       } else {
         output = *reinterpret_cast<const T*>(data_.sender_data.y0.at(ot_id_ + ot_i).GetData().data());
       }
-      outputs_[ot_i] = output;
-      macs_[ot_i] = mac_key_ * output;  // Calculate MAC
+      outputs_[ot_i] = output; //NEW
+      macs_[ot_i] = mac_key_ * output;  // Calculate MAC //NEW
     }
   } else {
     for (std::size_t ot_i = 0; ot_i < number_of_ots_; ++ot_i) {
-      auto data_pointer = corrections_span[ot_i]
-                              ? reinterpret_cast<const T*>(data_.sender_data.y1.at(ot_id_ + ot_i).GetData().data())
-                              : reinterpret_cast<const T*>(data_.sender_data.y0.at(ot_id_ + ot_i).GetData().data());
+      auto data_pointer = corrections_span[ot_i] //NEW
+                              ? reinterpret_cast<const T*>(data_.sender_data.y1.at(ot_id_ + ot_i).GetData().data())  //NEW
+                              : reinterpret_cast<const T*>(data_.sender_data.y0.at(ot_id_ + ot_i).GetData().data()); //NEW
 
-      std::copy(data_pointer, data_pointer + vector_size_, &outputs_[ot_i * vector_size_]);
+      std::copy(data_pointer, data_pointer + vector_size_, &outputs_[ot_i * vector_size_]); //NEW
 
-      for (std::size_t j = 0; j < vector_size_; ++j) {
-        macs_[ot_i * vector_size_ + j] = mac_key_ * outputs_[ot_i * vector_size_ + j];  // Calculate MAC
+      for (std::size_t j = 0; j < vector_size_; ++j) { //NEW
+        macs_[ot_i * vector_size_ + j] = mac_key_ * outputs_[ot_i * vector_size_ + j];  // Calculate MAC //NEW
       }
     }
   }
@@ -464,8 +464,8 @@ void AcOtSender<T>::SendMessages() const {
   assert(data_.sender_data.IsSetupReady());
 
   auto buffer = correlations_;
-  buffer.resize(number_of_ots_ * vector_size_ * 2);  // Resize for MACs
-  auto mac_offset = number_of_ots_ * vector_size_;
+  buffer.resize(number_of_ots_ * vector_size_ * 2);  // Resize for MACs //NEW 
+  auto mac_offset = number_of_ots_ * vector_size_; //NEW
 
   if (vector_size_ == 1) {
     for (std::size_t ot_i = 0; ot_i < number_of_ots_; ++ot_i) {
@@ -473,7 +473,7 @@ void AcOtSender<T>::SendMessages() const {
           *reinterpret_cast<const T*>(data_.sender_data.y0.at(ot_id_ + ot_i).GetData().data());
       buffer[ot_i] +=
           *reinterpret_cast<const T*>(data_.sender_data.y1.at(ot_id_ + ot_i).GetData().data());
-      buffer[mac_offset + ot_i] = macs_[ot_i];  // Add MACs
+      buffer[mac_offset + ot_i] = macs_[ot_i];  // Add MACs //NEW
     }
   } else {
     for (std::size_t ot_i = 0; ot_i < number_of_ots_; ++ot_i) {
@@ -484,7 +484,7 @@ void AcOtSender<T>::SendMessages() const {
       auto buffer_pointer = &buffer[ot_i * vector_size_];
       for (std::size_t j = 0; j < vector_size_; ++j) {
         buffer_pointer[j] += y0_pointer[j] + y1_pointer[j];
-        buffer[mac_offset + ot_i * vector_size_ + j] = macs_[ot_i * vector_size_ + j];  // Add MACs
+        buffer[mac_offset + ot_i * vector_size_ + j] = macs_[ot_i * vector_size_ + j];  // Add MACs //NEW
       }
     }
   }
@@ -506,8 +506,8 @@ AcOtReceiver<T>::AcOtReceiver(std::size_t ot_id, std::size_t number_of_ots, std:
     : BasicOtReceiver(ot_id, number_of_ots, sizeof(T) * vector_size, data),
       vector_size_(vector_size),
       outputs_(number_of_ots * vector_size),
-      macs_(number_of_ots * vector_size),  // Αρχικοποίηση MACs
-      mac_key_(0)                          // Αρχικοποίηση MAC key
+      macs_(number_of_ots * vector_size),  // Αρχικοποίηση MACs //NEW
+      mac_key_(0)                          // Αρχικοποίηση MAC key //NEW
 {
   sender_message_future_ = data_.message_manager.RegisterReceive(
       data_.party_id, communication::MessageType::kOtExtensionSender, ot_id);
@@ -536,14 +536,14 @@ void AcOtReceiver<T>::ComputeOutputs() {
          number_of_ots_ * vector_size_ * sizeof(T));
 
   // --- Διαχωρισμός τιμών και MACs ---
-  auto num_elements = number_of_ots_ * vector_size_;
-  auto value_span = std::span(reinterpret_cast<const T*>(pointer), num_elements);
-  auto mac_span =
-      std::span(reinterpret_cast<const T*>(pointer + sizeof(T) * num_elements), num_elements);
+  auto num_elements = number_of_ots_ * vector_size_; //NEW
+  auto value_span = std::span(reinterpret_cast<const T*>(pointer), num_elements); //NEW
+  auto mac_span = //NEW
+      std::span(reinterpret_cast<const T*>(pointer + sizeof(T) * num_elements), num_elements); //NEW
 
   // Προετοιμασία outputs και macs
-  outputs_.resize(num_elements);
-  macs_.resize(num_elements);
+  outputs_.resize(num_elements); //NEW
+  macs_.resize(num_elements); //NEW
 
   if (vector_size_ == 1) {
     for (std::size_t ot_i = 0; ot_i < number_of_ots_; ++ot_i) {
@@ -554,7 +554,7 @@ void AcOtReceiver<T>::ComputeOutputs() {
       } else {
         outputs_[ot_i] = *ot_data_pointer;
       }
-      macs_[ot_i] = mac_span[ot_i];  // Αποθήκευση του MAC
+      macs_[ot_i] = mac_span[ot_i];  // Αποθήκευση του MAC //NEW
     }
   } else {
     for (std::size_t ot_i = 0; ot_i < number_of_ots_; ++ot_i) {
@@ -569,21 +569,21 @@ void AcOtReceiver<T>::ComputeOutputs() {
         std::copy(ot_data_pointer, ot_data_pointer + vector_size_,
                   &outputs_[ot_i * vector_size_]);
       }
-      std::copy(mac_span.begin() + ot_i * vector_size_,
-                mac_span.begin() + (ot_i + 1) * vector_size_,
-                macs_.begin() + ot_i * vector_size_);
+      std::copy(mac_span.begin() + ot_i * vector_size_, //NEW
+                mac_span.begin() + (ot_i + 1) * vector_size_, //NEW
+                macs_.begin() + ot_i * vector_size_); //NEW
     }
   }
 
-  if (verify_mac_) {
-    // --- Επιβεβαίωση MAC ---
-    for (std::size_t i = 0; i < num_elements; ++i) {
-      auto received_mac = macs_[i];
-      auto computed_mac = outputs_[i] * mac_key_;
-      if (received_mac != computed_mac) {
-        throw std::runtime_error(
-            "MAC verification failed in AcOtReceiver::ComputeOutputs for element " +
-            std::to_string(i));
+  if (verify_mac_) { //NEW 
+    // --- Επιβεβαίωση MAC --- //NEW
+    for (std::size_t i = 0; i < num_elements; ++i) { //NEW
+      auto received_mac = macs_[i]; //NEW
+      auto computed_mac = outputs_[i] * mac_key_; //NEW
+      if (received_mac != computed_mac) { //NEW
+        throw std::runtime_error( //NEW
+            "MAC verification failed in AcOtReceiver::ComputeOutputs for element " + //NEW
+            std::to_string(i)); //NEW
       }
     }
   }
@@ -592,13 +592,13 @@ void AcOtReceiver<T>::ComputeOutputs() {
 }
 
 
-template <typename T>
-void AcOtReceiver<T>::VerifyMacs() const {
-  for (std::size_t i = 0; i < outputs_.size(); ++i) {
-    auto computed_mac = outputs_[i] * mac_key_;
-    if (macs_[i] != computed_mac) {
-      throw std::runtime_error(
-          "MAC verification failed for OT element " + std::to_string(i));
+template <typename T> //NEW
+void AcOtReceiver<T>::VerifyMacs() const { //NEW
+  for (std::size_t i = 0; i < outputs_.size(); ++i) { //NEW
+    auto computed_mac = outputs_[i] * mac_key_; //NEW
+    if (macs_[i] != computed_mac) { //NEW
+      throw std::runtime_error( //NEW
+          "MAC verification failed for OT element " + std::to_string(i)); //NEW
     }
   }
 }
