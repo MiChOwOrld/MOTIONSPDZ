@@ -31,9 +31,9 @@
 #include "utility/block.h"
 #include "utility/reusable_future.h"
 #include "utility/type_traits.h"
-#include <cstdint>
-#include <stdexcept>
-#include <vector>
+#include <cstdint> //NEW
+#include <stdexcept> //NEW
+#include <vector> //NEW
 
 namespace encrypto::motion {
 
@@ -407,8 +407,8 @@ class AcOtSender : public BasicOtSender {
 
   // the "0 output" for the sender (the "1 output" can be computed by applying the correlation)
   std::vector<T> outputs_;
-  std::vector<T> macs_;  // MACs που λαμβάνονται από τον sender
-  T mac_key_;
+  std::vector<T> macs_;  // MACs που λαμβάνονται από τον sender //NEW
+  T mac_key_; //NEW
   
   // if the sender outputs have been computed
   bool outputs_computed_ = false;
@@ -428,7 +428,7 @@ class AcOtReceiver : public BasicOtReceiver {
 
   // compute the receiver's outputs
   void ComputeOutputs();
-  void VerifyMacs() const;  // NEW MAC verification
+  void VerifyMacs() const;  // NEW MAC verification //NEW
 
   // get the receiver's outputs
   std::vector<T>& GetOutputs() {
@@ -447,17 +447,17 @@ class AcOtReceiver : public BasicOtReceiver {
 
   // the output for the receiver
   std::vector<T> outputs_;
-// MACs received from the sender //NEW MACs
-  std::vector<T> macs_;
+// MACs received from the sender //NEW MACs //NEW
+  std::vector<T> macs_; //NEW
 
-  // MAC key for validation //New MACs
-  T mac_key_;
+  // MAC key for validation //New MACs //NEW
+  T mac_key_; //NEW
 
   // if the sender outputs have been computed
   bool outputs_computed_ = false;
 
-  // enable MAC verification //new MACs
-  bool verify_mac_ = true;
+  // enable MAC verification //new MACs //NEW
+  bool verify_mac_ = true; //NEW
 };
 // sender implementation of batched 128 bit string OT
 class GOt128Sender : public BasicOtSender {
