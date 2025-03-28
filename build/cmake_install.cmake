@@ -1,4 +1,4 @@
-# Install script for directory: /home/micho/MOTION1
+# Install script for directory: /home/micho/CLionProjects/MOTIONSPDZ
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "Release")
+    set(CMAKE_INSTALL_CONFIG_NAME "Debug")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -44,9 +44,10 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/micho/MOTION1/build/flatbuffers-build/cmake_install.cmake")
-  include("/home/micho/MOTION1/build/fbs/cmake_install.cmake")
-  include("/home/micho/MOTION1/build/src/motioncore/cmake_install.cmake")
+  include("/home/micho/CLionProjects/MOTIONSPDZ/build/flatbuffers-build/cmake_install.cmake")
+  include("/home/micho/CLionProjects/MOTIONSPDZ/build/fbs/cmake_install.cmake")
+  include("/home/micho/CLionProjects/MOTIONSPDZ/build/src/motioncore/cmake_install.cmake")
+  include("/home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/cmake_install.cmake")
 
 endif()
 
@@ -58,5 +59,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/micho/MOTION1/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/micho/CLionProjects/MOTIONSPDZ/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

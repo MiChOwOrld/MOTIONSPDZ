@@ -141,6 +141,9 @@ class MtProvider {
   MtProvider(std::size_t my_id, std::size_t number_of_parties);
   MtProvider() = delete;
 
+  std::uint64_t alpha_{};  // NEW
+  static std::uint64_t GenerateRandomAlpha(); //NEW
+
   std::size_t number_of_bit_mts_{0}, number_of_mts_8_{0}, number_of_mts_16_{0},
       number_of_mts_32_{0}, number_of_mts_64_{0};
 
@@ -159,8 +162,7 @@ class MtProvider {
 
 
  private:
-   std::uint64_t alpha_{};  // NEW 
-   static std::uint64_t GenerateRandomAlpha(); //NEW
+
    
   template <typename T, typename = std::enable_if_t<std::is_unsigned_v<T>>>
   inline IntegerMtVector<T> GetInteger(const IntegerMtVector<T>& mts, const std::size_t offset,

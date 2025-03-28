@@ -170,7 +170,7 @@ boost::json::object AccumulatedCommunicationStatistics::ToJson() const {
 
 std::string PrintMotionInfo() {
   std::stringstream ss;
-  ss << fmt::format("MOTION version: {} @ {}\n", GetGitVersion(), GetGitBranch())
+  ss << fmt::format("MOTION version: {}\n", "N/A")
      << fmt::format("invocation: {}\n", GetCmdLine())
      << fmt::format("by {}@{}, PID {}\n", GetUsername(), GetHostname(), GetPid());
   return ss.str();

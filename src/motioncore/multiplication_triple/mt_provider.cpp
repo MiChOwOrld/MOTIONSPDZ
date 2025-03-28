@@ -337,9 +337,22 @@ void MtProviderFromOts::ParseOutputs() {
     ParseHelper<std::uint64_t>(ots_sender_64_.at(i), ots_receiver_64_.at(i), kMaxBatchSize, mts64_,
                                number_of_mts_64_);
    // Επαλήθευση MACs
-    assert(mts8_.mac_a == alpha_ * mts8_.a); //NEW
-    assert(mts8_.mac_b == alpha_ * mts8_.b); //NEW
-    assert(mts8_.mac_c == alpha_ * mts8_.c); //NEW
+    std::vector<uint8_t> computed_mac_a(mts8_.a.size()); //NEW
+    std::transform(mts8_.a.begin(), mts8_.a.end(), computed_mac_a.begin(), //NEW
+                   [this](uint8_t val) { return val * alpha_; }); //NEW
+
+    std::vector<uint8_t> computed_mac_b(mts8_.b.size()); //NEW
+    std::transform(mts8_.b.begin(), mts8_.b.end(), computed_mac_b.begin(), //NEW
+                   [this](uint8_t val) { return val * alpha_; }); //NEW
+
+    std::vector<uint8_t> computed_mac_c(mts8_.c.size()); //NEW
+    std::transform(mts8_.c.begin(), mts8_.c.end(), computed_mac_c.begin(), //NEW
+                   [this](uint8_t val) { return val * alpha_; }); //NEW
+
+    assert(mts8_.mac_a == computed_mac_a); //NEW
+    assert(mts8_.mac_b == computed_mac_b); //NEW
+    assert(mts8_.mac_c == computed_mac_c); //NEW
+
   }
 }
 

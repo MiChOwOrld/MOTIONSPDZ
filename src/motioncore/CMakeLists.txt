@@ -108,6 +108,7 @@ target_compile_options(motion PRIVATE
 # Σύνδεση Boost και άλλων απαραίτητων βιβλιοθηκών
 target_link_libraries(motion
     PRIVATE
+        fmt::fmt
         Boost::context
         Boost::fiber
         Boost::log_setup
@@ -122,6 +123,7 @@ target_link_libraries(motion
     PUBLIC
         Boost::json
 )
+target_compile_definitions(motion PUBLIC FMT_HEADER_ONLY)
 
 # Include Directories
 target_include_directories(motion PUBLIC

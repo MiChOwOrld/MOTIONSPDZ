@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/micho/MOTION1
+CMAKE_SOURCE_DIR = /home/micho/CLionProjects/MOTIONSPDZ
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/micho/MOTION1/build
+CMAKE_BINARY_DIR = /home/micho/CLionProjects/MOTIONSPDZ/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,9 +132,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/MOTION1/build/CMakeFiles /home/micho/MOTION1/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles /home/micho/CLionProjects/MOTIONSPDZ/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/MOTION1/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -252,6 +252,136 @@ gtest_main/fast:
 	$(MAKE) $(MAKESILENT) -f googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make googletest-build/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
+#=============================================================================
+# Target rules for targets named aes128
+
+# Build rule for target.
+aes128: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 aes128
+.PHONY : aes128
+
+# fast build rule for target.
+aes128/fast:
+	$(MAKE) $(MAKESILENT) -f src/examples/aes128/CMakeFiles/aes128.dir/build.make src/examples/aes128/CMakeFiles/aes128.dir/build
+.PHONY : aes128/fast
+
+#=============================================================================
+# Target rules for targets named benchmark_integers
+
+# Build rule for target.
+benchmark_integers: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 benchmark_integers
+.PHONY : benchmark_integers
+
+# fast build rule for target.
+benchmark_integers/fast:
+	$(MAKE) $(MAKESILENT) -f src/examples/benchmark_integers/CMakeFiles/benchmark_integers.dir/build.make src/examples/benchmark_integers/CMakeFiles/benchmark_integers.dir/build
+.PHONY : benchmark_integers/fast
+
+#=============================================================================
+# Target rules for targets named benchmark_primitive_operations
+
+# Build rule for target.
+benchmark_primitive_operations: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 benchmark_primitive_operations
+.PHONY : benchmark_primitive_operations
+
+# fast build rule for target.
+benchmark_primitive_operations/fast:
+	$(MAKE) $(MAKESILENT) -f src/examples/benchmark_primitive_operations/CMakeFiles/benchmark_primitive_operations.dir/build.make src/examples/benchmark_primitive_operations/CMakeFiles/benchmark_primitive_operations.dir/build
+.PHONY : benchmark_primitive_operations/fast
+
+#=============================================================================
+# Target rules for targets named benchmark_providers
+
+# Build rule for target.
+benchmark_providers: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 benchmark_providers
+.PHONY : benchmark_providers
+
+# fast build rule for target.
+benchmark_providers/fast:
+	$(MAKE) $(MAKESILENT) -f src/examples/benchmark_providers/CMakeFiles/benchmark_providers.dir/build.make src/examples/benchmark_providers/CMakeFiles/benchmark_providers.dir/build
+.PHONY : benchmark_providers/fast
+
+#=============================================================================
+# Target rules for targets named example_template
+
+# Build rule for target.
+example_template: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example_template
+.PHONY : example_template
+
+# fast build rule for target.
+example_template/fast:
+	$(MAKE) $(MAKESILENT) -f src/examples/example_template/CMakeFiles/example_template.dir/build.make src/examples/example_template/CMakeFiles/example_template.dir/build
+.PHONY : example_template/fast
+
+#=============================================================================
+# Target rules for targets named sha256
+
+# Build rule for target.
+sha256: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sha256
+.PHONY : sha256
+
+# fast build rule for target.
+sha256/fast:
+	$(MAKE) $(MAKESILENT) -f src/examples/sha256/CMakeFiles/sha256.dir/build.make src/examples/sha256/CMakeFiles/sha256.dir/build
+.PHONY : sha256/fast
+
+#=============================================================================
+# Target rules for targets named crosstabs
+
+# Build rule for target.
+crosstabs: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 crosstabs
+.PHONY : crosstabs
+
+# fast build rule for target.
+crosstabs/fast:
+	$(MAKE) $(MAKESILENT) -f src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/build.make src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/build
+.PHONY : crosstabs/fast
+
+#=============================================================================
+# Target rules for targets named innerproduct
+
+# Build rule for target.
+innerproduct: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 innerproduct
+.PHONY : innerproduct
+
+# fast build rule for target.
+innerproduct/fast:
+	$(MAKE) $(MAKESILENT) -f src/examples/tutorial/innerproduct/CMakeFiles/innerproduct.dir/build.make src/examples/tutorial/innerproduct/CMakeFiles/innerproduct.dir/build
+.PHONY : innerproduct/fast
+
+#=============================================================================
+# Target rules for targets named mult3
+
+# Build rule for target.
+mult3: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mult3
+.PHONY : mult3
+
+# fast build rule for target.
+mult3/fast:
+	$(MAKE) $(MAKESILENT) -f src/examples/tutorial/mult3/CMakeFiles/mult3.dir/build.make src/examples/tutorial/mult3/CMakeFiles/mult3.dir/build
+.PHONY : mult3/fast
+
+#=============================================================================
+# Target rules for targets named millionaires_problem
+
+# Build rule for target.
+millionaires_problem: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 millionaires_problem
+.PHONY : millionaires_problem
+
+# fast build rule for target.
+millionaires_problem/fast:
+	$(MAKE) $(MAKESILENT) -f src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/build.make src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/build
+.PHONY : millionaires_problem/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -265,12 +395,22 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... fbs-generation"
+	@echo "... aes128"
+	@echo "... benchmark_integers"
+	@echo "... benchmark_primitive_operations"
+	@echo "... benchmark_providers"
+	@echo "... crosstabs"
+	@echo "... example_template"
 	@echo "... flatc"
 	@echo "... gmock"
 	@echo "... gmock_main"
 	@echo "... gtest"
 	@echo "... gtest_main"
+	@echo "... innerproduct"
+	@echo "... millionaires_problem"
 	@echo "... motion"
+	@echo "... mult3"
+	@echo "... sha256"
 .PHONY : help
 
 

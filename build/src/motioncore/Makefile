@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/micho/MOTION1
+CMAKE_SOURCE_DIR = /home/micho/CLionProjects/MOTIONSPDZ
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/micho/MOTION1/build
+CMAKE_BINARY_DIR = /home/micho/CLionProjects/MOTIONSPDZ/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/micho/MOTION1/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/micho/MOTION1/build/CMakeFiles /home/micho/MOTION1/build/src/motioncore//CMakeFiles/progress.marks
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/motioncore/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/MOTION1/build/CMakeFiles 0
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles /home/micho/CLionProjects/MOTIONSPDZ/build/src/motioncore//CMakeFiles/progress.marks
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/motioncore/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/motioncore/clean
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/motioncore/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/motioncore/preinstall
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/motioncore/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/motioncore/preinstall
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/motioncore/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/micho/MOTION1/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/motioncore/CMakeFiles/motion.dir/rule:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/motioncore/CMakeFiles/motion.dir/rule
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/motioncore/CMakeFiles/motion.dir/rule
 .PHONY : src/motioncore/CMakeFiles/motion.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ motion: src/motioncore/CMakeFiles/motion.dir/rule
 
 # fast build rule for target.
 motion/fast:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/build
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/build
 .PHONY : motion/fast
 
 algorithm/algorithm_description.o: algorithm/algorithm_description.cpp.o
@@ -180,7 +180,7 @@ algorithm/algorithm_description.o: algorithm/algorithm_description.cpp.o
 
 # target to build an object file
 algorithm/algorithm_description.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/algorithm/algorithm_description.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/algorithm/algorithm_description.cpp.o
 .PHONY : algorithm/algorithm_description.cpp.o
 
 algorithm/algorithm_description.i: algorithm/algorithm_description.cpp.i
@@ -188,7 +188,7 @@ algorithm/algorithm_description.i: algorithm/algorithm_description.cpp.i
 
 # target to preprocess a source file
 algorithm/algorithm_description.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/algorithm/algorithm_description.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/algorithm/algorithm_description.cpp.i
 .PHONY : algorithm/algorithm_description.cpp.i
 
 algorithm/algorithm_description.s: algorithm/algorithm_description.cpp.s
@@ -196,7 +196,7 @@ algorithm/algorithm_description.s: algorithm/algorithm_description.cpp.s
 
 # target to generate assembly for a file
 algorithm/algorithm_description.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/algorithm/algorithm_description.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/algorithm/algorithm_description.cpp.s
 .PHONY : algorithm/algorithm_description.cpp.s
 
 algorithm/boolean_algorithms.o: algorithm/boolean_algorithms.cpp.o
@@ -204,7 +204,7 @@ algorithm/boolean_algorithms.o: algorithm/boolean_algorithms.cpp.o
 
 # target to build an object file
 algorithm/boolean_algorithms.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/algorithm/boolean_algorithms.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/algorithm/boolean_algorithms.cpp.o
 .PHONY : algorithm/boolean_algorithms.cpp.o
 
 algorithm/boolean_algorithms.i: algorithm/boolean_algorithms.cpp.i
@@ -212,7 +212,7 @@ algorithm/boolean_algorithms.i: algorithm/boolean_algorithms.cpp.i
 
 # target to preprocess a source file
 algorithm/boolean_algorithms.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/algorithm/boolean_algorithms.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/algorithm/boolean_algorithms.cpp.i
 .PHONY : algorithm/boolean_algorithms.cpp.i
 
 algorithm/boolean_algorithms.s: algorithm/boolean_algorithms.cpp.s
@@ -220,7 +220,7 @@ algorithm/boolean_algorithms.s: algorithm/boolean_algorithms.cpp.s
 
 # target to generate assembly for a file
 algorithm/boolean_algorithms.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/algorithm/boolean_algorithms.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/algorithm/boolean_algorithms.cpp.s
 .PHONY : algorithm/boolean_algorithms.cpp.s
 
 base/backend.o: base/backend.cpp.o
@@ -228,7 +228,7 @@ base/backend.o: base/backend.cpp.o
 
 # target to build an object file
 base/backend.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/base/backend.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/base/backend.cpp.o
 .PHONY : base/backend.cpp.o
 
 base/backend.i: base/backend.cpp.i
@@ -236,7 +236,7 @@ base/backend.i: base/backend.cpp.i
 
 # target to preprocess a source file
 base/backend.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/base/backend.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/base/backend.cpp.i
 .PHONY : base/backend.cpp.i
 
 base/backend.s: base/backend.cpp.s
@@ -244,7 +244,7 @@ base/backend.s: base/backend.cpp.s
 
 # target to generate assembly for a file
 base/backend.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/base/backend.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/base/backend.cpp.s
 .PHONY : base/backend.cpp.s
 
 base/configuration.o: base/configuration.cpp.o
@@ -252,7 +252,7 @@ base/configuration.o: base/configuration.cpp.o
 
 # target to build an object file
 base/configuration.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/base/configuration.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/base/configuration.cpp.o
 .PHONY : base/configuration.cpp.o
 
 base/configuration.i: base/configuration.cpp.i
@@ -260,7 +260,7 @@ base/configuration.i: base/configuration.cpp.i
 
 # target to preprocess a source file
 base/configuration.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/base/configuration.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/base/configuration.cpp.i
 .PHONY : base/configuration.cpp.i
 
 base/configuration.s: base/configuration.cpp.s
@@ -268,7 +268,7 @@ base/configuration.s: base/configuration.cpp.s
 
 # target to generate assembly for a file
 base/configuration.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/base/configuration.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/base/configuration.cpp.s
 .PHONY : base/configuration.cpp.s
 
 base/motion_base_provider.o: base/motion_base_provider.cpp.o
@@ -276,7 +276,7 @@ base/motion_base_provider.o: base/motion_base_provider.cpp.o
 
 # target to build an object file
 base/motion_base_provider.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/base/motion_base_provider.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/base/motion_base_provider.cpp.o
 .PHONY : base/motion_base_provider.cpp.o
 
 base/motion_base_provider.i: base/motion_base_provider.cpp.i
@@ -284,7 +284,7 @@ base/motion_base_provider.i: base/motion_base_provider.cpp.i
 
 # target to preprocess a source file
 base/motion_base_provider.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/base/motion_base_provider.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/base/motion_base_provider.cpp.i
 .PHONY : base/motion_base_provider.cpp.i
 
 base/motion_base_provider.s: base/motion_base_provider.cpp.s
@@ -292,7 +292,7 @@ base/motion_base_provider.s: base/motion_base_provider.cpp.s
 
 # target to generate assembly for a file
 base/motion_base_provider.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/base/motion_base_provider.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/base/motion_base_provider.cpp.s
 .PHONY : base/motion_base_provider.cpp.s
 
 base/party.o: base/party.cpp.o
@@ -300,7 +300,7 @@ base/party.o: base/party.cpp.o
 
 # target to build an object file
 base/party.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/base/party.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/base/party.cpp.o
 .PHONY : base/party.cpp.o
 
 base/party.i: base/party.cpp.i
@@ -308,7 +308,7 @@ base/party.i: base/party.cpp.i
 
 # target to preprocess a source file
 base/party.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/base/party.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/base/party.cpp.i
 .PHONY : base/party.cpp.i
 
 base/party.s: base/party.cpp.s
@@ -316,7 +316,7 @@ base/party.s: base/party.cpp.s
 
 # target to generate assembly for a file
 base/party.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/base/party.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/base/party.cpp.s
 .PHONY : base/party.cpp.s
 
 base/register.o: base/register.cpp.o
@@ -324,7 +324,7 @@ base/register.o: base/register.cpp.o
 
 # target to build an object file
 base/register.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/base/register.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/base/register.cpp.o
 .PHONY : base/register.cpp.o
 
 base/register.i: base/register.cpp.i
@@ -332,7 +332,7 @@ base/register.i: base/register.cpp.i
 
 # target to preprocess a source file
 base/register.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/base/register.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/base/register.cpp.i
 .PHONY : base/register.cpp.i
 
 base/register.s: base/register.cpp.s
@@ -340,7 +340,7 @@ base/register.s: base/register.cpp.s
 
 # target to generate assembly for a file
 base/register.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/base/register.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/base/register.cpp.s
 .PHONY : base/register.cpp.s
 
 communication/communication_layer.o: communication/communication_layer.cpp.o
@@ -348,7 +348,7 @@ communication/communication_layer.o: communication/communication_layer.cpp.o
 
 # target to build an object file
 communication/communication_layer.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/communication/communication_layer.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/communication/communication_layer.cpp.o
 .PHONY : communication/communication_layer.cpp.o
 
 communication/communication_layer.i: communication/communication_layer.cpp.i
@@ -356,7 +356,7 @@ communication/communication_layer.i: communication/communication_layer.cpp.i
 
 # target to preprocess a source file
 communication/communication_layer.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/communication/communication_layer.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/communication/communication_layer.cpp.i
 .PHONY : communication/communication_layer.cpp.i
 
 communication/communication_layer.s: communication/communication_layer.cpp.s
@@ -364,7 +364,7 @@ communication/communication_layer.s: communication/communication_layer.cpp.s
 
 # target to generate assembly for a file
 communication/communication_layer.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/communication/communication_layer.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/communication/communication_layer.cpp.s
 .PHONY : communication/communication_layer.cpp.s
 
 communication/dummy_transport.o: communication/dummy_transport.cpp.o
@@ -372,7 +372,7 @@ communication/dummy_transport.o: communication/dummy_transport.cpp.o
 
 # target to build an object file
 communication/dummy_transport.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/communication/dummy_transport.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/communication/dummy_transport.cpp.o
 .PHONY : communication/dummy_transport.cpp.o
 
 communication/dummy_transport.i: communication/dummy_transport.cpp.i
@@ -380,7 +380,7 @@ communication/dummy_transport.i: communication/dummy_transport.cpp.i
 
 # target to preprocess a source file
 communication/dummy_transport.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/communication/dummy_transport.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/communication/dummy_transport.cpp.i
 .PHONY : communication/dummy_transport.cpp.i
 
 communication/dummy_transport.s: communication/dummy_transport.cpp.s
@@ -388,7 +388,7 @@ communication/dummy_transport.s: communication/dummy_transport.cpp.s
 
 # target to generate assembly for a file
 communication/dummy_transport.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/communication/dummy_transport.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/communication/dummy_transport.cpp.s
 .PHONY : communication/dummy_transport.cpp.s
 
 communication/garbled_circuit_message.o: communication/garbled_circuit_message.cpp.o
@@ -396,7 +396,7 @@ communication/garbled_circuit_message.o: communication/garbled_circuit_message.c
 
 # target to build an object file
 communication/garbled_circuit_message.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/communication/garbled_circuit_message.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/communication/garbled_circuit_message.cpp.o
 .PHONY : communication/garbled_circuit_message.cpp.o
 
 communication/garbled_circuit_message.i: communication/garbled_circuit_message.cpp.i
@@ -404,7 +404,7 @@ communication/garbled_circuit_message.i: communication/garbled_circuit_message.c
 
 # target to preprocess a source file
 communication/garbled_circuit_message.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/communication/garbled_circuit_message.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/communication/garbled_circuit_message.cpp.i
 .PHONY : communication/garbled_circuit_message.cpp.i
 
 communication/garbled_circuit_message.s: communication/garbled_circuit_message.cpp.s
@@ -412,7 +412,7 @@ communication/garbled_circuit_message.s: communication/garbled_circuit_message.c
 
 # target to generate assembly for a file
 communication/garbled_circuit_message.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/communication/garbled_circuit_message.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/communication/garbled_circuit_message.cpp.s
 .PHONY : communication/garbled_circuit_message.cpp.s
 
 communication/hello_message.o: communication/hello_message.cpp.o
@@ -420,7 +420,7 @@ communication/hello_message.o: communication/hello_message.cpp.o
 
 # target to build an object file
 communication/hello_message.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/communication/hello_message.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/communication/hello_message.cpp.o
 .PHONY : communication/hello_message.cpp.o
 
 communication/hello_message.i: communication/hello_message.cpp.i
@@ -428,7 +428,7 @@ communication/hello_message.i: communication/hello_message.cpp.i
 
 # target to preprocess a source file
 communication/hello_message.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/communication/hello_message.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/communication/hello_message.cpp.i
 .PHONY : communication/hello_message.cpp.i
 
 communication/hello_message.s: communication/hello_message.cpp.s
@@ -436,7 +436,7 @@ communication/hello_message.s: communication/hello_message.cpp.s
 
 # target to generate assembly for a file
 communication/hello_message.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/communication/hello_message.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/communication/hello_message.cpp.s
 .PHONY : communication/hello_message.cpp.s
 
 communication/message.o: communication/message.cpp.o
@@ -444,7 +444,7 @@ communication/message.o: communication/message.cpp.o
 
 # target to build an object file
 communication/message.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/communication/message.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/communication/message.cpp.o
 .PHONY : communication/message.cpp.o
 
 communication/message.i: communication/message.cpp.i
@@ -452,7 +452,7 @@ communication/message.i: communication/message.cpp.i
 
 # target to preprocess a source file
 communication/message.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/communication/message.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/communication/message.cpp.i
 .PHONY : communication/message.cpp.i
 
 communication/message.s: communication/message.cpp.s
@@ -460,7 +460,7 @@ communication/message.s: communication/message.cpp.s
 
 # target to generate assembly for a file
 communication/message.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/communication/message.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/communication/message.cpp.s
 .PHONY : communication/message.cpp.s
 
 communication/message_manager.o: communication/message_manager.cpp.o
@@ -468,7 +468,7 @@ communication/message_manager.o: communication/message_manager.cpp.o
 
 # target to build an object file
 communication/message_manager.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/communication/message_manager.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/communication/message_manager.cpp.o
 .PHONY : communication/message_manager.cpp.o
 
 communication/message_manager.i: communication/message_manager.cpp.i
@@ -476,7 +476,7 @@ communication/message_manager.i: communication/message_manager.cpp.i
 
 # target to preprocess a source file
 communication/message_manager.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/communication/message_manager.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/communication/message_manager.cpp.i
 .PHONY : communication/message_manager.cpp.i
 
 communication/message_manager.s: communication/message_manager.cpp.s
@@ -484,7 +484,7 @@ communication/message_manager.s: communication/message_manager.cpp.s
 
 # target to generate assembly for a file
 communication/message_manager.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/communication/message_manager.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/communication/message_manager.cpp.s
 .PHONY : communication/message_manager.cpp.s
 
 communication/tcp_transport.o: communication/tcp_transport.cpp.o
@@ -492,7 +492,7 @@ communication/tcp_transport.o: communication/tcp_transport.cpp.o
 
 # target to build an object file
 communication/tcp_transport.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/communication/tcp_transport.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/communication/tcp_transport.cpp.o
 .PHONY : communication/tcp_transport.cpp.o
 
 communication/tcp_transport.i: communication/tcp_transport.cpp.i
@@ -500,7 +500,7 @@ communication/tcp_transport.i: communication/tcp_transport.cpp.i
 
 # target to preprocess a source file
 communication/tcp_transport.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/communication/tcp_transport.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/communication/tcp_transport.cpp.i
 .PHONY : communication/tcp_transport.cpp.i
 
 communication/tcp_transport.s: communication/tcp_transport.cpp.s
@@ -508,7 +508,7 @@ communication/tcp_transport.s: communication/tcp_transport.cpp.s
 
 # target to generate assembly for a file
 communication/tcp_transport.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/communication/tcp_transport.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/communication/tcp_transport.cpp.s
 .PHONY : communication/tcp_transport.cpp.s
 
 communication/transport.o: communication/transport.cpp.o
@@ -516,7 +516,7 @@ communication/transport.o: communication/transport.cpp.o
 
 # target to build an object file
 communication/transport.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/communication/transport.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/communication/transport.cpp.o
 .PHONY : communication/transport.cpp.o
 
 communication/transport.i: communication/transport.cpp.i
@@ -524,7 +524,7 @@ communication/transport.i: communication/transport.cpp.i
 
 # target to preprocess a source file
 communication/transport.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/communication/transport.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/communication/transport.cpp.i
 .PHONY : communication/transport.cpp.i
 
 communication/transport.s: communication/transport.cpp.s
@@ -532,7 +532,7 @@ communication/transport.s: communication/transport.cpp.s
 
 # target to generate assembly for a file
 communication/transport.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/communication/transport.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/communication/transport.cpp.s
 .PHONY : communication/transport.cpp.s
 
 executor/gate_executor.o: executor/gate_executor.cpp.o
@@ -540,7 +540,7 @@ executor/gate_executor.o: executor/gate_executor.cpp.o
 
 # target to build an object file
 executor/gate_executor.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/executor/gate_executor.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/executor/gate_executor.cpp.o
 .PHONY : executor/gate_executor.cpp.o
 
 executor/gate_executor.i: executor/gate_executor.cpp.i
@@ -548,7 +548,7 @@ executor/gate_executor.i: executor/gate_executor.cpp.i
 
 # target to preprocess a source file
 executor/gate_executor.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/executor/gate_executor.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/executor/gate_executor.cpp.i
 .PHONY : executor/gate_executor.cpp.i
 
 executor/gate_executor.s: executor/gate_executor.cpp.s
@@ -556,7 +556,7 @@ executor/gate_executor.s: executor/gate_executor.cpp.s
 
 # target to generate assembly for a file
 executor/gate_executor.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/executor/gate_executor.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/executor/gate_executor.cpp.s
 .PHONY : executor/gate_executor.cpp.s
 
 multiplication_triple/mt_provider.o: multiplication_triple/mt_provider.cpp.o
@@ -564,7 +564,7 @@ multiplication_triple/mt_provider.o: multiplication_triple/mt_provider.cpp.o
 
 # target to build an object file
 multiplication_triple/mt_provider.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/multiplication_triple/mt_provider.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/multiplication_triple/mt_provider.cpp.o
 .PHONY : multiplication_triple/mt_provider.cpp.o
 
 multiplication_triple/mt_provider.i: multiplication_triple/mt_provider.cpp.i
@@ -572,7 +572,7 @@ multiplication_triple/mt_provider.i: multiplication_triple/mt_provider.cpp.i
 
 # target to preprocess a source file
 multiplication_triple/mt_provider.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/multiplication_triple/mt_provider.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/multiplication_triple/mt_provider.cpp.i
 .PHONY : multiplication_triple/mt_provider.cpp.i
 
 multiplication_triple/mt_provider.s: multiplication_triple/mt_provider.cpp.s
@@ -580,7 +580,7 @@ multiplication_triple/mt_provider.s: multiplication_triple/mt_provider.cpp.s
 
 # target to generate assembly for a file
 multiplication_triple/mt_provider.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/multiplication_triple/mt_provider.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/multiplication_triple/mt_provider.cpp.s
 .PHONY : multiplication_triple/mt_provider.cpp.s
 
 multiplication_triple/sb_provider.o: multiplication_triple/sb_provider.cpp.o
@@ -588,7 +588,7 @@ multiplication_triple/sb_provider.o: multiplication_triple/sb_provider.cpp.o
 
 # target to build an object file
 multiplication_triple/sb_provider.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/multiplication_triple/sb_provider.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/multiplication_triple/sb_provider.cpp.o
 .PHONY : multiplication_triple/sb_provider.cpp.o
 
 multiplication_triple/sb_provider.i: multiplication_triple/sb_provider.cpp.i
@@ -596,7 +596,7 @@ multiplication_triple/sb_provider.i: multiplication_triple/sb_provider.cpp.i
 
 # target to preprocess a source file
 multiplication_triple/sb_provider.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/multiplication_triple/sb_provider.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/multiplication_triple/sb_provider.cpp.i
 .PHONY : multiplication_triple/sb_provider.cpp.i
 
 multiplication_triple/sb_provider.s: multiplication_triple/sb_provider.cpp.s
@@ -604,7 +604,7 @@ multiplication_triple/sb_provider.s: multiplication_triple/sb_provider.cpp.s
 
 # target to generate assembly for a file
 multiplication_triple/sb_provider.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/multiplication_triple/sb_provider.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/multiplication_triple/sb_provider.cpp.s
 .PHONY : multiplication_triple/sb_provider.cpp.s
 
 multiplication_triple/sp_provider.o: multiplication_triple/sp_provider.cpp.o
@@ -612,7 +612,7 @@ multiplication_triple/sp_provider.o: multiplication_triple/sp_provider.cpp.o
 
 # target to build an object file
 multiplication_triple/sp_provider.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/multiplication_triple/sp_provider.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/multiplication_triple/sp_provider.cpp.o
 .PHONY : multiplication_triple/sp_provider.cpp.o
 
 multiplication_triple/sp_provider.i: multiplication_triple/sp_provider.cpp.i
@@ -620,7 +620,7 @@ multiplication_triple/sp_provider.i: multiplication_triple/sp_provider.cpp.i
 
 # target to preprocess a source file
 multiplication_triple/sp_provider.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/multiplication_triple/sp_provider.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/multiplication_triple/sp_provider.cpp.i
 .PHONY : multiplication_triple/sp_provider.cpp.i
 
 multiplication_triple/sp_provider.s: multiplication_triple/sp_provider.cpp.s
@@ -628,7 +628,7 @@ multiplication_triple/sp_provider.s: multiplication_triple/sp_provider.cpp.s
 
 # target to generate assembly for a file
 multiplication_triple/sp_provider.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/multiplication_triple/sp_provider.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/multiplication_triple/sp_provider.cpp.s
 .PHONY : multiplication_triple/sp_provider.cpp.s
 
 oblivious_transfer/1_out_of_n/kk13_ot_flavors.o: oblivious_transfer/1_out_of_n/kk13_ot_flavors.cpp.o
@@ -636,7 +636,7 @@ oblivious_transfer/1_out_of_n/kk13_ot_flavors.o: oblivious_transfer/1_out_of_n/k
 
 # target to build an object file
 oblivious_transfer/1_out_of_n/kk13_ot_flavors.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/oblivious_transfer/1_out_of_n/kk13_ot_flavors.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/oblivious_transfer/1_out_of_n/kk13_ot_flavors.cpp.o
 .PHONY : oblivious_transfer/1_out_of_n/kk13_ot_flavors.cpp.o
 
 oblivious_transfer/1_out_of_n/kk13_ot_flavors.i: oblivious_transfer/1_out_of_n/kk13_ot_flavors.cpp.i
@@ -644,7 +644,7 @@ oblivious_transfer/1_out_of_n/kk13_ot_flavors.i: oblivious_transfer/1_out_of_n/k
 
 # target to preprocess a source file
 oblivious_transfer/1_out_of_n/kk13_ot_flavors.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/oblivious_transfer/1_out_of_n/kk13_ot_flavors.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/oblivious_transfer/1_out_of_n/kk13_ot_flavors.cpp.i
 .PHONY : oblivious_transfer/1_out_of_n/kk13_ot_flavors.cpp.i
 
 oblivious_transfer/1_out_of_n/kk13_ot_flavors.s: oblivious_transfer/1_out_of_n/kk13_ot_flavors.cpp.s
@@ -652,7 +652,7 @@ oblivious_transfer/1_out_of_n/kk13_ot_flavors.s: oblivious_transfer/1_out_of_n/k
 
 # target to generate assembly for a file
 oblivious_transfer/1_out_of_n/kk13_ot_flavors.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/oblivious_transfer/1_out_of_n/kk13_ot_flavors.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/oblivious_transfer/1_out_of_n/kk13_ot_flavors.cpp.s
 .PHONY : oblivious_transfer/1_out_of_n/kk13_ot_flavors.cpp.s
 
 oblivious_transfer/1_out_of_n/kk13_ot_provider.o: oblivious_transfer/1_out_of_n/kk13_ot_provider.cpp.o
@@ -660,7 +660,7 @@ oblivious_transfer/1_out_of_n/kk13_ot_provider.o: oblivious_transfer/1_out_of_n/
 
 # target to build an object file
 oblivious_transfer/1_out_of_n/kk13_ot_provider.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/oblivious_transfer/1_out_of_n/kk13_ot_provider.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/oblivious_transfer/1_out_of_n/kk13_ot_provider.cpp.o
 .PHONY : oblivious_transfer/1_out_of_n/kk13_ot_provider.cpp.o
 
 oblivious_transfer/1_out_of_n/kk13_ot_provider.i: oblivious_transfer/1_out_of_n/kk13_ot_provider.cpp.i
@@ -668,7 +668,7 @@ oblivious_transfer/1_out_of_n/kk13_ot_provider.i: oblivious_transfer/1_out_of_n/
 
 # target to preprocess a source file
 oblivious_transfer/1_out_of_n/kk13_ot_provider.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/oblivious_transfer/1_out_of_n/kk13_ot_provider.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/oblivious_transfer/1_out_of_n/kk13_ot_provider.cpp.i
 .PHONY : oblivious_transfer/1_out_of_n/kk13_ot_provider.cpp.i
 
 oblivious_transfer/1_out_of_n/kk13_ot_provider.s: oblivious_transfer/1_out_of_n/kk13_ot_provider.cpp.s
@@ -676,7 +676,7 @@ oblivious_transfer/1_out_of_n/kk13_ot_provider.s: oblivious_transfer/1_out_of_n/
 
 # target to generate assembly for a file
 oblivious_transfer/1_out_of_n/kk13_ot_provider.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/oblivious_transfer/1_out_of_n/kk13_ot_provider.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/oblivious_transfer/1_out_of_n/kk13_ot_provider.cpp.s
 .PHONY : oblivious_transfer/1_out_of_n/kk13_ot_provider.cpp.s
 
 oblivious_transfer/base_ots/base_ot_provider.o: oblivious_transfer/base_ots/base_ot_provider.cpp.o
@@ -684,7 +684,7 @@ oblivious_transfer/base_ots/base_ot_provider.o: oblivious_transfer/base_ots/base
 
 # target to build an object file
 oblivious_transfer/base_ots/base_ot_provider.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/oblivious_transfer/base_ots/base_ot_provider.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/oblivious_transfer/base_ots/base_ot_provider.cpp.o
 .PHONY : oblivious_transfer/base_ots/base_ot_provider.cpp.o
 
 oblivious_transfer/base_ots/base_ot_provider.i: oblivious_transfer/base_ots/base_ot_provider.cpp.i
@@ -692,7 +692,7 @@ oblivious_transfer/base_ots/base_ot_provider.i: oblivious_transfer/base_ots/base
 
 # target to preprocess a source file
 oblivious_transfer/base_ots/base_ot_provider.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/oblivious_transfer/base_ots/base_ot_provider.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/oblivious_transfer/base_ots/base_ot_provider.cpp.i
 .PHONY : oblivious_transfer/base_ots/base_ot_provider.cpp.i
 
 oblivious_transfer/base_ots/base_ot_provider.s: oblivious_transfer/base_ots/base_ot_provider.cpp.s
@@ -700,7 +700,7 @@ oblivious_transfer/base_ots/base_ot_provider.s: oblivious_transfer/base_ots/base
 
 # target to generate assembly for a file
 oblivious_transfer/base_ots/base_ot_provider.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/oblivious_transfer/base_ots/base_ot_provider.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/oblivious_transfer/base_ots/base_ot_provider.cpp.s
 .PHONY : oblivious_transfer/base_ots/base_ot_provider.cpp.s
 
 oblivious_transfer/base_ots/ot_hl17.o: oblivious_transfer/base_ots/ot_hl17.cpp.o
@@ -708,7 +708,7 @@ oblivious_transfer/base_ots/ot_hl17.o: oblivious_transfer/base_ots/ot_hl17.cpp.o
 
 # target to build an object file
 oblivious_transfer/base_ots/ot_hl17.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/oblivious_transfer/base_ots/ot_hl17.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/oblivious_transfer/base_ots/ot_hl17.cpp.o
 .PHONY : oblivious_transfer/base_ots/ot_hl17.cpp.o
 
 oblivious_transfer/base_ots/ot_hl17.i: oblivious_transfer/base_ots/ot_hl17.cpp.i
@@ -716,7 +716,7 @@ oblivious_transfer/base_ots/ot_hl17.i: oblivious_transfer/base_ots/ot_hl17.cpp.i
 
 # target to preprocess a source file
 oblivious_transfer/base_ots/ot_hl17.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/oblivious_transfer/base_ots/ot_hl17.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/oblivious_transfer/base_ots/ot_hl17.cpp.i
 .PHONY : oblivious_transfer/base_ots/ot_hl17.cpp.i
 
 oblivious_transfer/base_ots/ot_hl17.s: oblivious_transfer/base_ots/ot_hl17.cpp.s
@@ -724,7 +724,7 @@ oblivious_transfer/base_ots/ot_hl17.s: oblivious_transfer/base_ots/ot_hl17.cpp.s
 
 # target to generate assembly for a file
 oblivious_transfer/base_ots/ot_hl17.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/oblivious_transfer/base_ots/ot_hl17.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/oblivious_transfer/base_ots/ot_hl17.cpp.s
 .PHONY : oblivious_transfer/base_ots/ot_hl17.cpp.s
 
 oblivious_transfer/ot_flavors.o: oblivious_transfer/ot_flavors.cpp.o
@@ -732,7 +732,7 @@ oblivious_transfer/ot_flavors.o: oblivious_transfer/ot_flavors.cpp.o
 
 # target to build an object file
 oblivious_transfer/ot_flavors.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/oblivious_transfer/ot_flavors.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/oblivious_transfer/ot_flavors.cpp.o
 .PHONY : oblivious_transfer/ot_flavors.cpp.o
 
 oblivious_transfer/ot_flavors.i: oblivious_transfer/ot_flavors.cpp.i
@@ -740,7 +740,7 @@ oblivious_transfer/ot_flavors.i: oblivious_transfer/ot_flavors.cpp.i
 
 # target to preprocess a source file
 oblivious_transfer/ot_flavors.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/oblivious_transfer/ot_flavors.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/oblivious_transfer/ot_flavors.cpp.i
 .PHONY : oblivious_transfer/ot_flavors.cpp.i
 
 oblivious_transfer/ot_flavors.s: oblivious_transfer/ot_flavors.cpp.s
@@ -748,7 +748,7 @@ oblivious_transfer/ot_flavors.s: oblivious_transfer/ot_flavors.cpp.s
 
 # target to generate assembly for a file
 oblivious_transfer/ot_flavors.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/oblivious_transfer/ot_flavors.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/oblivious_transfer/ot_flavors.cpp.s
 .PHONY : oblivious_transfer/ot_flavors.cpp.s
 
 oblivious_transfer/ot_provider.o: oblivious_transfer/ot_provider.cpp.o
@@ -756,7 +756,7 @@ oblivious_transfer/ot_provider.o: oblivious_transfer/ot_provider.cpp.o
 
 # target to build an object file
 oblivious_transfer/ot_provider.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/oblivious_transfer/ot_provider.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/oblivious_transfer/ot_provider.cpp.o
 .PHONY : oblivious_transfer/ot_provider.cpp.o
 
 oblivious_transfer/ot_provider.i: oblivious_transfer/ot_provider.cpp.i
@@ -764,7 +764,7 @@ oblivious_transfer/ot_provider.i: oblivious_transfer/ot_provider.cpp.i
 
 # target to preprocess a source file
 oblivious_transfer/ot_provider.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/oblivious_transfer/ot_provider.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/oblivious_transfer/ot_provider.cpp.i
 .PHONY : oblivious_transfer/ot_provider.cpp.i
 
 oblivious_transfer/ot_provider.s: oblivious_transfer/ot_provider.cpp.s
@@ -772,7 +772,7 @@ oblivious_transfer/ot_provider.s: oblivious_transfer/ot_provider.cpp.s
 
 # target to generate assembly for a file
 oblivious_transfer/ot_provider.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/oblivious_transfer/ot_provider.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/oblivious_transfer/ot_provider.cpp.s
 .PHONY : oblivious_transfer/ot_provider.cpp.s
 
 primitives/aes/aesni_primitives.o: primitives/aes/aesni_primitives.cpp.o
@@ -780,7 +780,7 @@ primitives/aes/aesni_primitives.o: primitives/aes/aesni_primitives.cpp.o
 
 # target to build an object file
 primitives/aes/aesni_primitives.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/primitives/aes/aesni_primitives.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/primitives/aes/aesni_primitives.cpp.o
 .PHONY : primitives/aes/aesni_primitives.cpp.o
 
 primitives/aes/aesni_primitives.i: primitives/aes/aesni_primitives.cpp.i
@@ -788,7 +788,7 @@ primitives/aes/aesni_primitives.i: primitives/aes/aesni_primitives.cpp.i
 
 # target to preprocess a source file
 primitives/aes/aesni_primitives.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/primitives/aes/aesni_primitives.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/primitives/aes/aesni_primitives.cpp.i
 .PHONY : primitives/aes/aesni_primitives.cpp.i
 
 primitives/aes/aesni_primitives.s: primitives/aes/aesni_primitives.cpp.s
@@ -796,7 +796,7 @@ primitives/aes/aesni_primitives.s: primitives/aes/aesni_primitives.cpp.s
 
 # target to generate assembly for a file
 primitives/aes/aesni_primitives.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/primitives/aes/aesni_primitives.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/primitives/aes/aesni_primitives.cpp.s
 .PHONY : primitives/aes/aesni_primitives.cpp.s
 
 primitives/blake2b.o: primitives/blake2b.cpp.o
@@ -804,7 +804,7 @@ primitives/blake2b.o: primitives/blake2b.cpp.o
 
 # target to build an object file
 primitives/blake2b.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/primitives/blake2b.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/primitives/blake2b.cpp.o
 .PHONY : primitives/blake2b.cpp.o
 
 primitives/blake2b.i: primitives/blake2b.cpp.i
@@ -812,7 +812,7 @@ primitives/blake2b.i: primitives/blake2b.cpp.i
 
 # target to preprocess a source file
 primitives/blake2b.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/primitives/blake2b.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/primitives/blake2b.cpp.i
 .PHONY : primitives/blake2b.cpp.i
 
 primitives/blake2b.s: primitives/blake2b.cpp.s
@@ -820,7 +820,7 @@ primitives/blake2b.s: primitives/blake2b.cpp.s
 
 # target to generate assembly for a file
 primitives/blake2b.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/primitives/blake2b.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/primitives/blake2b.cpp.s
 .PHONY : primitives/blake2b.cpp.s
 
 primitives/curve25519/mycurve25519.o: primitives/curve25519/mycurve25519.cpp.o
@@ -828,7 +828,7 @@ primitives/curve25519/mycurve25519.o: primitives/curve25519/mycurve25519.cpp.o
 
 # target to build an object file
 primitives/curve25519/mycurve25519.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/primitives/curve25519/mycurve25519.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/primitives/curve25519/mycurve25519.cpp.o
 .PHONY : primitives/curve25519/mycurve25519.cpp.o
 
 primitives/curve25519/mycurve25519.i: primitives/curve25519/mycurve25519.cpp.i
@@ -836,7 +836,7 @@ primitives/curve25519/mycurve25519.i: primitives/curve25519/mycurve25519.cpp.i
 
 # target to preprocess a source file
 primitives/curve25519/mycurve25519.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/primitives/curve25519/mycurve25519.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/primitives/curve25519/mycurve25519.cpp.i
 .PHONY : primitives/curve25519/mycurve25519.cpp.i
 
 primitives/curve25519/mycurve25519.s: primitives/curve25519/mycurve25519.cpp.s
@@ -844,7 +844,7 @@ primitives/curve25519/mycurve25519.s: primitives/curve25519/mycurve25519.cpp.s
 
 # target to generate assembly for a file
 primitives/curve25519/mycurve25519.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/primitives/curve25519/mycurve25519.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/primitives/curve25519/mycurve25519.cpp.s
 .PHONY : primitives/curve25519/mycurve25519.cpp.s
 
 primitives/pseudo_random_generator.o: primitives/pseudo_random_generator.cpp.o
@@ -852,7 +852,7 @@ primitives/pseudo_random_generator.o: primitives/pseudo_random_generator.cpp.o
 
 # target to build an object file
 primitives/pseudo_random_generator.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/primitives/pseudo_random_generator.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/primitives/pseudo_random_generator.cpp.o
 .PHONY : primitives/pseudo_random_generator.cpp.o
 
 primitives/pseudo_random_generator.i: primitives/pseudo_random_generator.cpp.i
@@ -860,7 +860,7 @@ primitives/pseudo_random_generator.i: primitives/pseudo_random_generator.cpp.i
 
 # target to preprocess a source file
 primitives/pseudo_random_generator.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/primitives/pseudo_random_generator.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/primitives/pseudo_random_generator.cpp.i
 .PHONY : primitives/pseudo_random_generator.cpp.i
 
 primitives/pseudo_random_generator.s: primitives/pseudo_random_generator.cpp.s
@@ -868,7 +868,7 @@ primitives/pseudo_random_generator.s: primitives/pseudo_random_generator.cpp.s
 
 # target to generate assembly for a file
 primitives/pseudo_random_generator.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/primitives/pseudo_random_generator.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/primitives/pseudo_random_generator.cpp.s
 .PHONY : primitives/pseudo_random_generator.cpp.s
 
 primitives/random/aes128_ctr_rng.o: primitives/random/aes128_ctr_rng.cpp.o
@@ -876,7 +876,7 @@ primitives/random/aes128_ctr_rng.o: primitives/random/aes128_ctr_rng.cpp.o
 
 # target to build an object file
 primitives/random/aes128_ctr_rng.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/primitives/random/aes128_ctr_rng.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/primitives/random/aes128_ctr_rng.cpp.o
 .PHONY : primitives/random/aes128_ctr_rng.cpp.o
 
 primitives/random/aes128_ctr_rng.i: primitives/random/aes128_ctr_rng.cpp.i
@@ -884,7 +884,7 @@ primitives/random/aes128_ctr_rng.i: primitives/random/aes128_ctr_rng.cpp.i
 
 # target to preprocess a source file
 primitives/random/aes128_ctr_rng.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/primitives/random/aes128_ctr_rng.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/primitives/random/aes128_ctr_rng.cpp.i
 .PHONY : primitives/random/aes128_ctr_rng.cpp.i
 
 primitives/random/aes128_ctr_rng.s: primitives/random/aes128_ctr_rng.cpp.s
@@ -892,7 +892,7 @@ primitives/random/aes128_ctr_rng.s: primitives/random/aes128_ctr_rng.cpp.s
 
 # target to generate assembly for a file
 primitives/random/aes128_ctr_rng.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/primitives/random/aes128_ctr_rng.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/primitives/random/aes128_ctr_rng.cpp.s
 .PHONY : primitives/random/aes128_ctr_rng.cpp.s
 
 primitives/random/openssl_rng.o: primitives/random/openssl_rng.cpp.o
@@ -900,7 +900,7 @@ primitives/random/openssl_rng.o: primitives/random/openssl_rng.cpp.o
 
 # target to build an object file
 primitives/random/openssl_rng.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/primitives/random/openssl_rng.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/primitives/random/openssl_rng.cpp.o
 .PHONY : primitives/random/openssl_rng.cpp.o
 
 primitives/random/openssl_rng.i: primitives/random/openssl_rng.cpp.i
@@ -908,7 +908,7 @@ primitives/random/openssl_rng.i: primitives/random/openssl_rng.cpp.i
 
 # target to preprocess a source file
 primitives/random/openssl_rng.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/primitives/random/openssl_rng.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/primitives/random/openssl_rng.cpp.i
 .PHONY : primitives/random/openssl_rng.cpp.i
 
 primitives/random/openssl_rng.s: primitives/random/openssl_rng.cpp.s
@@ -916,7 +916,7 @@ primitives/random/openssl_rng.s: primitives/random/openssl_rng.cpp.s
 
 # target to generate assembly for a file
 primitives/random/openssl_rng.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/primitives/random/openssl_rng.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/primitives/random/openssl_rng.cpp.s
 .PHONY : primitives/random/openssl_rng.cpp.s
 
 primitives/sharing_randomness_generator.o: primitives/sharing_randomness_generator.cpp.o
@@ -924,7 +924,7 @@ primitives/sharing_randomness_generator.o: primitives/sharing_randomness_generat
 
 # target to build an object file
 primitives/sharing_randomness_generator.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/primitives/sharing_randomness_generator.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/primitives/sharing_randomness_generator.cpp.o
 .PHONY : primitives/sharing_randomness_generator.cpp.o
 
 primitives/sharing_randomness_generator.i: primitives/sharing_randomness_generator.cpp.i
@@ -932,7 +932,7 @@ primitives/sharing_randomness_generator.i: primitives/sharing_randomness_generat
 
 # target to preprocess a source file
 primitives/sharing_randomness_generator.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/primitives/sharing_randomness_generator.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/primitives/sharing_randomness_generator.cpp.i
 .PHONY : primitives/sharing_randomness_generator.cpp.i
 
 primitives/sharing_randomness_generator.s: primitives/sharing_randomness_generator.cpp.s
@@ -940,7 +940,7 @@ primitives/sharing_randomness_generator.s: primitives/sharing_randomness_generat
 
 # target to generate assembly for a file
 primitives/sharing_randomness_generator.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/primitives/sharing_randomness_generator.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/primitives/sharing_randomness_generator.cpp.s
 .PHONY : primitives/sharing_randomness_generator.cpp.s
 
 protocols/arithmetic_gmw/arithmetic_gmw_gate.o: protocols/arithmetic_gmw/arithmetic_gmw_gate.cpp.o
@@ -948,7 +948,7 @@ protocols/arithmetic_gmw/arithmetic_gmw_gate.o: protocols/arithmetic_gmw/arithme
 
 # target to build an object file
 protocols/arithmetic_gmw/arithmetic_gmw_gate.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/arithmetic_gmw/arithmetic_gmw_gate.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/arithmetic_gmw/arithmetic_gmw_gate.cpp.o
 .PHONY : protocols/arithmetic_gmw/arithmetic_gmw_gate.cpp.o
 
 protocols/arithmetic_gmw/arithmetic_gmw_gate.i: protocols/arithmetic_gmw/arithmetic_gmw_gate.cpp.i
@@ -956,7 +956,7 @@ protocols/arithmetic_gmw/arithmetic_gmw_gate.i: protocols/arithmetic_gmw/arithme
 
 # target to preprocess a source file
 protocols/arithmetic_gmw/arithmetic_gmw_gate.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/arithmetic_gmw/arithmetic_gmw_gate.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/arithmetic_gmw/arithmetic_gmw_gate.cpp.i
 .PHONY : protocols/arithmetic_gmw/arithmetic_gmw_gate.cpp.i
 
 protocols/arithmetic_gmw/arithmetic_gmw_gate.s: protocols/arithmetic_gmw/arithmetic_gmw_gate.cpp.s
@@ -964,7 +964,7 @@ protocols/arithmetic_gmw/arithmetic_gmw_gate.s: protocols/arithmetic_gmw/arithme
 
 # target to generate assembly for a file
 protocols/arithmetic_gmw/arithmetic_gmw_gate.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/arithmetic_gmw/arithmetic_gmw_gate.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/arithmetic_gmw/arithmetic_gmw_gate.cpp.s
 .PHONY : protocols/arithmetic_gmw/arithmetic_gmw_gate.cpp.s
 
 protocols/arithmetic_gmw/arithmetic_gmw_share.o: protocols/arithmetic_gmw/arithmetic_gmw_share.cpp.o
@@ -972,7 +972,7 @@ protocols/arithmetic_gmw/arithmetic_gmw_share.o: protocols/arithmetic_gmw/arithm
 
 # target to build an object file
 protocols/arithmetic_gmw/arithmetic_gmw_share.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/arithmetic_gmw/arithmetic_gmw_share.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/arithmetic_gmw/arithmetic_gmw_share.cpp.o
 .PHONY : protocols/arithmetic_gmw/arithmetic_gmw_share.cpp.o
 
 protocols/arithmetic_gmw/arithmetic_gmw_share.i: protocols/arithmetic_gmw/arithmetic_gmw_share.cpp.i
@@ -980,7 +980,7 @@ protocols/arithmetic_gmw/arithmetic_gmw_share.i: protocols/arithmetic_gmw/arithm
 
 # target to preprocess a source file
 protocols/arithmetic_gmw/arithmetic_gmw_share.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/arithmetic_gmw/arithmetic_gmw_share.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/arithmetic_gmw/arithmetic_gmw_share.cpp.i
 .PHONY : protocols/arithmetic_gmw/arithmetic_gmw_share.cpp.i
 
 protocols/arithmetic_gmw/arithmetic_gmw_share.s: protocols/arithmetic_gmw/arithmetic_gmw_share.cpp.s
@@ -988,7 +988,7 @@ protocols/arithmetic_gmw/arithmetic_gmw_share.s: protocols/arithmetic_gmw/arithm
 
 # target to generate assembly for a file
 protocols/arithmetic_gmw/arithmetic_gmw_share.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/arithmetic_gmw/arithmetic_gmw_share.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/arithmetic_gmw/arithmetic_gmw_share.cpp.s
 .PHONY : protocols/arithmetic_gmw/arithmetic_gmw_share.cpp.s
 
 protocols/arithmetic_gmw/arithmetic_gmw_wire.o: protocols/arithmetic_gmw/arithmetic_gmw_wire.cpp.o
@@ -996,7 +996,7 @@ protocols/arithmetic_gmw/arithmetic_gmw_wire.o: protocols/arithmetic_gmw/arithme
 
 # target to build an object file
 protocols/arithmetic_gmw/arithmetic_gmw_wire.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/arithmetic_gmw/arithmetic_gmw_wire.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/arithmetic_gmw/arithmetic_gmw_wire.cpp.o
 .PHONY : protocols/arithmetic_gmw/arithmetic_gmw_wire.cpp.o
 
 protocols/arithmetic_gmw/arithmetic_gmw_wire.i: protocols/arithmetic_gmw/arithmetic_gmw_wire.cpp.i
@@ -1004,7 +1004,7 @@ protocols/arithmetic_gmw/arithmetic_gmw_wire.i: protocols/arithmetic_gmw/arithme
 
 # target to preprocess a source file
 protocols/arithmetic_gmw/arithmetic_gmw_wire.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/arithmetic_gmw/arithmetic_gmw_wire.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/arithmetic_gmw/arithmetic_gmw_wire.cpp.i
 .PHONY : protocols/arithmetic_gmw/arithmetic_gmw_wire.cpp.i
 
 protocols/arithmetic_gmw/arithmetic_gmw_wire.s: protocols/arithmetic_gmw/arithmetic_gmw_wire.cpp.s
@@ -1012,7 +1012,7 @@ protocols/arithmetic_gmw/arithmetic_gmw_wire.s: protocols/arithmetic_gmw/arithme
 
 # target to generate assembly for a file
 protocols/arithmetic_gmw/arithmetic_gmw_wire.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/arithmetic_gmw/arithmetic_gmw_wire.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/arithmetic_gmw/arithmetic_gmw_wire.cpp.s
 .PHONY : protocols/arithmetic_gmw/arithmetic_gmw_wire.cpp.s
 
 protocols/astra/astra_gate.o: protocols/astra/astra_gate.cpp.o
@@ -1020,7 +1020,7 @@ protocols/astra/astra_gate.o: protocols/astra/astra_gate.cpp.o
 
 # target to build an object file
 protocols/astra/astra_gate.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/astra/astra_gate.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/astra/astra_gate.cpp.o
 .PHONY : protocols/astra/astra_gate.cpp.o
 
 protocols/astra/astra_gate.i: protocols/astra/astra_gate.cpp.i
@@ -1028,7 +1028,7 @@ protocols/astra/astra_gate.i: protocols/astra/astra_gate.cpp.i
 
 # target to preprocess a source file
 protocols/astra/astra_gate.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/astra/astra_gate.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/astra/astra_gate.cpp.i
 .PHONY : protocols/astra/astra_gate.cpp.i
 
 protocols/astra/astra_gate.s: protocols/astra/astra_gate.cpp.s
@@ -1036,7 +1036,7 @@ protocols/astra/astra_gate.s: protocols/astra/astra_gate.cpp.s
 
 # target to generate assembly for a file
 protocols/astra/astra_gate.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/astra/astra_gate.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/astra/astra_gate.cpp.s
 .PHONY : protocols/astra/astra_gate.cpp.s
 
 protocols/astra/astra_share.o: protocols/astra/astra_share.cpp.o
@@ -1044,7 +1044,7 @@ protocols/astra/astra_share.o: protocols/astra/astra_share.cpp.o
 
 # target to build an object file
 protocols/astra/astra_share.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/astra/astra_share.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/astra/astra_share.cpp.o
 .PHONY : protocols/astra/astra_share.cpp.o
 
 protocols/astra/astra_share.i: protocols/astra/astra_share.cpp.i
@@ -1052,7 +1052,7 @@ protocols/astra/astra_share.i: protocols/astra/astra_share.cpp.i
 
 # target to preprocess a source file
 protocols/astra/astra_share.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/astra/astra_share.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/astra/astra_share.cpp.i
 .PHONY : protocols/astra/astra_share.cpp.i
 
 protocols/astra/astra_share.s: protocols/astra/astra_share.cpp.s
@@ -1060,7 +1060,7 @@ protocols/astra/astra_share.s: protocols/astra/astra_share.cpp.s
 
 # target to generate assembly for a file
 protocols/astra/astra_share.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/astra/astra_share.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/astra/astra_share.cpp.s
 .PHONY : protocols/astra/astra_share.cpp.s
 
 protocols/astra/astra_wire.o: protocols/astra/astra_wire.cpp.o
@@ -1068,7 +1068,7 @@ protocols/astra/astra_wire.o: protocols/astra/astra_wire.cpp.o
 
 # target to build an object file
 protocols/astra/astra_wire.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/astra/astra_wire.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/astra/astra_wire.cpp.o
 .PHONY : protocols/astra/astra_wire.cpp.o
 
 protocols/astra/astra_wire.i: protocols/astra/astra_wire.cpp.i
@@ -1076,7 +1076,7 @@ protocols/astra/astra_wire.i: protocols/astra/astra_wire.cpp.i
 
 # target to preprocess a source file
 protocols/astra/astra_wire.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/astra/astra_wire.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/astra/astra_wire.cpp.i
 .PHONY : protocols/astra/astra_wire.cpp.i
 
 protocols/astra/astra_wire.s: protocols/astra/astra_wire.cpp.s
@@ -1084,7 +1084,7 @@ protocols/astra/astra_wire.s: protocols/astra/astra_wire.cpp.s
 
 # target to generate assembly for a file
 protocols/astra/astra_wire.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/astra/astra_wire.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/astra/astra_wire.cpp.s
 .PHONY : protocols/astra/astra_wire.cpp.s
 
 protocols/bmr/bmr_gate.o: protocols/bmr/bmr_gate.cpp.o
@@ -1092,7 +1092,7 @@ protocols/bmr/bmr_gate.o: protocols/bmr/bmr_gate.cpp.o
 
 # target to build an object file
 protocols/bmr/bmr_gate.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/bmr/bmr_gate.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/bmr/bmr_gate.cpp.o
 .PHONY : protocols/bmr/bmr_gate.cpp.o
 
 protocols/bmr/bmr_gate.i: protocols/bmr/bmr_gate.cpp.i
@@ -1100,7 +1100,7 @@ protocols/bmr/bmr_gate.i: protocols/bmr/bmr_gate.cpp.i
 
 # target to preprocess a source file
 protocols/bmr/bmr_gate.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/bmr/bmr_gate.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/bmr/bmr_gate.cpp.i
 .PHONY : protocols/bmr/bmr_gate.cpp.i
 
 protocols/bmr/bmr_gate.s: protocols/bmr/bmr_gate.cpp.s
@@ -1108,7 +1108,7 @@ protocols/bmr/bmr_gate.s: protocols/bmr/bmr_gate.cpp.s
 
 # target to generate assembly for a file
 protocols/bmr/bmr_gate.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/bmr/bmr_gate.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/bmr/bmr_gate.cpp.s
 .PHONY : protocols/bmr/bmr_gate.cpp.s
 
 protocols/bmr/bmr_provider.o: protocols/bmr/bmr_provider.cpp.o
@@ -1116,7 +1116,7 @@ protocols/bmr/bmr_provider.o: protocols/bmr/bmr_provider.cpp.o
 
 # target to build an object file
 protocols/bmr/bmr_provider.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/bmr/bmr_provider.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/bmr/bmr_provider.cpp.o
 .PHONY : protocols/bmr/bmr_provider.cpp.o
 
 protocols/bmr/bmr_provider.i: protocols/bmr/bmr_provider.cpp.i
@@ -1124,7 +1124,7 @@ protocols/bmr/bmr_provider.i: protocols/bmr/bmr_provider.cpp.i
 
 # target to preprocess a source file
 protocols/bmr/bmr_provider.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/bmr/bmr_provider.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/bmr/bmr_provider.cpp.i
 .PHONY : protocols/bmr/bmr_provider.cpp.i
 
 protocols/bmr/bmr_provider.s: protocols/bmr/bmr_provider.cpp.s
@@ -1132,7 +1132,7 @@ protocols/bmr/bmr_provider.s: protocols/bmr/bmr_provider.cpp.s
 
 # target to generate assembly for a file
 protocols/bmr/bmr_provider.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/bmr/bmr_provider.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/bmr/bmr_provider.cpp.s
 .PHONY : protocols/bmr/bmr_provider.cpp.s
 
 protocols/bmr/bmr_share.o: protocols/bmr/bmr_share.cpp.o
@@ -1140,7 +1140,7 @@ protocols/bmr/bmr_share.o: protocols/bmr/bmr_share.cpp.o
 
 # target to build an object file
 protocols/bmr/bmr_share.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/bmr/bmr_share.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/bmr/bmr_share.cpp.o
 .PHONY : protocols/bmr/bmr_share.cpp.o
 
 protocols/bmr/bmr_share.i: protocols/bmr/bmr_share.cpp.i
@@ -1148,7 +1148,7 @@ protocols/bmr/bmr_share.i: protocols/bmr/bmr_share.cpp.i
 
 # target to preprocess a source file
 protocols/bmr/bmr_share.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/bmr/bmr_share.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/bmr/bmr_share.cpp.i
 .PHONY : protocols/bmr/bmr_share.cpp.i
 
 protocols/bmr/bmr_share.s: protocols/bmr/bmr_share.cpp.s
@@ -1156,7 +1156,7 @@ protocols/bmr/bmr_share.s: protocols/bmr/bmr_share.cpp.s
 
 # target to generate assembly for a file
 protocols/bmr/bmr_share.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/bmr/bmr_share.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/bmr/bmr_share.cpp.s
 .PHONY : protocols/bmr/bmr_share.cpp.s
 
 protocols/bmr/bmr_wire.o: protocols/bmr/bmr_wire.cpp.o
@@ -1164,7 +1164,7 @@ protocols/bmr/bmr_wire.o: protocols/bmr/bmr_wire.cpp.o
 
 # target to build an object file
 protocols/bmr/bmr_wire.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/bmr/bmr_wire.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/bmr/bmr_wire.cpp.o
 .PHONY : protocols/bmr/bmr_wire.cpp.o
 
 protocols/bmr/bmr_wire.i: protocols/bmr/bmr_wire.cpp.i
@@ -1172,7 +1172,7 @@ protocols/bmr/bmr_wire.i: protocols/bmr/bmr_wire.cpp.i
 
 # target to preprocess a source file
 protocols/bmr/bmr_wire.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/bmr/bmr_wire.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/bmr/bmr_wire.cpp.i
 .PHONY : protocols/bmr/bmr_wire.cpp.i
 
 protocols/bmr/bmr_wire.s: protocols/bmr/bmr_wire.cpp.s
@@ -1180,7 +1180,7 @@ protocols/bmr/bmr_wire.s: protocols/bmr/bmr_wire.cpp.s
 
 # target to generate assembly for a file
 protocols/bmr/bmr_wire.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/bmr/bmr_wire.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/bmr/bmr_wire.cpp.s
 .PHONY : protocols/bmr/bmr_wire.cpp.s
 
 protocols/boolean_gmw/boolean_gmw_gate.o: protocols/boolean_gmw/boolean_gmw_gate.cpp.o
@@ -1188,7 +1188,7 @@ protocols/boolean_gmw/boolean_gmw_gate.o: protocols/boolean_gmw/boolean_gmw_gate
 
 # target to build an object file
 protocols/boolean_gmw/boolean_gmw_gate.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/boolean_gmw/boolean_gmw_gate.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/boolean_gmw/boolean_gmw_gate.cpp.o
 .PHONY : protocols/boolean_gmw/boolean_gmw_gate.cpp.o
 
 protocols/boolean_gmw/boolean_gmw_gate.i: protocols/boolean_gmw/boolean_gmw_gate.cpp.i
@@ -1196,7 +1196,7 @@ protocols/boolean_gmw/boolean_gmw_gate.i: protocols/boolean_gmw/boolean_gmw_gate
 
 # target to preprocess a source file
 protocols/boolean_gmw/boolean_gmw_gate.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/boolean_gmw/boolean_gmw_gate.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/boolean_gmw/boolean_gmw_gate.cpp.i
 .PHONY : protocols/boolean_gmw/boolean_gmw_gate.cpp.i
 
 protocols/boolean_gmw/boolean_gmw_gate.s: protocols/boolean_gmw/boolean_gmw_gate.cpp.s
@@ -1204,7 +1204,7 @@ protocols/boolean_gmw/boolean_gmw_gate.s: protocols/boolean_gmw/boolean_gmw_gate
 
 # target to generate assembly for a file
 protocols/boolean_gmw/boolean_gmw_gate.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/boolean_gmw/boolean_gmw_gate.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/boolean_gmw/boolean_gmw_gate.cpp.s
 .PHONY : protocols/boolean_gmw/boolean_gmw_gate.cpp.s
 
 protocols/boolean_gmw/boolean_gmw_share.o: protocols/boolean_gmw/boolean_gmw_share.cpp.o
@@ -1212,7 +1212,7 @@ protocols/boolean_gmw/boolean_gmw_share.o: protocols/boolean_gmw/boolean_gmw_sha
 
 # target to build an object file
 protocols/boolean_gmw/boolean_gmw_share.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/boolean_gmw/boolean_gmw_share.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/boolean_gmw/boolean_gmw_share.cpp.o
 .PHONY : protocols/boolean_gmw/boolean_gmw_share.cpp.o
 
 protocols/boolean_gmw/boolean_gmw_share.i: protocols/boolean_gmw/boolean_gmw_share.cpp.i
@@ -1220,7 +1220,7 @@ protocols/boolean_gmw/boolean_gmw_share.i: protocols/boolean_gmw/boolean_gmw_sha
 
 # target to preprocess a source file
 protocols/boolean_gmw/boolean_gmw_share.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/boolean_gmw/boolean_gmw_share.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/boolean_gmw/boolean_gmw_share.cpp.i
 .PHONY : protocols/boolean_gmw/boolean_gmw_share.cpp.i
 
 protocols/boolean_gmw/boolean_gmw_share.s: protocols/boolean_gmw/boolean_gmw_share.cpp.s
@@ -1228,7 +1228,7 @@ protocols/boolean_gmw/boolean_gmw_share.s: protocols/boolean_gmw/boolean_gmw_sha
 
 # target to generate assembly for a file
 protocols/boolean_gmw/boolean_gmw_share.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/boolean_gmw/boolean_gmw_share.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/boolean_gmw/boolean_gmw_share.cpp.s
 .PHONY : protocols/boolean_gmw/boolean_gmw_share.cpp.s
 
 protocols/boolean_gmw/boolean_gmw_wire.o: protocols/boolean_gmw/boolean_gmw_wire.cpp.o
@@ -1236,7 +1236,7 @@ protocols/boolean_gmw/boolean_gmw_wire.o: protocols/boolean_gmw/boolean_gmw_wire
 
 # target to build an object file
 protocols/boolean_gmw/boolean_gmw_wire.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/boolean_gmw/boolean_gmw_wire.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/boolean_gmw/boolean_gmw_wire.cpp.o
 .PHONY : protocols/boolean_gmw/boolean_gmw_wire.cpp.o
 
 protocols/boolean_gmw/boolean_gmw_wire.i: protocols/boolean_gmw/boolean_gmw_wire.cpp.i
@@ -1244,7 +1244,7 @@ protocols/boolean_gmw/boolean_gmw_wire.i: protocols/boolean_gmw/boolean_gmw_wire
 
 # target to preprocess a source file
 protocols/boolean_gmw/boolean_gmw_wire.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/boolean_gmw/boolean_gmw_wire.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/boolean_gmw/boolean_gmw_wire.cpp.i
 .PHONY : protocols/boolean_gmw/boolean_gmw_wire.cpp.i
 
 protocols/boolean_gmw/boolean_gmw_wire.s: protocols/boolean_gmw/boolean_gmw_wire.cpp.s
@@ -1252,7 +1252,7 @@ protocols/boolean_gmw/boolean_gmw_wire.s: protocols/boolean_gmw/boolean_gmw_wire
 
 # target to generate assembly for a file
 protocols/boolean_gmw/boolean_gmw_wire.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/boolean_gmw/boolean_gmw_wire.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/boolean_gmw/boolean_gmw_wire.cpp.s
 .PHONY : protocols/boolean_gmw/boolean_gmw_wire.cpp.s
 
 protocols/constant/constant_gate.o: protocols/constant/constant_gate.cpp.o
@@ -1260,7 +1260,7 @@ protocols/constant/constant_gate.o: protocols/constant/constant_gate.cpp.o
 
 # target to build an object file
 protocols/constant/constant_gate.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/constant/constant_gate.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/constant/constant_gate.cpp.o
 .PHONY : protocols/constant/constant_gate.cpp.o
 
 protocols/constant/constant_gate.i: protocols/constant/constant_gate.cpp.i
@@ -1268,7 +1268,7 @@ protocols/constant/constant_gate.i: protocols/constant/constant_gate.cpp.i
 
 # target to preprocess a source file
 protocols/constant/constant_gate.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/constant/constant_gate.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/constant/constant_gate.cpp.i
 .PHONY : protocols/constant/constant_gate.cpp.i
 
 protocols/constant/constant_gate.s: protocols/constant/constant_gate.cpp.s
@@ -1276,7 +1276,7 @@ protocols/constant/constant_gate.s: protocols/constant/constant_gate.cpp.s
 
 # target to generate assembly for a file
 protocols/constant/constant_gate.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/constant/constant_gate.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/constant/constant_gate.cpp.s
 .PHONY : protocols/constant/constant_gate.cpp.s
 
 protocols/constant/constant_share.o: protocols/constant/constant_share.cpp.o
@@ -1284,7 +1284,7 @@ protocols/constant/constant_share.o: protocols/constant/constant_share.cpp.o
 
 # target to build an object file
 protocols/constant/constant_share.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/constant/constant_share.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/constant/constant_share.cpp.o
 .PHONY : protocols/constant/constant_share.cpp.o
 
 protocols/constant/constant_share.i: protocols/constant/constant_share.cpp.i
@@ -1292,7 +1292,7 @@ protocols/constant/constant_share.i: protocols/constant/constant_share.cpp.i
 
 # target to preprocess a source file
 protocols/constant/constant_share.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/constant/constant_share.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/constant/constant_share.cpp.i
 .PHONY : protocols/constant/constant_share.cpp.i
 
 protocols/constant/constant_share.s: protocols/constant/constant_share.cpp.s
@@ -1300,7 +1300,7 @@ protocols/constant/constant_share.s: protocols/constant/constant_share.cpp.s
 
 # target to generate assembly for a file
 protocols/constant/constant_share.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/constant/constant_share.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/constant/constant_share.cpp.s
 .PHONY : protocols/constant/constant_share.cpp.s
 
 protocols/constant/constant_wire.o: protocols/constant/constant_wire.cpp.o
@@ -1308,7 +1308,7 @@ protocols/constant/constant_wire.o: protocols/constant/constant_wire.cpp.o
 
 # target to build an object file
 protocols/constant/constant_wire.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/constant/constant_wire.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/constant/constant_wire.cpp.o
 .PHONY : protocols/constant/constant_wire.cpp.o
 
 protocols/constant/constant_wire.i: protocols/constant/constant_wire.cpp.i
@@ -1316,7 +1316,7 @@ protocols/constant/constant_wire.i: protocols/constant/constant_wire.cpp.i
 
 # target to preprocess a source file
 protocols/constant/constant_wire.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/constant/constant_wire.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/constant/constant_wire.cpp.i
 .PHONY : protocols/constant/constant_wire.cpp.i
 
 protocols/constant/constant_wire.s: protocols/constant/constant_wire.cpp.s
@@ -1324,7 +1324,7 @@ protocols/constant/constant_wire.s: protocols/constant/constant_wire.cpp.s
 
 # target to generate assembly for a file
 protocols/constant/constant_wire.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/constant/constant_wire.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/constant/constant_wire.cpp.s
 .PHONY : protocols/constant/constant_wire.cpp.s
 
 protocols/conversion/conversion_gate.o: protocols/conversion/conversion_gate.cpp.o
@@ -1332,7 +1332,7 @@ protocols/conversion/conversion_gate.o: protocols/conversion/conversion_gate.cpp
 
 # target to build an object file
 protocols/conversion/conversion_gate.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/conversion/conversion_gate.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/conversion/conversion_gate.cpp.o
 .PHONY : protocols/conversion/conversion_gate.cpp.o
 
 protocols/conversion/conversion_gate.i: protocols/conversion/conversion_gate.cpp.i
@@ -1340,7 +1340,7 @@ protocols/conversion/conversion_gate.i: protocols/conversion/conversion_gate.cpp
 
 # target to preprocess a source file
 protocols/conversion/conversion_gate.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/conversion/conversion_gate.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/conversion/conversion_gate.cpp.i
 .PHONY : protocols/conversion/conversion_gate.cpp.i
 
 protocols/conversion/conversion_gate.s: protocols/conversion/conversion_gate.cpp.s
@@ -1348,7 +1348,7 @@ protocols/conversion/conversion_gate.s: protocols/conversion/conversion_gate.cpp
 
 # target to generate assembly for a file
 protocols/conversion/conversion_gate.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/conversion/conversion_gate.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/conversion/conversion_gate.cpp.s
 .PHONY : protocols/conversion/conversion_gate.cpp.s
 
 protocols/data_management/simdify_gate.o: protocols/data_management/simdify_gate.cpp.o
@@ -1356,7 +1356,7 @@ protocols/data_management/simdify_gate.o: protocols/data_management/simdify_gate
 
 # target to build an object file
 protocols/data_management/simdify_gate.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/data_management/simdify_gate.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/data_management/simdify_gate.cpp.o
 .PHONY : protocols/data_management/simdify_gate.cpp.o
 
 protocols/data_management/simdify_gate.i: protocols/data_management/simdify_gate.cpp.i
@@ -1364,7 +1364,7 @@ protocols/data_management/simdify_gate.i: protocols/data_management/simdify_gate
 
 # target to preprocess a source file
 protocols/data_management/simdify_gate.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/data_management/simdify_gate.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/data_management/simdify_gate.cpp.i
 .PHONY : protocols/data_management/simdify_gate.cpp.i
 
 protocols/data_management/simdify_gate.s: protocols/data_management/simdify_gate.cpp.s
@@ -1372,7 +1372,7 @@ protocols/data_management/simdify_gate.s: protocols/data_management/simdify_gate
 
 # target to generate assembly for a file
 protocols/data_management/simdify_gate.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/data_management/simdify_gate.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/data_management/simdify_gate.cpp.s
 .PHONY : protocols/data_management/simdify_gate.cpp.s
 
 protocols/data_management/subset_gate.o: protocols/data_management/subset_gate.cpp.o
@@ -1380,7 +1380,7 @@ protocols/data_management/subset_gate.o: protocols/data_management/subset_gate.c
 
 # target to build an object file
 protocols/data_management/subset_gate.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/data_management/subset_gate.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/data_management/subset_gate.cpp.o
 .PHONY : protocols/data_management/subset_gate.cpp.o
 
 protocols/data_management/subset_gate.i: protocols/data_management/subset_gate.cpp.i
@@ -1388,7 +1388,7 @@ protocols/data_management/subset_gate.i: protocols/data_management/subset_gate.c
 
 # target to preprocess a source file
 protocols/data_management/subset_gate.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/data_management/subset_gate.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/data_management/subset_gate.cpp.i
 .PHONY : protocols/data_management/subset_gate.cpp.i
 
 protocols/data_management/subset_gate.s: protocols/data_management/subset_gate.cpp.s
@@ -1396,7 +1396,7 @@ protocols/data_management/subset_gate.s: protocols/data_management/subset_gate.c
 
 # target to generate assembly for a file
 protocols/data_management/subset_gate.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/data_management/subset_gate.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/data_management/subset_gate.cpp.s
 .PHONY : protocols/data_management/subset_gate.cpp.s
 
 protocols/data_management/unsimdify_gate.o: protocols/data_management/unsimdify_gate.cpp.o
@@ -1404,7 +1404,7 @@ protocols/data_management/unsimdify_gate.o: protocols/data_management/unsimdify_
 
 # target to build an object file
 protocols/data_management/unsimdify_gate.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/data_management/unsimdify_gate.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/data_management/unsimdify_gate.cpp.o
 .PHONY : protocols/data_management/unsimdify_gate.cpp.o
 
 protocols/data_management/unsimdify_gate.i: protocols/data_management/unsimdify_gate.cpp.i
@@ -1412,7 +1412,7 @@ protocols/data_management/unsimdify_gate.i: protocols/data_management/unsimdify_
 
 # target to preprocess a source file
 protocols/data_management/unsimdify_gate.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/data_management/unsimdify_gate.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/data_management/unsimdify_gate.cpp.i
 .PHONY : protocols/data_management/unsimdify_gate.cpp.i
 
 protocols/data_management/unsimdify_gate.s: protocols/data_management/unsimdify_gate.cpp.s
@@ -1420,7 +1420,7 @@ protocols/data_management/unsimdify_gate.s: protocols/data_management/unsimdify_
 
 # target to generate assembly for a file
 protocols/data_management/unsimdify_gate.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/data_management/unsimdify_gate.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/data_management/unsimdify_gate.cpp.s
 .PHONY : protocols/data_management/unsimdify_gate.cpp.s
 
 protocols/garbled_circuit/garbled_circuit_gate.o: protocols/garbled_circuit/garbled_circuit_gate.cpp.o
@@ -1428,7 +1428,7 @@ protocols/garbled_circuit/garbled_circuit_gate.o: protocols/garbled_circuit/garb
 
 # target to build an object file
 protocols/garbled_circuit/garbled_circuit_gate.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/garbled_circuit/garbled_circuit_gate.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/garbled_circuit/garbled_circuit_gate.cpp.o
 .PHONY : protocols/garbled_circuit/garbled_circuit_gate.cpp.o
 
 protocols/garbled_circuit/garbled_circuit_gate.i: protocols/garbled_circuit/garbled_circuit_gate.cpp.i
@@ -1436,7 +1436,7 @@ protocols/garbled_circuit/garbled_circuit_gate.i: protocols/garbled_circuit/garb
 
 # target to preprocess a source file
 protocols/garbled_circuit/garbled_circuit_gate.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/garbled_circuit/garbled_circuit_gate.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/garbled_circuit/garbled_circuit_gate.cpp.i
 .PHONY : protocols/garbled_circuit/garbled_circuit_gate.cpp.i
 
 protocols/garbled_circuit/garbled_circuit_gate.s: protocols/garbled_circuit/garbled_circuit_gate.cpp.s
@@ -1444,7 +1444,7 @@ protocols/garbled_circuit/garbled_circuit_gate.s: protocols/garbled_circuit/garb
 
 # target to generate assembly for a file
 protocols/garbled_circuit/garbled_circuit_gate.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/garbled_circuit/garbled_circuit_gate.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/garbled_circuit/garbled_circuit_gate.cpp.s
 .PHONY : protocols/garbled_circuit/garbled_circuit_gate.cpp.s
 
 protocols/garbled_circuit/garbled_circuit_provider.o: protocols/garbled_circuit/garbled_circuit_provider.cpp.o
@@ -1452,7 +1452,7 @@ protocols/garbled_circuit/garbled_circuit_provider.o: protocols/garbled_circuit/
 
 # target to build an object file
 protocols/garbled_circuit/garbled_circuit_provider.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/garbled_circuit/garbled_circuit_provider.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/garbled_circuit/garbled_circuit_provider.cpp.o
 .PHONY : protocols/garbled_circuit/garbled_circuit_provider.cpp.o
 
 protocols/garbled_circuit/garbled_circuit_provider.i: protocols/garbled_circuit/garbled_circuit_provider.cpp.i
@@ -1460,7 +1460,7 @@ protocols/garbled_circuit/garbled_circuit_provider.i: protocols/garbled_circuit/
 
 # target to preprocess a source file
 protocols/garbled_circuit/garbled_circuit_provider.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/garbled_circuit/garbled_circuit_provider.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/garbled_circuit/garbled_circuit_provider.cpp.i
 .PHONY : protocols/garbled_circuit/garbled_circuit_provider.cpp.i
 
 protocols/garbled_circuit/garbled_circuit_provider.s: protocols/garbled_circuit/garbled_circuit_provider.cpp.s
@@ -1468,7 +1468,7 @@ protocols/garbled_circuit/garbled_circuit_provider.s: protocols/garbled_circuit/
 
 # target to generate assembly for a file
 protocols/garbled_circuit/garbled_circuit_provider.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/garbled_circuit/garbled_circuit_provider.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/garbled_circuit/garbled_circuit_provider.cpp.s
 .PHONY : protocols/garbled_circuit/garbled_circuit_provider.cpp.s
 
 protocols/garbled_circuit/garbled_circuit_share.o: protocols/garbled_circuit/garbled_circuit_share.cpp.o
@@ -1476,7 +1476,7 @@ protocols/garbled_circuit/garbled_circuit_share.o: protocols/garbled_circuit/gar
 
 # target to build an object file
 protocols/garbled_circuit/garbled_circuit_share.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/garbled_circuit/garbled_circuit_share.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/garbled_circuit/garbled_circuit_share.cpp.o
 .PHONY : protocols/garbled_circuit/garbled_circuit_share.cpp.o
 
 protocols/garbled_circuit/garbled_circuit_share.i: protocols/garbled_circuit/garbled_circuit_share.cpp.i
@@ -1484,7 +1484,7 @@ protocols/garbled_circuit/garbled_circuit_share.i: protocols/garbled_circuit/gar
 
 # target to preprocess a source file
 protocols/garbled_circuit/garbled_circuit_share.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/garbled_circuit/garbled_circuit_share.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/garbled_circuit/garbled_circuit_share.cpp.i
 .PHONY : protocols/garbled_circuit/garbled_circuit_share.cpp.i
 
 protocols/garbled_circuit/garbled_circuit_share.s: protocols/garbled_circuit/garbled_circuit_share.cpp.s
@@ -1492,7 +1492,7 @@ protocols/garbled_circuit/garbled_circuit_share.s: protocols/garbled_circuit/gar
 
 # target to generate assembly for a file
 protocols/garbled_circuit/garbled_circuit_share.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/garbled_circuit/garbled_circuit_share.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/garbled_circuit/garbled_circuit_share.cpp.s
 .PHONY : protocols/garbled_circuit/garbled_circuit_share.cpp.s
 
 protocols/garbled_circuit/garbled_circuit_wire.o: protocols/garbled_circuit/garbled_circuit_wire.cpp.o
@@ -1500,7 +1500,7 @@ protocols/garbled_circuit/garbled_circuit_wire.o: protocols/garbled_circuit/garb
 
 # target to build an object file
 protocols/garbled_circuit/garbled_circuit_wire.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/garbled_circuit/garbled_circuit_wire.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/garbled_circuit/garbled_circuit_wire.cpp.o
 .PHONY : protocols/garbled_circuit/garbled_circuit_wire.cpp.o
 
 protocols/garbled_circuit/garbled_circuit_wire.i: protocols/garbled_circuit/garbled_circuit_wire.cpp.i
@@ -1508,7 +1508,7 @@ protocols/garbled_circuit/garbled_circuit_wire.i: protocols/garbled_circuit/garb
 
 # target to preprocess a source file
 protocols/garbled_circuit/garbled_circuit_wire.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/garbled_circuit/garbled_circuit_wire.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/garbled_circuit/garbled_circuit_wire.cpp.i
 .PHONY : protocols/garbled_circuit/garbled_circuit_wire.cpp.i
 
 protocols/garbled_circuit/garbled_circuit_wire.s: protocols/garbled_circuit/garbled_circuit_wire.cpp.s
@@ -1516,7 +1516,7 @@ protocols/garbled_circuit/garbled_circuit_wire.s: protocols/garbled_circuit/garb
 
 # target to generate assembly for a file
 protocols/garbled_circuit/garbled_circuit_wire.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/garbled_circuit/garbled_circuit_wire.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/garbled_circuit/garbled_circuit_wire.cpp.s
 .PHONY : protocols/garbled_circuit/garbled_circuit_wire.cpp.s
 
 protocols/gate.o: protocols/gate.cpp.o
@@ -1524,7 +1524,7 @@ protocols/gate.o: protocols/gate.cpp.o
 
 # target to build an object file
 protocols/gate.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/gate.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/gate.cpp.o
 .PHONY : protocols/gate.cpp.o
 
 protocols/gate.i: protocols/gate.cpp.i
@@ -1532,7 +1532,7 @@ protocols/gate.i: protocols/gate.cpp.i
 
 # target to preprocess a source file
 protocols/gate.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/gate.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/gate.cpp.i
 .PHONY : protocols/gate.cpp.i
 
 protocols/gate.s: protocols/gate.cpp.s
@@ -1540,7 +1540,7 @@ protocols/gate.s: protocols/gate.cpp.s
 
 # target to generate assembly for a file
 protocols/gate.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/gate.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/gate.cpp.s
 .PHONY : protocols/gate.cpp.s
 
 protocols/share.o: protocols/share.cpp.o
@@ -1548,7 +1548,7 @@ protocols/share.o: protocols/share.cpp.o
 
 # target to build an object file
 protocols/share.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/share.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/share.cpp.o
 .PHONY : protocols/share.cpp.o
 
 protocols/share.i: protocols/share.cpp.i
@@ -1556,7 +1556,7 @@ protocols/share.i: protocols/share.cpp.i
 
 # target to preprocess a source file
 protocols/share.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/share.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/share.cpp.i
 .PHONY : protocols/share.cpp.i
 
 protocols/share.s: protocols/share.cpp.s
@@ -1564,7 +1564,7 @@ protocols/share.s: protocols/share.cpp.s
 
 # target to generate assembly for a file
 protocols/share.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/share.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/share.cpp.s
 .PHONY : protocols/share.cpp.s
 
 protocols/share_wrapper.o: protocols/share_wrapper.cpp.o
@@ -1572,7 +1572,7 @@ protocols/share_wrapper.o: protocols/share_wrapper.cpp.o
 
 # target to build an object file
 protocols/share_wrapper.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/share_wrapper.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/share_wrapper.cpp.o
 .PHONY : protocols/share_wrapper.cpp.o
 
 protocols/share_wrapper.i: protocols/share_wrapper.cpp.i
@@ -1580,7 +1580,7 @@ protocols/share_wrapper.i: protocols/share_wrapper.cpp.i
 
 # target to preprocess a source file
 protocols/share_wrapper.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/share_wrapper.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/share_wrapper.cpp.i
 .PHONY : protocols/share_wrapper.cpp.i
 
 protocols/share_wrapper.s: protocols/share_wrapper.cpp.s
@@ -1588,7 +1588,7 @@ protocols/share_wrapper.s: protocols/share_wrapper.cpp.s
 
 # target to generate assembly for a file
 protocols/share_wrapper.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/share_wrapper.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/share_wrapper.cpp.s
 .PHONY : protocols/share_wrapper.cpp.s
 
 protocols/wire.o: protocols/wire.cpp.o
@@ -1596,7 +1596,7 @@ protocols/wire.o: protocols/wire.cpp.o
 
 # target to build an object file
 protocols/wire.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/wire.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/wire.cpp.o
 .PHONY : protocols/wire.cpp.o
 
 protocols/wire.i: protocols/wire.cpp.i
@@ -1604,7 +1604,7 @@ protocols/wire.i: protocols/wire.cpp.i
 
 # target to preprocess a source file
 protocols/wire.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/wire.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/wire.cpp.i
 .PHONY : protocols/wire.cpp.i
 
 protocols/wire.s: protocols/wire.cpp.s
@@ -1612,7 +1612,7 @@ protocols/wire.s: protocols/wire.cpp.s
 
 # target to generate assembly for a file
 protocols/wire.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/wire.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/protocols/wire.cpp.s
 .PHONY : protocols/wire.cpp.s
 
 secure_type/secure_signed_integer.o: secure_type/secure_signed_integer.cpp.o
@@ -1620,7 +1620,7 @@ secure_type/secure_signed_integer.o: secure_type/secure_signed_integer.cpp.o
 
 # target to build an object file
 secure_type/secure_signed_integer.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/secure_type/secure_signed_integer.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/secure_type/secure_signed_integer.cpp.o
 .PHONY : secure_type/secure_signed_integer.cpp.o
 
 secure_type/secure_signed_integer.i: secure_type/secure_signed_integer.cpp.i
@@ -1628,7 +1628,7 @@ secure_type/secure_signed_integer.i: secure_type/secure_signed_integer.cpp.i
 
 # target to preprocess a source file
 secure_type/secure_signed_integer.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/secure_type/secure_signed_integer.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/secure_type/secure_signed_integer.cpp.i
 .PHONY : secure_type/secure_signed_integer.cpp.i
 
 secure_type/secure_signed_integer.s: secure_type/secure_signed_integer.cpp.s
@@ -1636,7 +1636,7 @@ secure_type/secure_signed_integer.s: secure_type/secure_signed_integer.cpp.s
 
 # target to generate assembly for a file
 secure_type/secure_signed_integer.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/secure_type/secure_signed_integer.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/secure_type/secure_signed_integer.cpp.s
 .PHONY : secure_type/secure_signed_integer.cpp.s
 
 secure_type/secure_unsigned_integer.o: secure_type/secure_unsigned_integer.cpp.o
@@ -1644,7 +1644,7 @@ secure_type/secure_unsigned_integer.o: secure_type/secure_unsigned_integer.cpp.o
 
 # target to build an object file
 secure_type/secure_unsigned_integer.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/secure_type/secure_unsigned_integer.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/secure_type/secure_unsigned_integer.cpp.o
 .PHONY : secure_type/secure_unsigned_integer.cpp.o
 
 secure_type/secure_unsigned_integer.i: secure_type/secure_unsigned_integer.cpp.i
@@ -1652,7 +1652,7 @@ secure_type/secure_unsigned_integer.i: secure_type/secure_unsigned_integer.cpp.i
 
 # target to preprocess a source file
 secure_type/secure_unsigned_integer.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/secure_type/secure_unsigned_integer.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/secure_type/secure_unsigned_integer.cpp.i
 .PHONY : secure_type/secure_unsigned_integer.cpp.i
 
 secure_type/secure_unsigned_integer.s: secure_type/secure_unsigned_integer.cpp.s
@@ -1660,7 +1660,7 @@ secure_type/secure_unsigned_integer.s: secure_type/secure_unsigned_integer.cpp.s
 
 # target to generate assembly for a file
 secure_type/secure_unsigned_integer.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/secure_type/secure_unsigned_integer.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/secure_type/secure_unsigned_integer.cpp.s
 .PHONY : secure_type/secure_unsigned_integer.cpp.s
 
 statistics/analysis.o: statistics/analysis.cpp.o
@@ -1668,7 +1668,7 @@ statistics/analysis.o: statistics/analysis.cpp.o
 
 # target to build an object file
 statistics/analysis.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/statistics/analysis.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/statistics/analysis.cpp.o
 .PHONY : statistics/analysis.cpp.o
 
 statistics/analysis.i: statistics/analysis.cpp.i
@@ -1676,7 +1676,7 @@ statistics/analysis.i: statistics/analysis.cpp.i
 
 # target to preprocess a source file
 statistics/analysis.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/statistics/analysis.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/statistics/analysis.cpp.i
 .PHONY : statistics/analysis.cpp.i
 
 statistics/analysis.s: statistics/analysis.cpp.s
@@ -1684,7 +1684,7 @@ statistics/analysis.s: statistics/analysis.cpp.s
 
 # target to generate assembly for a file
 statistics/analysis.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/statistics/analysis.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/statistics/analysis.cpp.s
 .PHONY : statistics/analysis.cpp.s
 
 statistics/run_time_statistics.o: statistics/run_time_statistics.cpp.o
@@ -1692,7 +1692,7 @@ statistics/run_time_statistics.o: statistics/run_time_statistics.cpp.o
 
 # target to build an object file
 statistics/run_time_statistics.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/statistics/run_time_statistics.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/statistics/run_time_statistics.cpp.o
 .PHONY : statistics/run_time_statistics.cpp.o
 
 statistics/run_time_statistics.i: statistics/run_time_statistics.cpp.i
@@ -1700,7 +1700,7 @@ statistics/run_time_statistics.i: statistics/run_time_statistics.cpp.i
 
 # target to preprocess a source file
 statistics/run_time_statistics.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/statistics/run_time_statistics.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/statistics/run_time_statistics.cpp.i
 .PHONY : statistics/run_time_statistics.cpp.i
 
 statistics/run_time_statistics.s: statistics/run_time_statistics.cpp.s
@@ -1708,7 +1708,7 @@ statistics/run_time_statistics.s: statistics/run_time_statistics.cpp.s
 
 # target to generate assembly for a file
 statistics/run_time_statistics.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/statistics/run_time_statistics.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/statistics/run_time_statistics.cpp.s
 .PHONY : statistics/run_time_statistics.cpp.s
 
 utility/bit_matrix.o: utility/bit_matrix.cpp.o
@@ -1716,7 +1716,7 @@ utility/bit_matrix.o: utility/bit_matrix.cpp.o
 
 # target to build an object file
 utility/bit_matrix.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/utility/bit_matrix.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/utility/bit_matrix.cpp.o
 .PHONY : utility/bit_matrix.cpp.o
 
 utility/bit_matrix.i: utility/bit_matrix.cpp.i
@@ -1724,7 +1724,7 @@ utility/bit_matrix.i: utility/bit_matrix.cpp.i
 
 # target to preprocess a source file
 utility/bit_matrix.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/utility/bit_matrix.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/utility/bit_matrix.cpp.i
 .PHONY : utility/bit_matrix.cpp.i
 
 utility/bit_matrix.s: utility/bit_matrix.cpp.s
@@ -1732,7 +1732,7 @@ utility/bit_matrix.s: utility/bit_matrix.cpp.s
 
 # target to generate assembly for a file
 utility/bit_matrix.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/utility/bit_matrix.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/utility/bit_matrix.cpp.s
 .PHONY : utility/bit_matrix.cpp.s
 
 utility/bit_vector.o: utility/bit_vector.cpp.o
@@ -1740,7 +1740,7 @@ utility/bit_vector.o: utility/bit_vector.cpp.o
 
 # target to build an object file
 utility/bit_vector.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/utility/bit_vector.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/utility/bit_vector.cpp.o
 .PHONY : utility/bit_vector.cpp.o
 
 utility/bit_vector.i: utility/bit_vector.cpp.i
@@ -1748,7 +1748,7 @@ utility/bit_vector.i: utility/bit_vector.cpp.i
 
 # target to preprocess a source file
 utility/bit_vector.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/utility/bit_vector.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/utility/bit_vector.cpp.i
 .PHONY : utility/bit_vector.cpp.i
 
 utility/bit_vector.s: utility/bit_vector.cpp.s
@@ -1756,7 +1756,7 @@ utility/bit_vector.s: utility/bit_vector.cpp.s
 
 # target to generate assembly for a file
 utility/bit_vector.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/utility/bit_vector.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/utility/bit_vector.cpp.s
 .PHONY : utility/bit_vector.cpp.s
 
 utility/block.o: utility/block.cpp.o
@@ -1764,7 +1764,7 @@ utility/block.o: utility/block.cpp.o
 
 # target to build an object file
 utility/block.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/utility/block.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/utility/block.cpp.o
 .PHONY : utility/block.cpp.o
 
 utility/block.i: utility/block.cpp.i
@@ -1772,7 +1772,7 @@ utility/block.i: utility/block.cpp.i
 
 # target to preprocess a source file
 utility/block.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/utility/block.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/utility/block.cpp.i
 .PHONY : utility/block.cpp.i
 
 utility/block.s: utility/block.cpp.s
@@ -1780,7 +1780,7 @@ utility/block.s: utility/block.cpp.s
 
 # target to generate assembly for a file
 utility/block.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/utility/block.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/utility/block.cpp.s
 .PHONY : utility/block.cpp.s
 
 utility/condition.o: utility/condition.cpp.o
@@ -1788,7 +1788,7 @@ utility/condition.o: utility/condition.cpp.o
 
 # target to build an object file
 utility/condition.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/utility/condition.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/utility/condition.cpp.o
 .PHONY : utility/condition.cpp.o
 
 utility/condition.i: utility/condition.cpp.i
@@ -1796,7 +1796,7 @@ utility/condition.i: utility/condition.cpp.i
 
 # target to preprocess a source file
 utility/condition.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/utility/condition.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/utility/condition.cpp.i
 .PHONY : utility/condition.cpp.i
 
 utility/condition.s: utility/condition.cpp.s
@@ -1804,7 +1804,7 @@ utility/condition.s: utility/condition.cpp.s
 
 # target to generate assembly for a file
 utility/condition.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/utility/condition.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/utility/condition.cpp.s
 .PHONY : utility/condition.cpp.s
 
 utility/fiber_thread_pool/fiber_thread_pool.o: utility/fiber_thread_pool/fiber_thread_pool.cpp.o
@@ -1812,7 +1812,7 @@ utility/fiber_thread_pool/fiber_thread_pool.o: utility/fiber_thread_pool/fiber_t
 
 # target to build an object file
 utility/fiber_thread_pool/fiber_thread_pool.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/utility/fiber_thread_pool/fiber_thread_pool.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/utility/fiber_thread_pool/fiber_thread_pool.cpp.o
 .PHONY : utility/fiber_thread_pool/fiber_thread_pool.cpp.o
 
 utility/fiber_thread_pool/fiber_thread_pool.i: utility/fiber_thread_pool/fiber_thread_pool.cpp.i
@@ -1820,7 +1820,7 @@ utility/fiber_thread_pool/fiber_thread_pool.i: utility/fiber_thread_pool/fiber_t
 
 # target to preprocess a source file
 utility/fiber_thread_pool/fiber_thread_pool.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/utility/fiber_thread_pool/fiber_thread_pool.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/utility/fiber_thread_pool/fiber_thread_pool.cpp.i
 .PHONY : utility/fiber_thread_pool/fiber_thread_pool.cpp.i
 
 utility/fiber_thread_pool/fiber_thread_pool.s: utility/fiber_thread_pool/fiber_thread_pool.cpp.s
@@ -1828,7 +1828,7 @@ utility/fiber_thread_pool/fiber_thread_pool.s: utility/fiber_thread_pool/fiber_t
 
 # target to generate assembly for a file
 utility/fiber_thread_pool/fiber_thread_pool.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/utility/fiber_thread_pool/fiber_thread_pool.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/utility/fiber_thread_pool/fiber_thread_pool.cpp.s
 .PHONY : utility/fiber_thread_pool/fiber_thread_pool.cpp.s
 
 utility/fiber_thread_pool/pooled_work_stealing.o: utility/fiber_thread_pool/pooled_work_stealing.cpp.o
@@ -1836,7 +1836,7 @@ utility/fiber_thread_pool/pooled_work_stealing.o: utility/fiber_thread_pool/pool
 
 # target to build an object file
 utility/fiber_thread_pool/pooled_work_stealing.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/utility/fiber_thread_pool/pooled_work_stealing.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/utility/fiber_thread_pool/pooled_work_stealing.cpp.o
 .PHONY : utility/fiber_thread_pool/pooled_work_stealing.cpp.o
 
 utility/fiber_thread_pool/pooled_work_stealing.i: utility/fiber_thread_pool/pooled_work_stealing.cpp.i
@@ -1844,7 +1844,7 @@ utility/fiber_thread_pool/pooled_work_stealing.i: utility/fiber_thread_pool/pool
 
 # target to preprocess a source file
 utility/fiber_thread_pool/pooled_work_stealing.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/utility/fiber_thread_pool/pooled_work_stealing.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/utility/fiber_thread_pool/pooled_work_stealing.cpp.i
 .PHONY : utility/fiber_thread_pool/pooled_work_stealing.cpp.i
 
 utility/fiber_thread_pool/pooled_work_stealing.s: utility/fiber_thread_pool/pooled_work_stealing.cpp.s
@@ -1852,7 +1852,7 @@ utility/fiber_thread_pool/pooled_work_stealing.s: utility/fiber_thread_pool/pool
 
 # target to generate assembly for a file
 utility/fiber_thread_pool/pooled_work_stealing.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/utility/fiber_thread_pool/pooled_work_stealing.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/utility/fiber_thread_pool/pooled_work_stealing.cpp.s
 .PHONY : utility/fiber_thread_pool/pooled_work_stealing.cpp.s
 
 utility/fiber_waitable.o: utility/fiber_waitable.cpp.o
@@ -1860,7 +1860,7 @@ utility/fiber_waitable.o: utility/fiber_waitable.cpp.o
 
 # target to build an object file
 utility/fiber_waitable.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/utility/fiber_waitable.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/utility/fiber_waitable.cpp.o
 .PHONY : utility/fiber_waitable.cpp.o
 
 utility/fiber_waitable.i: utility/fiber_waitable.cpp.i
@@ -1868,7 +1868,7 @@ utility/fiber_waitable.i: utility/fiber_waitable.cpp.i
 
 # target to preprocess a source file
 utility/fiber_waitable.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/utility/fiber_waitable.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/utility/fiber_waitable.cpp.i
 .PHONY : utility/fiber_waitable.cpp.i
 
 utility/fiber_waitable.s: utility/fiber_waitable.cpp.s
@@ -1876,7 +1876,7 @@ utility/fiber_waitable.s: utility/fiber_waitable.cpp.s
 
 # target to generate assembly for a file
 utility/fiber_waitable.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/utility/fiber_waitable.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/utility/fiber_waitable.cpp.s
 .PHONY : utility/fiber_waitable.cpp.s
 
 utility/helpers.o: utility/helpers.cpp.o
@@ -1884,7 +1884,7 @@ utility/helpers.o: utility/helpers.cpp.o
 
 # target to build an object file
 utility/helpers.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/utility/helpers.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/utility/helpers.cpp.o
 .PHONY : utility/helpers.cpp.o
 
 utility/helpers.i: utility/helpers.cpp.i
@@ -1892,7 +1892,7 @@ utility/helpers.i: utility/helpers.cpp.i
 
 # target to preprocess a source file
 utility/helpers.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/utility/helpers.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/utility/helpers.cpp.i
 .PHONY : utility/helpers.cpp.i
 
 utility/helpers.s: utility/helpers.cpp.s
@@ -1900,7 +1900,7 @@ utility/helpers.s: utility/helpers.cpp.s
 
 # target to generate assembly for a file
 utility/helpers.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/utility/helpers.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/utility/helpers.cpp.s
 .PHONY : utility/helpers.cpp.s
 
 utility/logger.o: utility/logger.cpp.o
@@ -1908,7 +1908,7 @@ utility/logger.o: utility/logger.cpp.o
 
 # target to build an object file
 utility/logger.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/utility/logger.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/utility/logger.cpp.o
 .PHONY : utility/logger.cpp.o
 
 utility/logger.i: utility/logger.cpp.i
@@ -1916,7 +1916,7 @@ utility/logger.i: utility/logger.cpp.i
 
 # target to preprocess a source file
 utility/logger.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/utility/logger.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/utility/logger.cpp.i
 .PHONY : utility/logger.cpp.i
 
 utility/logger.s: utility/logger.cpp.s
@@ -1924,7 +1924,7 @@ utility/logger.s: utility/logger.cpp.s
 
 # target to generate assembly for a file
 utility/logger.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/utility/logger.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/utility/logger.cpp.s
 .PHONY : utility/logger.cpp.s
 
 utility/runtime_info.o: utility/runtime_info.cpp.o
@@ -1932,7 +1932,7 @@ utility/runtime_info.o: utility/runtime_info.cpp.o
 
 # target to build an object file
 utility/runtime_info.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/utility/runtime_info.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/utility/runtime_info.cpp.o
 .PHONY : utility/runtime_info.cpp.o
 
 utility/runtime_info.i: utility/runtime_info.cpp.i
@@ -1940,7 +1940,7 @@ utility/runtime_info.i: utility/runtime_info.cpp.i
 
 # target to preprocess a source file
 utility/runtime_info.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/utility/runtime_info.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/utility/runtime_info.cpp.i
 .PHONY : utility/runtime_info.cpp.i
 
 utility/runtime_info.s: utility/runtime_info.cpp.s
@@ -1948,7 +1948,7 @@ utility/runtime_info.s: utility/runtime_info.cpp.s
 
 # target to generate assembly for a file
 utility/runtime_info.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/utility/runtime_info.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/utility/runtime_info.cpp.s
 .PHONY : utility/runtime_info.cpp.s
 
 utility/thread.o: utility/thread.cpp.o
@@ -1956,7 +1956,7 @@ utility/thread.o: utility/thread.cpp.o
 
 # target to build an object file
 utility/thread.cpp.o:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/utility/thread.cpp.o
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/utility/thread.cpp.o
 .PHONY : utility/thread.cpp.o
 
 utility/thread.i: utility/thread.cpp.i
@@ -1964,7 +1964,7 @@ utility/thread.i: utility/thread.cpp.i
 
 # target to preprocess a source file
 utility/thread.cpp.i:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/utility/thread.cpp.i
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/utility/thread.cpp.i
 .PHONY : utility/thread.cpp.i
 
 utility/thread.s: utility/thread.cpp.s
@@ -1972,7 +1972,7 @@ utility/thread.s: utility/thread.cpp.s
 
 # target to generate assembly for a file
 utility/thread.cpp.s:
-	cd /home/micho/MOTION1/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/utility/thread.cpp.s
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/utility/thread.cpp.s
 .PHONY : utility/thread.cpp.s
 
 # Help Target
@@ -2224,6 +2224,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/micho/MOTION1/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

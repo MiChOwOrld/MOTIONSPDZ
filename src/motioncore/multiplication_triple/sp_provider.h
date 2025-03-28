@@ -174,7 +174,8 @@ class SpProviderFromOts final : public SpProvider {
                     std::shared_ptr<Logger> logger, RunTimeStatistics& run_time_statistics);
 
   void PreSetup() final override;
-
+  void DistributeGlobalMacKey();  // OT-based sharing of global alpha //NEW
+  std::uint64_t GetAlphaShare() const { return alpha_share_; } //NEW
   // needs completed OTExtension
   void Setup() final override;
 
@@ -184,6 +185,7 @@ class SpProviderFromOts final : public SpProvider {
   void ParseOutputs();
 
   std::vector<std::unique_ptr<OtProvider>>& ot_providers_;
+  std::uint64_t alpha_share_{0}; //NEW
 
   // use alternating party roles for load balancing
   std::vector<std::list<std::unique_ptr<BasicOtReceiver>>> ots_receiver_8_;

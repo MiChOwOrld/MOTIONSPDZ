@@ -92,6 +92,11 @@ elseif (NOT fmt_FOUND AND NOT TARGET fmt::fmt)
         execute_process(COMMAND git submodule update --init extern/fmt
                 WORKING_DIRECTORY "${PROJECT_SOURCE_DIR}")
     endif ()
+    add_library(fmt::fmt INTERFACE IMPORTED GLOBAL)
+    set_target_properties(fmt::fmt PROPERTIES
+        INTERFACE_INCLUDE_DIRECTORIES "${PROJECT_SOURCE_DIR}/extern/fmt/include"
+        INTERFACE_COMPILE_DEFINITIONS FMT_HEADER_ONLY
+    )
     # we use the header-only version of fmt
     # -> add `target_compile_definitions($TARGET PUBLIC FMT_HEADER_ONLY)` for
     # targets using fmt
