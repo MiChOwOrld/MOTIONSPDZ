@@ -257,20 +257,20 @@
 				},
 				{
 					"backtrace" : 8,
-					"path" : "/home/micho/CLionProjects/MOTIONSPDZ/src/motioncore"
+					"path" : "/home/micho/Documents/GitHub/MOTIONSPDZ/src/motioncore"
 				},
 				{
 					"backtrace" : 8,
-					"path" : "/home/micho/CLionProjects/MOTIONSPDZ/extern"
+					"path" : "/home/micho/Documents/GitHub/MOTIONSPDZ/extern"
 				},
 				{
 					"backtrace" : 8,
-					"path" : "/home/micho/CLionProjects/MOTIONSPDZ/extern/flatbuffers/include"
+					"path" : "/home/micho/Documents/GitHub/MOTIONSPDZ/extern/flatbuffers/include"
 				},
 				{
 					"backtrace" : 8,
 					"isSystem" : true,
-					"path" : "/home/micho/CLionProjects/MOTIONSPDZ/extern/fmt/include"
+					"path" : "/home/micho/Documents/GitHub/MOTIONSPDZ/extern/fmt/include"
 				}
 			],
 			"language" : "CXX",

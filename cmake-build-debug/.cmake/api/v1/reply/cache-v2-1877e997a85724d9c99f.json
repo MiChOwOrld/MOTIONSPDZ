@@ -203,7 +203,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/micho/CLionProjects/MOTIONSPDZ/cmake-build-debug"
+			"value" : "/home/micho/Documents/GitHub/MOTIONSPDZ/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -691,7 +691,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/micho/CLionProjects/MOTIONSPDZ/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "/home/micho/Documents/GitHub/MOTIONSPDZ/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -763,7 +763,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/micho/CLionProjects/MOTIONSPDZ"
+			"value" : "/home/micho/Documents/GitHub/MOTIONSPDZ"
 		},
 		{
 			"name" : "CMAKE_INSTALL_BINDIR",
@@ -1271,7 +1271,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "1.15.2"
+			"value" : "1.16.0"
 		},
 		{
 			"name" : "CMAKE_PROJECT_VERSION_MAJOR",
@@ -1295,7 +1295,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "15"
+			"value" : "16"
 		},
 		{
 			"name" : "CMAKE_PROJECT_VERSION_PATCH",
@@ -1307,7 +1307,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "2"
+			"value" : "0"
 		},
 		{
 			"name" : "CMAKE_PROJECT_VERSION_TWEAK",
@@ -1891,7 +1891,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/micho/CLionProjects/MOTIONSPDZ/cmake-build-debug/flatbuffers-build"
+			"value" : "/home/micho/Documents/GitHub/MOTIONSPDZ/cmake-build-debug/flatbuffers-build"
 		},
 		{
 			"name" : "FlatBuffers_IS_TOP_LEVEL",
@@ -1915,7 +1915,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/micho/CLionProjects/MOTIONSPDZ/extern/flatbuffers"
+			"value" : "/home/micho/Documents/GitHub/MOTIONSPDZ/extern/flatbuffers"
 		},
 		{
 			"name" : "Flatbuffers_DIR",
@@ -1975,7 +1975,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/micho/CLionProjects/MOTIONSPDZ/cmake-build-debug"
+			"value" : "/home/micho/Documents/GitHub/MOTIONSPDZ/cmake-build-debug"
 		},
 		{
 			"name" : "MOTION_BUILD_DOC",
@@ -2047,7 +2047,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/micho/CLionProjects/MOTIONSPDZ"
+			"value" : "/home/micho/Documents/GitHub/MOTIONSPDZ"
 		},
 		{
 			"name" : "MOTION_USE_AVX",
@@ -2075,7 +2075,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/micho/CLionProjects/MOTIONSPDZ/cmake-build-debug/flatbuffers-build"
+			"value" : "/home/micho/Documents/GitHub/MOTIONSPDZ/cmake-build-debug/flatbuffers-build"
 		},
 		{
 			"name" : "Motion_IS_TOP_LEVEL",
@@ -2099,7 +2099,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/micho/CLionProjects/MOTIONSPDZ/extern/flatbuffers"
+			"value" : "/home/micho/Documents/GitHub/MOTIONSPDZ/extern/flatbuffers"
 		},
 		{
 			"name" : "OPENSSL_CRYPTO_LIBRARY",
@@ -2827,7 +2827,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/micho/CLionProjects/MOTIONSPDZ/cmake-build-debug/googletest-build/googletest/generated"
+			"value" : "/home/micho/Documents/GitHub/MOTIONSPDZ/cmake-build-debug/googletest-build/googletest/generated"
 		},
 		{
 			"name" : "gmock_BINARY_DIR",
@@ -2839,7 +2839,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/micho/CLionProjects/MOTIONSPDZ/cmake-build-debug/googletest-build/googlemock"
+			"value" : "/home/micho/Documents/GitHub/MOTIONSPDZ/cmake-build-debug/googletest-build/googlemock"
 		},
 		{
 			"name" : "gmock_IS_TOP_LEVEL",
@@ -2891,7 +2891,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/micho/CLionProjects/MOTIONSPDZ/cmake-build-debug/googletest-build"
+			"value" : "/home/micho/Documents/GitHub/MOTIONSPDZ/cmake-build-debug/googletest-build"
 		},
 		{
 			"name" : "googletest-distribution_IS_TOP_LEVEL",
@@ -2927,7 +2927,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/micho/CLionProjects/MOTIONSPDZ/cmake-build-debug/googletest-build/googletest"
+			"value" : "/home/micho/Documents/GitHub/MOTIONSPDZ/cmake-build-debug/googletest-build/googletest"
 		},
 		{
 			"name" : "gtest_IS_TOP_LEVEL",

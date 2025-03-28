@@ -1,4 +1,16 @@
-/home/micho/CLion-2024.3.4/clion-2024.3.4/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/micho/CLion-2024.3.4/clion-2024.3.4/bin/ninja/linux/x64/ninja -G Ninja -S /home/micho/CLionProjects/MOTIONSPDZ -B /home/micho/CLionProjects/MOTIONSPDZ/cmake-build-debug
+/home/micho/CLion-2024.3.4/clion-2024.3.4/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/micho/CLion-2024.3.4/clion-2024.3.4/bin/ninja/linux/x64/ninja -G Ninja -S /home/micho/Documents/GitHub/MOTIONSPDZ -B /home/micho/Documents/GitHub/MOTIONSPDZ/cmake-build-debug
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")
+-- Found OpenMP_CXX: -fopenmp (found version "4.5")
+-- Found OpenMP: TRUE (found version "4.5")
 CMake Warning (dev) at CMakeLists.txt:41 (find_package):
   Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
   --help-policy CMP0167" for policy details.  Use the cmake_policy command to
@@ -9,6 +21,16 @@ This warning is for project developers.  Use -Wno-dev to suppress it.
 BUILD TYPE: Debug
 fmt was not found: add fmt subdirectory
 flatbuffers was not found: add flatbuffers subdirectory
+-- The C compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Looking for strtof_l
+-- Looking for strtof_l - found
+-- Looking for strtoull_l
+-- Looking for strtoull_l - found
 -- CMAKE_CXX_FLAGS:  -Wall -pedantic -Wextra -Wno-stringop-overflow -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char
 fatal: No names found, cannot describe anything.
 CMake Warning at extern/flatbuffers/CMake/Version.cmake:22 (message):
@@ -18,6 +40,6 @@ Call Stack (most recent call first):
 
 
 -- Proceeding with version: 2.0.0.0
--- Configuring done (0.5s)
+-- Configuring done (3.8s)
 -- Generating done (0.2s)
--- Build files have been written to: /home/micho/CLionProjects/MOTIONSPDZ/cmake-build-debug
+-- Build files have been written to: /home/micho/Documents/GitHub/MOTIONSPDZ/cmake-build-debug

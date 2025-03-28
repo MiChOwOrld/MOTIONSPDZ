@@ -44,6 +44,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/micho/CLionProjects/MOTIONSPDZ/cmake-build-debug/googletest-build/googlemock/cmake_install.cmake")
+  include("/home/micho/Documents/GitHub/MOTIONSPDZ/cmake-build-debug/googletest-build/googlemock/cmake_install.cmake")
 endif()
 

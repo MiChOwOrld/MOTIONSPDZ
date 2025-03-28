@@ -1,4 +1,4 @@
-# Install script for directory: /home/micho/CLionProjects/MOTIONSPDZ/src/motioncore
+# Install script for directory: /home/micho/Documents/GitHub/MOTIONSPDZ/src/motioncore
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -43,16 +43,16 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/micho/CLionProjects/MOTIONSPDZ/cmake-build-debug/lib/libmotion.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/micho/Documents/GitHub/MOTIONSPDZ/cmake-build-debug/lib/libmotion.a")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/micho/CLionProjects/MOTIONSPDZ/src/motioncore" FILES_MATCHING REGEX "/[^/]*\\.h$")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/micho/Documents/GitHub/MOTIONSPDZ/src/motioncore" FILES_MATCHING REGEX "/[^/]*\\.h$")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/micho/CLionProjects/MOTIONSPDZ/cmake-build-debug/googletest-build/cmake_install.cmake")
+  include("/home/micho/Documents/GitHub/MOTIONSPDZ/cmake-build-debug/googletest-build/cmake_install.cmake")
 
 endif()
 

@@ -1,4 +1,4 @@
-# Install script for directory: /home/micho/CLionProjects/MOTIONSPDZ
+# Install script for directory: /home/micho/Documents/GitHub/MOTIONSPDZ
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,9 +44,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/micho/CLionProjects/MOTIONSPDZ/cmake-build-debug/flatbuffers-build/cmake_install.cmake")
-  include("/home/micho/CLionProjects/MOTIONSPDZ/cmake-build-debug/fbs/cmake_install.cmake")
-  include("/home/micho/CLionProjects/MOTIONSPDZ/cmake-build-debug/src/motioncore/cmake_install.cmake")
+  include("/home/micho/Documents/GitHub/MOTIONSPDZ/cmake-build-debug/flatbuffers-build/cmake_install.cmake")
+  include("/home/micho/Documents/GitHub/MOTIONSPDZ/cmake-build-debug/fbs/cmake_install.cmake")
+  include("/home/micho/Documents/GitHub/MOTIONSPDZ/cmake-build-debug/src/motioncore/cmake_install.cmake")
 
 endif()
 
@@ -65,6 +65,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-  file(WRITE "/home/micho/CLionProjects/MOTIONSPDZ/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "/home/micho/Documents/GitHub/MOTIONSPDZ/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

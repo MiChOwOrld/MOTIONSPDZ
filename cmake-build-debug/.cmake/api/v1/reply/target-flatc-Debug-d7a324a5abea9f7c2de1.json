@@ -87,11 +87,11 @@
 			[
 				{
 					"backtrace" : 5,
-					"path" : "/home/micho/CLionProjects/MOTIONSPDZ/extern/flatbuffers/include"
+					"path" : "/home/micho/Documents/GitHub/MOTIONSPDZ/extern/flatbuffers/include"
 				},
 				{
 					"backtrace" : 6,
-					"path" : "/home/micho/CLionProjects/MOTIONSPDZ/extern/flatbuffers/grpc"
+					"path" : "/home/micho/Documents/GitHub/MOTIONSPDZ/extern/flatbuffers/grpc"
 				}
 			],
 			"language" : "CXX",

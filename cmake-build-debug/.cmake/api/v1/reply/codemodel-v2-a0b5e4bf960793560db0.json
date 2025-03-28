@@ -216,7 +216,7 @@
 				{
 					"directoryIndex" : 1,
 					"id" : "flatc::@bea912407e3719a83c7d",
-					"jsonFile" : "target-flatc-Debug-2ce2f8c125150f3f7d58.json",
+					"jsonFile" : "target-flatc-Debug-d7a324a5abea9f7c2de1.json",
 					"name" : "flatc",
 					"projectIndex" : 1
 				},
@@ -251,7 +251,7 @@
 				{
 					"directoryIndex" : 3,
 					"id" : "motion::@b461c9499611823db302",
-					"jsonFile" : "target-motion-Debug-f96c2bf400fc9dfa3517.json",
+					"jsonFile" : "target-motion-Debug-3166d4b3be881be76843.json",
 					"name" : "motion",
 					"projectIndex" : 0
 				}
@@ -261,8 +261,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/micho/CLionProjects/MOTIONSPDZ/cmake-build-debug",
-		"source" : "/home/micho/CLionProjects/MOTIONSPDZ"
+		"build" : "/home/micho/Documents/GitHub/MOTIONSPDZ/cmake-build-debug",
+		"source" : "/home/micho/Documents/GitHub/MOTIONSPDZ"
 	},
 	"version" : 
 	{

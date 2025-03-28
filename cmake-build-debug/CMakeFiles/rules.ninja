@@ -137,7 +137,7 @@ rule CXX_STATIC_LIBRARY_LINKER__gtest_main_Debug
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /home/micho/CLion-2024.3.4/clion-2024.3.4/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S/home/micho/CLionProjects/MOTIONSPDZ -B/home/micho/CLionProjects/MOTIONSPDZ/cmake-build-debug
+  command = /home/micho/CLion-2024.3.4/clion-2024.3.4/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S/home/micho/Documents/GitHub/MOTIONSPDZ -B/home/micho/Documents/GitHub/MOTIONSPDZ/cmake-build-debug
   description = Re-running CMake...
   generator = 1
 
