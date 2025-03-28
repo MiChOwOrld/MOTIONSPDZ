@@ -163,7 +163,7 @@ class MtProvider {
 
  private:
 
-   
+
   template <typename T, typename = std::enable_if_t<std::is_unsigned_v<T>>>
   inline IntegerMtVector<T> GetInteger(const IntegerMtVector<T>& mts, const std::size_t offset,
                                        const std::size_t n) const {
