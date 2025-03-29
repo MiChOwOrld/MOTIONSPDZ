@@ -296,63 +296,63 @@ void SpProviderFromOts::ParseOutputs() {
     }
   }
 }
-  std::uint64_t SampleRandomUint64() {
-  std::random_device rd;
-  std::mt19937_64 gen(rd());
-  std::uniform_int_distribution<std::uint64_t> distrib;
-  return distrib(gen);
+  std::uint64_t SampleRandomUint64() { //NEW
+  std::random_device rd; //NEW
+  std::mt19937_64 gen(rd()); //NEW
+  std::uniform_int_distribution<std::uint64_t> distrib; //NEW
+  return distrib(gen); //NEW
 }
 
-  void SpProviderFromOts::DistributeGlobalMacKey() {
-  using namespace encrypto::motion;
+  void SpProviderFromOts::DistributeGlobalMacKey() { //NEW
+  using namespace encrypto::motion; //NEW
 
-  const auto my_id = my_id_;
-  const auto num_parties = ot_providers_.size();
-  std::vector<std::uint64_t> alpha_shares(num_parties, 0);
-  constexpr std::uint64_t kModulus = std::numeric_limits<std::uint64_t>::max();
+  const auto my_id = my_id_; //NEW
+  const auto num_parties = ot_providers_.size(); //NEW
+  std::vector<std::uint64_t> alpha_shares(num_parties, 0); //NEW
+  constexpr std::uint64_t kModulus = std::numeric_limits<std::uint64_t>::max(); //NEW
 
-  if (my_id == 0) {
-    const std::uint64_t alpha = SampleRandomUint64();
+  if (my_id == 0) { //NEW
+    const std::uint64_t alpha = SampleRandomUint64(); //NEW
+    //NEW
+    for (std::size_t i = 1; i < num_parties; ++i) { //NEW
+      alpha_shares[i] = SampleRandomUint64(); //NEW
+    } //NEW
 
-    for (std::size_t i = 1; i < num_parties; ++i) {
-      alpha_shares[i] = SampleRandomUint64();
-    }
+    std::uint64_t sum = 0; //NEW
+    for (std::size_t i = 1; i < num_parties; ++i) { //NEW
+      sum = (sum + alpha_shares[i]) % kModulus; //NEW
+    }  //NEW
+    alpha_shares[0] = (alpha + kModulus - sum) % kModulus; //NEW
+  } //NEW
 
-    std::uint64_t sum = 0;
-    for (std::size_t i = 1; i < num_parties; ++i) {
-      sum = (sum + alpha_shares[i]) % kModulus;
-    }
-    alpha_shares[0] = (alpha + kModulus - sum) % kModulus;
-  }
+  for (std::size_t i = 0; i < num_parties; ++i) { //NEW
+    if (i == my_id) continue; //NEW
 
-  for (std::size_t i = 0; i < num_parties; ++i) {
-    if (i == my_id) continue;
+    auto* ot_provider = static_cast<OtProviderFromOtExtension*>(ot_providers_.at(std::max(i, my_id)).get()); //NEW
 
-    auto* ot_provider = static_cast<OtProviderFromOtExtension*>(ot_providers_.at(std::max(i, my_id)).get());
-
-    if (my_id == 0) {
+    if (my_id == 0) { //NEW
       // Sender
-      auto ot_sender = ot_provider->RegisterSendAcOt<std::uint64_t>(1, 64, 1);
-      ot_sender->ComputeOutputs();
-      alpha_share_ = alpha_shares[0];
-    } else if (i == 0) {
+      auto ot_sender = ot_provider->RegisterSendAcOt<std::uint64_t>(1, 64, 1); //NEW
+      ot_sender->ComputeOutputs(); //NEW
+      alpha_share_ = alpha_shares[0]; //NEW
+    } else if (i == 0) { //NEW
       // Receiver
-      auto ot_receiver = ot_provider->RegisterReceiveAcOt<std::uint64_t>(1, 64, 1);
-      ot_receiver->SetChoices(BitVector<>(1, true));
-      ot_receiver->SendCorrections();
-      ot_receiver->ComputeOutputs();
-      alpha_share_ = ot_receiver->GetOutputs()[0];
+      auto ot_receiver = ot_provider->RegisterReceiveAcOt<std::uint64_t>(1, 64, 1); //NEW
+      ot_receiver->SetChoices(BitVector<>(1, true)); //NEW
+      ot_receiver->SendCorrections(); //NEW
+      ot_receiver->ComputeOutputs(); //NEW
+      alpha_share_ = ot_receiver->GetOutputs()[0]; //NEW
     }
   }
 
-  if (my_id == 0) {
-    alpha_share_ = alpha_shares[0];
+  if (my_id == 0) { //NEW
+    alpha_share_ = alpha_shares[0]; //NEW
   }
 
-  if (logger_) {
-    logger_->LogDebug(fmt::format("Party {}: Global MAC key share α_i = {}", my_id, alpha_share_));
-  }
-}
+  if (logger_) { //NEW
+    logger_->LogDebug(fmt::format("Party {}: Global MAC key share α_i = {}", my_id, alpha_share_)); //NEW
+  } //NEW
+} //NEW
 
 
 

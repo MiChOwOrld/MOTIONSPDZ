@@ -359,19 +359,19 @@ class OtProviderFromOtExtension final : public OtProvider {
   [[nodiscard]] std::size_t GetNumOtsSender() const final { return sender_provider_.GetNumOts(); }
 
 
-    template <typename T>
-    std::unique_ptr<AcOtSender<T>> RegisterSendAcOt(std::size_t number_of_ots = 1,
-                                                    std::size_t bitlength = sizeof(T) * 8,
-                                                    std::size_t vector_size = 1) {
-      return dynamic_cast<OtProviderFromOtExtension*>(this)->RegisterSendAcOt<T>(number_of_ots, bitlength, vector_size);
+    template <typename T> //NEW
+    std::unique_ptr<AcOtSender<T>> RegisterSendAcOt(std::size_t number_of_ots = 1, //NEW
+                                                    std::size_t bitlength = sizeof(T) * 8, //NEW
+                                                    std::size_t vector_size = 1) { //NEW
+      return dynamic_cast<OtProviderFromOtExtension*>(this)->RegisterSendAcOt<T>(number_of_ots, bitlength, vector_size); //NEW
   }
 
-    template <typename T>
-    std::unique_ptr<AcOtReceiver<T>> RegisterReceiveAcOt(std::size_t number_of_ots = 1,
-                                                         std::size_t bitlength = sizeof(T) * 8,
-                                                         std::size_t vector_size = 1) {
-      return dynamic_cast<OtProviderFromOtExtension*>(this)->RegisterReceiveAcOt<T>(number_of_ots, bitlength, vector_size);
-  }
+    template <typename T> //NEW
+    std::unique_ptr<AcOtReceiver<T>> RegisterReceiveAcOt(std::size_t number_of_ots = 1, //NEW
+                                                         std::size_t bitlength = sizeof(T) * 8, //NEW
+                                                         std::size_t vector_size = 1) { //NEW
+      return dynamic_cast<OtProviderFromOtExtension*>(this)->RegisterReceiveAcOt<T>(number_of_ots, bitlength, vector_size); //NEW
+  }  //NEW
 
  private:
   OtExtensionData& data_;
