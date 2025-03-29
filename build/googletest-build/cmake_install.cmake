@@ -43,8 +43,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for each subdirectory.
-  include("/home/micho/CLionProjects/MOTIONSPDZ/build/googletest-build/googlemock/cmake_install.cmake")
-
+  # Include the install script for the subdirectory.
+  include("/home/micho/Documents/GitHub/MOTIONSPDZ/build/googletest-build/googlemock/cmake_install.cmake")
 endif()
 

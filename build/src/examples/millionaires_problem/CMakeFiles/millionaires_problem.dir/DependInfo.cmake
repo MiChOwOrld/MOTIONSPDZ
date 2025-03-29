@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/micho/CLionProjects/MOTIONSPDZ/src/examples/millionaires_problem/common/millionaires_problem.cpp" "src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/common/millionaires_problem.cpp.o" "gcc" "src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/common/millionaires_problem.cpp.o.d"
-  "/home/micho/CLionProjects/MOTIONSPDZ/src/examples/millionaires_problem/millionaires_problem_main.cpp" "src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/millionaires_problem_main.cpp.o" "gcc" "src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/millionaires_problem_main.cpp.o.d"
+  "/home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/millionaires_problem/common/millionaires_problem.cpp" "src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/common/millionaires_problem.cpp.o" "gcc" "src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/common/millionaires_problem.cpp.o.d"
+  "/home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/millionaires_problem/millionaires_problem_main.cpp" "src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/millionaires_problem_main.cpp.o" "gcc" "src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/millionaires_problem_main.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

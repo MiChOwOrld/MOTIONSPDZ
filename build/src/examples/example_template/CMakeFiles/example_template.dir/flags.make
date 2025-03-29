@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DBOOST_CONTAINER_DYN_LINK -DBOOST_CONTAINER_NO_LIB -DBOOST_JSON_DYN_LINK -DBOOST_JSON_NO_LIB -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_PROGRAM_OPTIONS_NO_LIB -DFMT_HEADER_ONLY
 
-CXX_INCLUDES = -I/home/micho/CLionProjects/MOTIONSPDZ/src/motioncore -I/home/micho/CLionProjects/MOTIONSPDZ/extern -I/home/micho/CLionProjects/MOTIONSPDZ/extern/fmt/include -I/home/micho/CLionProjects/MOTIONSPDZ/extern/flatbuffers/include
+CXX_INCLUDES = -I/home/micho/Documents/GitHub/MOTIONSPDZ/src/motioncore -I/home/micho/Documents/GitHub/MOTIONSPDZ/extern -I/home/micho/Documents/GitHub/MOTIONSPDZ/extern/fmt/include -I/home/micho/Documents/GitHub/MOTIONSPDZ/extern/flatbuffers/include
 
 CXX_FLAGS = -g -std=gnu++20
 

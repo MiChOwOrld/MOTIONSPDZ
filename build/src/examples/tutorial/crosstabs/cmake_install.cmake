@@ -1,4 +1,4 @@
-# Install script for directory: /home/micho/CLionProjects/MOTIONSPDZ/src/examples/tutorial/crosstabs
+# Install script for directory: /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/tutorial/crosstabs
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

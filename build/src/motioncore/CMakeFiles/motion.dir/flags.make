@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_CHRONO_DYN_LINK -DBOOST_CHRONO_NO_LIB -DBOOST_CONTAINER_DYN_LINK -DBOOST_CONTAINER_NO_LIB -DBOOST_CONTEXT_DYN_LINK -DBOOST_CONTEXT_NO_LIB -DBOOST_FIBER_DYN_LINK -DBOOST_FIBER_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_JSON_DYN_LINK -DBOOST_JSON_NO_LIB -DBOOST_LOG_DYN_LINK -DBOOST_LOG_NO_LIB -DBOOST_LOG_SETUP_DYN_LINK -DBOOST_LOG_SETUP_NO_LIB -DBOOST_REGEX_DYN_LINK -DBOOST_REGEX_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DBOOST_THREAD_DYN_LINK -DBOOST_THREAD_NO_LIB -DFMT_HEADER_ONLY
 
-CXX_INCLUDES = -I/home/micho/libraries/googletest/googletest/include -I/home/micho/libraries/googletest/googlemock/include -I/home/micho/CLionProjects/MOTIONSPDZ/src/motioncore -I/home/micho/CLionProjects/MOTIONSPDZ/extern -I/home/micho/CLionProjects/MOTIONSPDZ/extern/flatbuffers/include -isystem /home/micho/CLionProjects/MOTIONSPDZ/extern/fmt/include
+CXX_INCLUDES = -I/home/micho/libraries/googletest/googletest/include -I/home/micho/libraries/googletest/googlemock/include -I/home/micho/Documents/GitHub/MOTIONSPDZ/src/motioncore -I/home/micho/Documents/GitHub/MOTIONSPDZ/extern -I/home/micho/Documents/GitHub/MOTIONSPDZ/extern/flatbuffers/include -isystem /home/micho/Documents/GitHub/MOTIONSPDZ/extern/fmt/include
 
 CXX_FLAGS = -g -std=gnu++20 -fPIC -Wall -Wextra -pedantic -maes -msse2 -msse4.1 -msse4.2 -mpclmul -ffunction-sections -march=native -ffast-math -fopenmp
 

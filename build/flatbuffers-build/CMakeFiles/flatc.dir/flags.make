@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DFLATBUFFERS_LOCALE_INDEPENDENT=1
 
-CXX_INCLUDES = -I/home/micho/CLionProjects/MOTIONSPDZ/extern/flatbuffers/include -I/home/micho/CLionProjects/MOTIONSPDZ/extern/flatbuffers/grpc
+CXX_INCLUDES = -I/home/micho/Documents/GitHub/MOTIONSPDZ/extern/flatbuffers/include -I/home/micho/Documents/GitHub/MOTIONSPDZ/extern/flatbuffers/grpc
 
 CXX_FLAGS =  -Wall -pedantic -Wextra -Wno-stringop-overflow -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -g -std=gnu++17 -Wold-style-cast
 

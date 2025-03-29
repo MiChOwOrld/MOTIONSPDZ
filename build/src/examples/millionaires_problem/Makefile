@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/micho/CLionProjects/MOTIONSPDZ
+CMAKE_SOURCE_DIR = /home/micho/Documents/GitHub/MOTIONSPDZ
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/micho/CLionProjects/MOTIONSPDZ/build
+CMAKE_BINARY_DIR = /home/micho/Documents/GitHub/MOTIONSPDZ/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/millionaires_problem//CMakeFiles/progress.marks
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/millionaires_problem/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles 0
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/millionaires_problem//CMakeFiles/progress.marks
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/millionaires_problem/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/millionaires_problem/clean
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/millionaires_problem/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/millionaires_problem/preinstall
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/millionaires_problem/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/millionaires_problem/preinstall
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/millionaires_problem/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/rule:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/rule
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/rule
 .PHONY : src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ millionaires_problem: src/examples/millionaires_problem/CMakeFiles/millionaires_
 
 # fast build rule for target.
 millionaires_problem/fast:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/build.make src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/build
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/build.make src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/build
 .PHONY : millionaires_problem/fast
 
 common/millionaires_problem.o: common/millionaires_problem.cpp.o
@@ -180,7 +180,7 @@ common/millionaires_problem.o: common/millionaires_problem.cpp.o
 
 # target to build an object file
 common/millionaires_problem.cpp.o:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/build.make src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/common/millionaires_problem.cpp.o
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/build.make src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/common/millionaires_problem.cpp.o
 .PHONY : common/millionaires_problem.cpp.o
 
 common/millionaires_problem.i: common/millionaires_problem.cpp.i
@@ -188,7 +188,7 @@ common/millionaires_problem.i: common/millionaires_problem.cpp.i
 
 # target to preprocess a source file
 common/millionaires_problem.cpp.i:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/build.make src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/common/millionaires_problem.cpp.i
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/build.make src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/common/millionaires_problem.cpp.i
 .PHONY : common/millionaires_problem.cpp.i
 
 common/millionaires_problem.s: common/millionaires_problem.cpp.s
@@ -196,7 +196,7 @@ common/millionaires_problem.s: common/millionaires_problem.cpp.s
 
 # target to generate assembly for a file
 common/millionaires_problem.cpp.s:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/build.make src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/common/millionaires_problem.cpp.s
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/build.make src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/common/millionaires_problem.cpp.s
 .PHONY : common/millionaires_problem.cpp.s
 
 millionaires_problem_main.o: millionaires_problem_main.cpp.o
@@ -204,7 +204,7 @@ millionaires_problem_main.o: millionaires_problem_main.cpp.o
 
 # target to build an object file
 millionaires_problem_main.cpp.o:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/build.make src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/millionaires_problem_main.cpp.o
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/build.make src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/millionaires_problem_main.cpp.o
 .PHONY : millionaires_problem_main.cpp.o
 
 millionaires_problem_main.i: millionaires_problem_main.cpp.i
@@ -212,7 +212,7 @@ millionaires_problem_main.i: millionaires_problem_main.cpp.i
 
 # target to preprocess a source file
 millionaires_problem_main.cpp.i:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/build.make src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/millionaires_problem_main.cpp.i
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/build.make src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/millionaires_problem_main.cpp.i
 .PHONY : millionaires_problem_main.cpp.i
 
 millionaires_problem_main.s: millionaires_problem_main.cpp.s
@@ -220,7 +220,7 @@ millionaires_problem_main.s: millionaires_problem_main.cpp.s
 
 # target to generate assembly for a file
 millionaires_problem_main.cpp.s:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/build.make src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/millionaires_problem_main.cpp.s
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/build.make src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/millionaires_problem_main.cpp.s
 .PHONY : millionaires_problem_main.cpp.s
 
 # Help Target
@@ -253,6 +253,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

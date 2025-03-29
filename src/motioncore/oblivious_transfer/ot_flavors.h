@@ -398,7 +398,7 @@ class AcOtSender : public BasicOtSender {
 
   [[nodiscard]] OtProtocol GetProtocol() const noexcept override { return OtProtocol::kAcOt; }
 
- private:
+private:
   // dimension of each sender-input/output
   const std::size_t vector_size_;
 

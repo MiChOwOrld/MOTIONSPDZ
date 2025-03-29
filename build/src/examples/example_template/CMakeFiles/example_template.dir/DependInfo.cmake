@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/micho/CLionProjects/MOTIONSPDZ/src/examples/example_template/common/example_template.cpp" "src/examples/example_template/CMakeFiles/example_template.dir/common/example_template.cpp.o" "gcc" "src/examples/example_template/CMakeFiles/example_template.dir/common/example_template.cpp.o.d"
-  "/home/micho/CLionProjects/MOTIONSPDZ/src/examples/example_template/example_template_main.cpp" "src/examples/example_template/CMakeFiles/example_template.dir/example_template_main.cpp.o" "gcc" "src/examples/example_template/CMakeFiles/example_template.dir/example_template_main.cpp.o.d"
+  "/home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/example_template/common/example_template.cpp" "src/examples/example_template/CMakeFiles/example_template.dir/common/example_template.cpp.o" "gcc" "src/examples/example_template/CMakeFiles/example_template.dir/common/example_template.cpp.o.d"
+  "/home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/example_template/example_template_main.cpp" "src/examples/example_template/CMakeFiles/example_template.dir/example_template_main.cpp.o" "gcc" "src/examples/example_template/CMakeFiles/example_template.dir/example_template_main.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/micho/CLionProjects/MOTIONSPDZ/src/examples/aes128/aes128_main.cpp" "src/examples/aes128/CMakeFiles/aes128.dir/aes128_main.cpp.o" "gcc" "src/examples/aes128/CMakeFiles/aes128.dir/aes128_main.cpp.o.d"
-  "/home/micho/CLionProjects/MOTIONSPDZ/src/examples/aes128/common/aes128.cpp" "src/examples/aes128/CMakeFiles/aes128.dir/common/aes128.cpp.o" "gcc" "src/examples/aes128/CMakeFiles/aes128.dir/common/aes128.cpp.o.d"
+  "/home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/aes128/aes128_main.cpp" "src/examples/aes128/CMakeFiles/aes128.dir/aes128_main.cpp.o" "gcc" "src/examples/aes128/CMakeFiles/aes128.dir/aes128_main.cpp.o.d"
+  "/home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/aes128/common/aes128.cpp" "src/examples/aes128/CMakeFiles/aes128.dir/common/aes128.cpp.o" "gcc" "src/examples/aes128/CMakeFiles/aes128.dir/common/aes128.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

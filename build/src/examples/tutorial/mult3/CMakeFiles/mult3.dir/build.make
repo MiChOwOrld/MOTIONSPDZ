@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/micho/CLionProjects/MOTIONSPDZ
+CMAKE_SOURCE_DIR = /home/micho/Documents/GitHub/MOTIONSPDZ
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/micho/CLionProjects/MOTIONSPDZ/build
+CMAKE_BINARY_DIR = /home/micho/Documents/GitHub/MOTIONSPDZ/build
 
 # Include any dependencies generated for this target.
 include src/examples/tutorial/mult3/CMakeFiles/mult3.dir/depend.make
@@ -70,32 +70,32 @@ include src/examples/tutorial/mult3/CMakeFiles/mult3.dir/progress.make
 include src/examples/tutorial/mult3/CMakeFiles/mult3.dir/flags.make
 
 src/examples/tutorial/mult3/CMakeFiles/mult3.dir/mult3_main.cpp.o: src/examples/tutorial/mult3/CMakeFiles/mult3.dir/flags.make
-src/examples/tutorial/mult3/CMakeFiles/mult3.dir/mult3_main.cpp.o: /home/micho/CLionProjects/MOTIONSPDZ/src/examples/tutorial/mult3/mult3_main.cpp
+src/examples/tutorial/mult3/CMakeFiles/mult3.dir/mult3_main.cpp.o: /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/tutorial/mult3/mult3_main.cpp
 src/examples/tutorial/mult3/CMakeFiles/mult3.dir/mult3_main.cpp.o: src/examples/tutorial/mult3/CMakeFiles/mult3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/examples/tutorial/mult3/CMakeFiles/mult3.dir/mult3_main.cpp.o"
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/tutorial/mult3 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/examples/tutorial/mult3/CMakeFiles/mult3.dir/mult3_main.cpp.o -MF CMakeFiles/mult3.dir/mult3_main.cpp.o.d -o CMakeFiles/mult3.dir/mult3_main.cpp.o -c /home/micho/CLionProjects/MOTIONSPDZ/src/examples/tutorial/mult3/mult3_main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/examples/tutorial/mult3/CMakeFiles/mult3.dir/mult3_main.cpp.o"
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/tutorial/mult3 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/examples/tutorial/mult3/CMakeFiles/mult3.dir/mult3_main.cpp.o -MF CMakeFiles/mult3.dir/mult3_main.cpp.o.d -o CMakeFiles/mult3.dir/mult3_main.cpp.o -c /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/tutorial/mult3/mult3_main.cpp
 
 src/examples/tutorial/mult3/CMakeFiles/mult3.dir/mult3_main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mult3.dir/mult3_main.cpp.i"
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/tutorial/mult3 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/micho/CLionProjects/MOTIONSPDZ/src/examples/tutorial/mult3/mult3_main.cpp > CMakeFiles/mult3.dir/mult3_main.cpp.i
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/tutorial/mult3 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/tutorial/mult3/mult3_main.cpp > CMakeFiles/mult3.dir/mult3_main.cpp.i
 
 src/examples/tutorial/mult3/CMakeFiles/mult3.dir/mult3_main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mult3.dir/mult3_main.cpp.s"
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/tutorial/mult3 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/micho/CLionProjects/MOTIONSPDZ/src/examples/tutorial/mult3/mult3_main.cpp -o CMakeFiles/mult3.dir/mult3_main.cpp.s
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/tutorial/mult3 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/tutorial/mult3/mult3_main.cpp -o CMakeFiles/mult3.dir/mult3_main.cpp.s
 
 src/examples/tutorial/mult3/CMakeFiles/mult3.dir/common/mult3.cpp.o: src/examples/tutorial/mult3/CMakeFiles/mult3.dir/flags.make
-src/examples/tutorial/mult3/CMakeFiles/mult3.dir/common/mult3.cpp.o: /home/micho/CLionProjects/MOTIONSPDZ/src/examples/tutorial/mult3/common/mult3.cpp
+src/examples/tutorial/mult3/CMakeFiles/mult3.dir/common/mult3.cpp.o: /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/tutorial/mult3/common/mult3.cpp
 src/examples/tutorial/mult3/CMakeFiles/mult3.dir/common/mult3.cpp.o: src/examples/tutorial/mult3/CMakeFiles/mult3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/examples/tutorial/mult3/CMakeFiles/mult3.dir/common/mult3.cpp.o"
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/tutorial/mult3 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/examples/tutorial/mult3/CMakeFiles/mult3.dir/common/mult3.cpp.o -MF CMakeFiles/mult3.dir/common/mult3.cpp.o.d -o CMakeFiles/mult3.dir/common/mult3.cpp.o -c /home/micho/CLionProjects/MOTIONSPDZ/src/examples/tutorial/mult3/common/mult3.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/examples/tutorial/mult3/CMakeFiles/mult3.dir/common/mult3.cpp.o"
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/tutorial/mult3 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/examples/tutorial/mult3/CMakeFiles/mult3.dir/common/mult3.cpp.o -MF CMakeFiles/mult3.dir/common/mult3.cpp.o.d -o CMakeFiles/mult3.dir/common/mult3.cpp.o -c /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/tutorial/mult3/common/mult3.cpp
 
 src/examples/tutorial/mult3/CMakeFiles/mult3.dir/common/mult3.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mult3.dir/common/mult3.cpp.i"
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/tutorial/mult3 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/micho/CLionProjects/MOTIONSPDZ/src/examples/tutorial/mult3/common/mult3.cpp > CMakeFiles/mult3.dir/common/mult3.cpp.i
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/tutorial/mult3 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/tutorial/mult3/common/mult3.cpp > CMakeFiles/mult3.dir/common/mult3.cpp.i
 
 src/examples/tutorial/mult3/CMakeFiles/mult3.dir/common/mult3.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mult3.dir/common/mult3.cpp.s"
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/tutorial/mult3 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/micho/CLionProjects/MOTIONSPDZ/src/examples/tutorial/mult3/common/mult3.cpp -o CMakeFiles/mult3.dir/common/mult3.cpp.s
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/tutorial/mult3 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/tutorial/mult3/common/mult3.cpp -o CMakeFiles/mult3.dir/common/mult3.cpp.s
 
 # Object files for target mult3
 mult3_OBJECTS = \
@@ -127,18 +127,18 @@ bin/mult3: /usr/lib/x86_64-linux-gnu/libcrypto.so
 bin/mult3: /usr/lib/x86_64-linux-gnu/libboost_json.so.1.83.0
 bin/mult3: /usr/lib/x86_64-linux-gnu/libboost_container.so.1.83.0
 bin/mult3: src/examples/tutorial/mult3/CMakeFiles/mult3.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ../../../../bin/mult3"
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/tutorial/mult3 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mult3.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ../../../../bin/mult3"
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/tutorial/mult3 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mult3.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/examples/tutorial/mult3/CMakeFiles/mult3.dir/build: bin/mult3
 .PHONY : src/examples/tutorial/mult3/CMakeFiles/mult3.dir/build
 
 src/examples/tutorial/mult3/CMakeFiles/mult3.dir/clean:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/tutorial/mult3 && $(CMAKE_COMMAND) -P CMakeFiles/mult3.dir/cmake_clean.cmake
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/tutorial/mult3 && $(CMAKE_COMMAND) -P CMakeFiles/mult3.dir/cmake_clean.cmake
 .PHONY : src/examples/tutorial/mult3/CMakeFiles/mult3.dir/clean
 
 src/examples/tutorial/mult3/CMakeFiles/mult3.dir/depend:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/micho/CLionProjects/MOTIONSPDZ /home/micho/CLionProjects/MOTIONSPDZ/src/examples/tutorial/mult3 /home/micho/CLionProjects/MOTIONSPDZ/build /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/tutorial/mult3 /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/tutorial/mult3/CMakeFiles/mult3.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/micho/Documents/GitHub/MOTIONSPDZ /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/tutorial/mult3 /home/micho/Documents/GitHub/MOTIONSPDZ/build /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/tutorial/mult3 /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/tutorial/mult3/CMakeFiles/mult3.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : src/examples/tutorial/mult3/CMakeFiles/mult3.dir/depend
 

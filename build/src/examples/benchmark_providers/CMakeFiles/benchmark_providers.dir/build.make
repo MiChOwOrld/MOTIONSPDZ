@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/micho/CLionProjects/MOTIONSPDZ
+CMAKE_SOURCE_DIR = /home/micho/Documents/GitHub/MOTIONSPDZ
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/micho/CLionProjects/MOTIONSPDZ/build
+CMAKE_BINARY_DIR = /home/micho/Documents/GitHub/MOTIONSPDZ/build
 
 # Include any dependencies generated for this target.
 include src/examples/benchmark_providers/CMakeFiles/benchmark_providers.dir/depend.make
@@ -70,32 +70,32 @@ include src/examples/benchmark_providers/CMakeFiles/benchmark_providers.dir/prog
 include src/examples/benchmark_providers/CMakeFiles/benchmark_providers.dir/flags.make
 
 src/examples/benchmark_providers/CMakeFiles/benchmark_providers.dir/benchmark_providers_main.cpp.o: src/examples/benchmark_providers/CMakeFiles/benchmark_providers.dir/flags.make
-src/examples/benchmark_providers/CMakeFiles/benchmark_providers.dir/benchmark_providers_main.cpp.o: /home/micho/CLionProjects/MOTIONSPDZ/src/examples/benchmark_providers/benchmark_providers_main.cpp
+src/examples/benchmark_providers/CMakeFiles/benchmark_providers.dir/benchmark_providers_main.cpp.o: /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/benchmark_providers/benchmark_providers_main.cpp
 src/examples/benchmark_providers/CMakeFiles/benchmark_providers.dir/benchmark_providers_main.cpp.o: src/examples/benchmark_providers/CMakeFiles/benchmark_providers.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/examples/benchmark_providers/CMakeFiles/benchmark_providers.dir/benchmark_providers_main.cpp.o"
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/benchmark_providers && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/examples/benchmark_providers/CMakeFiles/benchmark_providers.dir/benchmark_providers_main.cpp.o -MF CMakeFiles/benchmark_providers.dir/benchmark_providers_main.cpp.o.d -o CMakeFiles/benchmark_providers.dir/benchmark_providers_main.cpp.o -c /home/micho/CLionProjects/MOTIONSPDZ/src/examples/benchmark_providers/benchmark_providers_main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/examples/benchmark_providers/CMakeFiles/benchmark_providers.dir/benchmark_providers_main.cpp.o"
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/benchmark_providers && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/examples/benchmark_providers/CMakeFiles/benchmark_providers.dir/benchmark_providers_main.cpp.o -MF CMakeFiles/benchmark_providers.dir/benchmark_providers_main.cpp.o.d -o CMakeFiles/benchmark_providers.dir/benchmark_providers_main.cpp.o -c /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/benchmark_providers/benchmark_providers_main.cpp
 
 src/examples/benchmark_providers/CMakeFiles/benchmark_providers.dir/benchmark_providers_main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/benchmark_providers.dir/benchmark_providers_main.cpp.i"
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/benchmark_providers && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/micho/CLionProjects/MOTIONSPDZ/src/examples/benchmark_providers/benchmark_providers_main.cpp > CMakeFiles/benchmark_providers.dir/benchmark_providers_main.cpp.i
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/benchmark_providers && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/benchmark_providers/benchmark_providers_main.cpp > CMakeFiles/benchmark_providers.dir/benchmark_providers_main.cpp.i
 
 src/examples/benchmark_providers/CMakeFiles/benchmark_providers.dir/benchmark_providers_main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/benchmark_providers.dir/benchmark_providers_main.cpp.s"
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/benchmark_providers && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/micho/CLionProjects/MOTIONSPDZ/src/examples/benchmark_providers/benchmark_providers_main.cpp -o CMakeFiles/benchmark_providers.dir/benchmark_providers_main.cpp.s
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/benchmark_providers && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/benchmark_providers/benchmark_providers_main.cpp -o CMakeFiles/benchmark_providers.dir/benchmark_providers_main.cpp.s
 
 src/examples/benchmark_providers/CMakeFiles/benchmark_providers.dir/common/benchmark_providers.cpp.o: src/examples/benchmark_providers/CMakeFiles/benchmark_providers.dir/flags.make
-src/examples/benchmark_providers/CMakeFiles/benchmark_providers.dir/common/benchmark_providers.cpp.o: /home/micho/CLionProjects/MOTIONSPDZ/src/examples/benchmark_providers/common/benchmark_providers.cpp
+src/examples/benchmark_providers/CMakeFiles/benchmark_providers.dir/common/benchmark_providers.cpp.o: /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/benchmark_providers/common/benchmark_providers.cpp
 src/examples/benchmark_providers/CMakeFiles/benchmark_providers.dir/common/benchmark_providers.cpp.o: src/examples/benchmark_providers/CMakeFiles/benchmark_providers.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/examples/benchmark_providers/CMakeFiles/benchmark_providers.dir/common/benchmark_providers.cpp.o"
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/benchmark_providers && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/examples/benchmark_providers/CMakeFiles/benchmark_providers.dir/common/benchmark_providers.cpp.o -MF CMakeFiles/benchmark_providers.dir/common/benchmark_providers.cpp.o.d -o CMakeFiles/benchmark_providers.dir/common/benchmark_providers.cpp.o -c /home/micho/CLionProjects/MOTIONSPDZ/src/examples/benchmark_providers/common/benchmark_providers.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/examples/benchmark_providers/CMakeFiles/benchmark_providers.dir/common/benchmark_providers.cpp.o"
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/benchmark_providers && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/examples/benchmark_providers/CMakeFiles/benchmark_providers.dir/common/benchmark_providers.cpp.o -MF CMakeFiles/benchmark_providers.dir/common/benchmark_providers.cpp.o.d -o CMakeFiles/benchmark_providers.dir/common/benchmark_providers.cpp.o -c /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/benchmark_providers/common/benchmark_providers.cpp
 
 src/examples/benchmark_providers/CMakeFiles/benchmark_providers.dir/common/benchmark_providers.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/benchmark_providers.dir/common/benchmark_providers.cpp.i"
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/benchmark_providers && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/micho/CLionProjects/MOTIONSPDZ/src/examples/benchmark_providers/common/benchmark_providers.cpp > CMakeFiles/benchmark_providers.dir/common/benchmark_providers.cpp.i
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/benchmark_providers && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/benchmark_providers/common/benchmark_providers.cpp > CMakeFiles/benchmark_providers.dir/common/benchmark_providers.cpp.i
 
 src/examples/benchmark_providers/CMakeFiles/benchmark_providers.dir/common/benchmark_providers.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/benchmark_providers.dir/common/benchmark_providers.cpp.s"
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/benchmark_providers && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/micho/CLionProjects/MOTIONSPDZ/src/examples/benchmark_providers/common/benchmark_providers.cpp -o CMakeFiles/benchmark_providers.dir/common/benchmark_providers.cpp.s
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/benchmark_providers && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/benchmark_providers/common/benchmark_providers.cpp -o CMakeFiles/benchmark_providers.dir/common/benchmark_providers.cpp.s
 
 # Object files for target benchmark_providers
 benchmark_providers_OBJECTS = \
@@ -127,18 +127,18 @@ bin/benchmark_providers: /usr/lib/x86_64-linux-gnu/libcrypto.so
 bin/benchmark_providers: /usr/lib/x86_64-linux-gnu/libboost_json.so.1.83.0
 bin/benchmark_providers: /usr/lib/x86_64-linux-gnu/libboost_container.so.1.83.0
 bin/benchmark_providers: src/examples/benchmark_providers/CMakeFiles/benchmark_providers.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ../../../bin/benchmark_providers"
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/benchmark_providers && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/benchmark_providers.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ../../../bin/benchmark_providers"
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/benchmark_providers && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/benchmark_providers.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/examples/benchmark_providers/CMakeFiles/benchmark_providers.dir/build: bin/benchmark_providers
 .PHONY : src/examples/benchmark_providers/CMakeFiles/benchmark_providers.dir/build
 
 src/examples/benchmark_providers/CMakeFiles/benchmark_providers.dir/clean:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/benchmark_providers && $(CMAKE_COMMAND) -P CMakeFiles/benchmark_providers.dir/cmake_clean.cmake
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/benchmark_providers && $(CMAKE_COMMAND) -P CMakeFiles/benchmark_providers.dir/cmake_clean.cmake
 .PHONY : src/examples/benchmark_providers/CMakeFiles/benchmark_providers.dir/clean
 
 src/examples/benchmark_providers/CMakeFiles/benchmark_providers.dir/depend:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/micho/CLionProjects/MOTIONSPDZ /home/micho/CLionProjects/MOTIONSPDZ/src/examples/benchmark_providers /home/micho/CLionProjects/MOTIONSPDZ/build /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/benchmark_providers /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/benchmark_providers/CMakeFiles/benchmark_providers.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/micho/Documents/GitHub/MOTIONSPDZ /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/benchmark_providers /home/micho/Documents/GitHub/MOTIONSPDZ/build /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/benchmark_providers /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/benchmark_providers/CMakeFiles/benchmark_providers.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : src/examples/benchmark_providers/CMakeFiles/benchmark_providers.dir/depend
 

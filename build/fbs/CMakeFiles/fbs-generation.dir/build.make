@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/micho/CLionProjects/MOTIONSPDZ
+CMAKE_SOURCE_DIR = /home/micho/Documents/GitHub/MOTIONSPDZ
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/micho/CLionProjects/MOTIONSPDZ/build
+CMAKE_BINARY_DIR = /home/micho/Documents/GitHub/MOTIONSPDZ/build
 
 # Utility rule file for fbs-generation.
 
@@ -67,26 +67,26 @@ include fbs/CMakeFiles/fbs-generation.dir/compiler_depend.make
 include fbs/CMakeFiles/fbs-generation.dir/progress.make
 
 fbs/CMakeFiles/fbs-generation: bin/flatc
-fbs/CMakeFiles/fbs-generation: /home/micho/CLionProjects/MOTIONSPDZ/src/motioncore/communication/fbs_headers/garbled_circuit_message_generated.h
-fbs/CMakeFiles/fbs-generation: /home/micho/CLionProjects/MOTIONSPDZ/src/motioncore/communication/fbs_headers/hello_message_generated.h
-fbs/CMakeFiles/fbs-generation: /home/micho/CLionProjects/MOTIONSPDZ/src/motioncore/communication/fbs_headers/message_generated.h
+fbs/CMakeFiles/fbs-generation: /home/micho/Documents/GitHub/MOTIONSPDZ/src/motioncore/communication/fbs_headers/garbled_circuit_message_generated.h
+fbs/CMakeFiles/fbs-generation: /home/micho/Documents/GitHub/MOTIONSPDZ/src/motioncore/communication/fbs_headers/hello_message_generated.h
+fbs/CMakeFiles/fbs-generation: /home/micho/Documents/GitHub/MOTIONSPDZ/src/motioncore/communication/fbs_headers/message_generated.h
 
-/home/micho/CLionProjects/MOTIONSPDZ/src/motioncore/communication/fbs_headers/garbled_circuit_message_generated.h: /home/micho/CLionProjects/MOTIONSPDZ/fbs/garbled_circuit_message.fbs
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating /home/micho/CLionProjects/MOTIONSPDZ/src/motioncore/communication/fbs_headers/garbled_circuit_message_generated.h"
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build/fbs && ../bin/flatc --cpp --scoped-enums -o /home/micho/CLionProjects/MOTIONSPDZ/src/motioncore/communication/fbs_headers /home/micho/CLionProjects/MOTIONSPDZ/fbs/garbled_circuit_message.fbs
+/home/micho/Documents/GitHub/MOTIONSPDZ/src/motioncore/communication/fbs_headers/garbled_circuit_message_generated.h: /home/micho/Documents/GitHub/MOTIONSPDZ/fbs/garbled_circuit_message.fbs
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating /home/micho/Documents/GitHub/MOTIONSPDZ/src/motioncore/communication/fbs_headers/garbled_circuit_message_generated.h"
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build/fbs && ../bin/flatc --cpp --scoped-enums -o /home/micho/Documents/GitHub/MOTIONSPDZ/src/motioncore/communication/fbs_headers /home/micho/Documents/GitHub/MOTIONSPDZ/fbs/garbled_circuit_message.fbs
 
-/home/micho/CLionProjects/MOTIONSPDZ/src/motioncore/communication/fbs_headers/hello_message_generated.h: /home/micho/CLionProjects/MOTIONSPDZ/fbs/hello_message.fbs
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating /home/micho/CLionProjects/MOTIONSPDZ/src/motioncore/communication/fbs_headers/hello_message_generated.h"
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build/fbs && ../bin/flatc --cpp --scoped-enums -o /home/micho/CLionProjects/MOTIONSPDZ/src/motioncore/communication/fbs_headers /home/micho/CLionProjects/MOTIONSPDZ/fbs/hello_message.fbs
+/home/micho/Documents/GitHub/MOTIONSPDZ/src/motioncore/communication/fbs_headers/hello_message_generated.h: /home/micho/Documents/GitHub/MOTIONSPDZ/fbs/hello_message.fbs
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating /home/micho/Documents/GitHub/MOTIONSPDZ/src/motioncore/communication/fbs_headers/hello_message_generated.h"
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build/fbs && ../bin/flatc --cpp --scoped-enums -o /home/micho/Documents/GitHub/MOTIONSPDZ/src/motioncore/communication/fbs_headers /home/micho/Documents/GitHub/MOTIONSPDZ/fbs/hello_message.fbs
 
-/home/micho/CLionProjects/MOTIONSPDZ/src/motioncore/communication/fbs_headers/message_generated.h: /home/micho/CLionProjects/MOTIONSPDZ/fbs/message.fbs
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating /home/micho/CLionProjects/MOTIONSPDZ/src/motioncore/communication/fbs_headers/message_generated.h"
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build/fbs && ../bin/flatc --cpp --scoped-enums -o /home/micho/CLionProjects/MOTIONSPDZ/src/motioncore/communication/fbs_headers /home/micho/CLionProjects/MOTIONSPDZ/fbs/message.fbs
+/home/micho/Documents/GitHub/MOTIONSPDZ/src/motioncore/communication/fbs_headers/message_generated.h: /home/micho/Documents/GitHub/MOTIONSPDZ/fbs/message.fbs
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating /home/micho/Documents/GitHub/MOTIONSPDZ/src/motioncore/communication/fbs_headers/message_generated.h"
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build/fbs && ../bin/flatc --cpp --scoped-enums -o /home/micho/Documents/GitHub/MOTIONSPDZ/src/motioncore/communication/fbs_headers /home/micho/Documents/GitHub/MOTIONSPDZ/fbs/message.fbs
 
 fbs-generation: fbs/CMakeFiles/fbs-generation
-fbs-generation: /home/micho/CLionProjects/MOTIONSPDZ/src/motioncore/communication/fbs_headers/garbled_circuit_message_generated.h
-fbs-generation: /home/micho/CLionProjects/MOTIONSPDZ/src/motioncore/communication/fbs_headers/hello_message_generated.h
-fbs-generation: /home/micho/CLionProjects/MOTIONSPDZ/src/motioncore/communication/fbs_headers/message_generated.h
+fbs-generation: /home/micho/Documents/GitHub/MOTIONSPDZ/src/motioncore/communication/fbs_headers/garbled_circuit_message_generated.h
+fbs-generation: /home/micho/Documents/GitHub/MOTIONSPDZ/src/motioncore/communication/fbs_headers/hello_message_generated.h
+fbs-generation: /home/micho/Documents/GitHub/MOTIONSPDZ/src/motioncore/communication/fbs_headers/message_generated.h
 fbs-generation: fbs/CMakeFiles/fbs-generation.dir/build.make
 .PHONY : fbs-generation
 
@@ -95,10 +95,10 @@ fbs/CMakeFiles/fbs-generation.dir/build: fbs-generation
 .PHONY : fbs/CMakeFiles/fbs-generation.dir/build
 
 fbs/CMakeFiles/fbs-generation.dir/clean:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build/fbs && $(CMAKE_COMMAND) -P CMakeFiles/fbs-generation.dir/cmake_clean.cmake
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build/fbs && $(CMAKE_COMMAND) -P CMakeFiles/fbs-generation.dir/cmake_clean.cmake
 .PHONY : fbs/CMakeFiles/fbs-generation.dir/clean
 
 fbs/CMakeFiles/fbs-generation.dir/depend:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/micho/CLionProjects/MOTIONSPDZ /home/micho/CLionProjects/MOTIONSPDZ/fbs /home/micho/CLionProjects/MOTIONSPDZ/build /home/micho/CLionProjects/MOTIONSPDZ/build/fbs /home/micho/CLionProjects/MOTIONSPDZ/build/fbs/CMakeFiles/fbs-generation.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/micho/Documents/GitHub/MOTIONSPDZ /home/micho/Documents/GitHub/MOTIONSPDZ/fbs /home/micho/Documents/GitHub/MOTIONSPDZ/build /home/micho/Documents/GitHub/MOTIONSPDZ/build/fbs /home/micho/Documents/GitHub/MOTIONSPDZ/build/fbs/CMakeFiles/fbs-generation.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : fbs/CMakeFiles/fbs-generation.dir/depend
 

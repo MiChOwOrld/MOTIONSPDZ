@@ -1,4 +1,4 @@
-# Install script for directory: /home/micho/CLionProjects/MOTIONSPDZ/src/examples/millionaires_problem
+# Install script for directory: /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/millionaires_problem
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

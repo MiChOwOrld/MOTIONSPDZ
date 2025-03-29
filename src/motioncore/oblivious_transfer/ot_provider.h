@@ -31,6 +31,7 @@
 
 #include <flatbuffers/flatbuffers.h>
 #include "utility/fiber_waitable.h"
+#include "ot_flavors.h"
 
 namespace encrypto::motion::communication {
 
@@ -356,6 +357,21 @@ class OtProviderFromOtExtension final : public OtProvider {
   }
 
   [[nodiscard]] std::size_t GetNumOtsSender() const final { return sender_provider_.GetNumOts(); }
+
+
+    template <typename T>
+    std::unique_ptr<AcOtSender<T>> RegisterSendAcOt(std::size_t number_of_ots = 1,
+                                                    std::size_t bitlength = sizeof(T) * 8,
+                                                    std::size_t vector_size = 1) {
+      return dynamic_cast<OtProviderFromOtExtension*>(this)->RegisterSendAcOt<T>(number_of_ots, bitlength, vector_size);
+  }
+
+    template <typename T>
+    std::unique_ptr<AcOtReceiver<T>> RegisterReceiveAcOt(std::size_t number_of_ots = 1,
+                                                         std::size_t bitlength = sizeof(T) * 8,
+                                                         std::size_t vector_size = 1) {
+      return dynamic_cast<OtProviderFromOtExtension*>(this)->RegisterReceiveAcOt<T>(number_of_ots, bitlength, vector_size);
+  }
 
  private:
   OtExtensionData& data_;

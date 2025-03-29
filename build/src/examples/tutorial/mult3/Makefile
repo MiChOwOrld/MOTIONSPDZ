@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/micho/CLionProjects/MOTIONSPDZ
+CMAKE_SOURCE_DIR = /home/micho/Documents/GitHub/MOTIONSPDZ
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/micho/CLionProjects/MOTIONSPDZ/build
+CMAKE_BINARY_DIR = /home/micho/Documents/GitHub/MOTIONSPDZ/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/tutorial/mult3//CMakeFiles/progress.marks
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/tutorial/mult3/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles 0
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/tutorial/mult3//CMakeFiles/progress.marks
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/tutorial/mult3/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/tutorial/mult3/clean
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/tutorial/mult3/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/tutorial/mult3/preinstall
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/tutorial/mult3/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/tutorial/mult3/preinstall
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/tutorial/mult3/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/examples/tutorial/mult3/CMakeFiles/mult3.dir/rule:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/tutorial/mult3/CMakeFiles/mult3.dir/rule
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/tutorial/mult3/CMakeFiles/mult3.dir/rule
 .PHONY : src/examples/tutorial/mult3/CMakeFiles/mult3.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ mult3: src/examples/tutorial/mult3/CMakeFiles/mult3.dir/rule
 
 # fast build rule for target.
 mult3/fast:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/tutorial/mult3/CMakeFiles/mult3.dir/build.make src/examples/tutorial/mult3/CMakeFiles/mult3.dir/build
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/tutorial/mult3/CMakeFiles/mult3.dir/build.make src/examples/tutorial/mult3/CMakeFiles/mult3.dir/build
 .PHONY : mult3/fast
 
 common/mult3.o: common/mult3.cpp.o
@@ -180,7 +180,7 @@ common/mult3.o: common/mult3.cpp.o
 
 # target to build an object file
 common/mult3.cpp.o:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/tutorial/mult3/CMakeFiles/mult3.dir/build.make src/examples/tutorial/mult3/CMakeFiles/mult3.dir/common/mult3.cpp.o
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/tutorial/mult3/CMakeFiles/mult3.dir/build.make src/examples/tutorial/mult3/CMakeFiles/mult3.dir/common/mult3.cpp.o
 .PHONY : common/mult3.cpp.o
 
 common/mult3.i: common/mult3.cpp.i
@@ -188,7 +188,7 @@ common/mult3.i: common/mult3.cpp.i
 
 # target to preprocess a source file
 common/mult3.cpp.i:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/tutorial/mult3/CMakeFiles/mult3.dir/build.make src/examples/tutorial/mult3/CMakeFiles/mult3.dir/common/mult3.cpp.i
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/tutorial/mult3/CMakeFiles/mult3.dir/build.make src/examples/tutorial/mult3/CMakeFiles/mult3.dir/common/mult3.cpp.i
 .PHONY : common/mult3.cpp.i
 
 common/mult3.s: common/mult3.cpp.s
@@ -196,7 +196,7 @@ common/mult3.s: common/mult3.cpp.s
 
 # target to generate assembly for a file
 common/mult3.cpp.s:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/tutorial/mult3/CMakeFiles/mult3.dir/build.make src/examples/tutorial/mult3/CMakeFiles/mult3.dir/common/mult3.cpp.s
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/tutorial/mult3/CMakeFiles/mult3.dir/build.make src/examples/tutorial/mult3/CMakeFiles/mult3.dir/common/mult3.cpp.s
 .PHONY : common/mult3.cpp.s
 
 mult3_main.o: mult3_main.cpp.o
@@ -204,7 +204,7 @@ mult3_main.o: mult3_main.cpp.o
 
 # target to build an object file
 mult3_main.cpp.o:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/tutorial/mult3/CMakeFiles/mult3.dir/build.make src/examples/tutorial/mult3/CMakeFiles/mult3.dir/mult3_main.cpp.o
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/tutorial/mult3/CMakeFiles/mult3.dir/build.make src/examples/tutorial/mult3/CMakeFiles/mult3.dir/mult3_main.cpp.o
 .PHONY : mult3_main.cpp.o
 
 mult3_main.i: mult3_main.cpp.i
@@ -212,7 +212,7 @@ mult3_main.i: mult3_main.cpp.i
 
 # target to preprocess a source file
 mult3_main.cpp.i:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/tutorial/mult3/CMakeFiles/mult3.dir/build.make src/examples/tutorial/mult3/CMakeFiles/mult3.dir/mult3_main.cpp.i
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/tutorial/mult3/CMakeFiles/mult3.dir/build.make src/examples/tutorial/mult3/CMakeFiles/mult3.dir/mult3_main.cpp.i
 .PHONY : mult3_main.cpp.i
 
 mult3_main.s: mult3_main.cpp.s
@@ -220,7 +220,7 @@ mult3_main.s: mult3_main.cpp.s
 
 # target to generate assembly for a file
 mult3_main.cpp.s:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/tutorial/mult3/CMakeFiles/mult3.dir/build.make src/examples/tutorial/mult3/CMakeFiles/mult3.dir/mult3_main.cpp.s
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/tutorial/mult3/CMakeFiles/mult3.dir/build.make src/examples/tutorial/mult3/CMakeFiles/mult3.dir/mult3_main.cpp.s
 .PHONY : mult3_main.cpp.s
 
 # Help Target
@@ -253,6 +253,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

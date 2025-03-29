@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/micho/CLionProjects/MOTIONSPDZ/src/examples/sha256/common/sha256.cpp" "src/examples/sha256/CMakeFiles/sha256.dir/common/sha256.cpp.o" "gcc" "src/examples/sha256/CMakeFiles/sha256.dir/common/sha256.cpp.o.d"
-  "/home/micho/CLionProjects/MOTIONSPDZ/src/examples/sha256/sha256_main.cpp" "src/examples/sha256/CMakeFiles/sha256.dir/sha256_main.cpp.o" "gcc" "src/examples/sha256/CMakeFiles/sha256.dir/sha256_main.cpp.o.d"
+  "/home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/sha256/common/sha256.cpp" "src/examples/sha256/CMakeFiles/sha256.dir/common/sha256.cpp.o" "gcc" "src/examples/sha256/CMakeFiles/sha256.dir/common/sha256.cpp.o.d"
+  "/home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/sha256/sha256_main.cpp" "src/examples/sha256/CMakeFiles/sha256.dir/sha256_main.cpp.o" "gcc" "src/examples/sha256/CMakeFiles/sha256.dir/sha256_main.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -1,4 +1,4 @@
-# Install script for directory: /home/micho/CLionProjects/MOTIONSPDZ/src/examples
+# Install script for directory: /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,16 +44,16 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/aes128/cmake_install.cmake")
-  include("/home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/benchmark_integers/cmake_install.cmake")
-  include("/home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/benchmark_primitive_operations/cmake_install.cmake")
-  include("/home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/benchmark_providers/cmake_install.cmake")
-  include("/home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/example_template/cmake_install.cmake")
-  include("/home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/sha256/cmake_install.cmake")
-  include("/home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/tutorial/crosstabs/cmake_install.cmake")
-  include("/home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/tutorial/innerproduct/cmake_install.cmake")
-  include("/home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/tutorial/mult3/cmake_install.cmake")
-  include("/home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/millionaires_problem/cmake_install.cmake")
+  include("/home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/aes128/cmake_install.cmake")
+  include("/home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/benchmark_integers/cmake_install.cmake")
+  include("/home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/benchmark_primitive_operations/cmake_install.cmake")
+  include("/home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/benchmark_providers/cmake_install.cmake")
+  include("/home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/example_template/cmake_install.cmake")
+  include("/home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/sha256/cmake_install.cmake")
+  include("/home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/tutorial/crosstabs/cmake_install.cmake")
+  include("/home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/tutorial/innerproduct/cmake_install.cmake")
+  include("/home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/tutorial/mult3/cmake_install.cmake")
+  include("/home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/millionaires_problem/cmake_install.cmake")
 
 endif()
 

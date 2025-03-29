@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/micho/CLionProjects/MOTIONSPDZ
+CMAKE_SOURCE_DIR = /home/micho/Documents/GitHub/MOTIONSPDZ
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/micho/CLionProjects/MOTIONSPDZ/build
+CMAKE_BINARY_DIR = /home/micho/Documents/GitHub/MOTIONSPDZ/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/sha256//CMakeFiles/progress.marks
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/sha256/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles 0
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/sha256//CMakeFiles/progress.marks
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/sha256/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/sha256/clean
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/sha256/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/sha256/preinstall
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/sha256/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/sha256/preinstall
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/sha256/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/examples/sha256/CMakeFiles/sha256.dir/rule:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/sha256/CMakeFiles/sha256.dir/rule
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/sha256/CMakeFiles/sha256.dir/rule
 .PHONY : src/examples/sha256/CMakeFiles/sha256.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ sha256: src/examples/sha256/CMakeFiles/sha256.dir/rule
 
 # fast build rule for target.
 sha256/fast:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/sha256/CMakeFiles/sha256.dir/build.make src/examples/sha256/CMakeFiles/sha256.dir/build
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/sha256/CMakeFiles/sha256.dir/build.make src/examples/sha256/CMakeFiles/sha256.dir/build
 .PHONY : sha256/fast
 
 common/sha256.o: common/sha256.cpp.o
@@ -180,7 +180,7 @@ common/sha256.o: common/sha256.cpp.o
 
 # target to build an object file
 common/sha256.cpp.o:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/sha256/CMakeFiles/sha256.dir/build.make src/examples/sha256/CMakeFiles/sha256.dir/common/sha256.cpp.o
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/sha256/CMakeFiles/sha256.dir/build.make src/examples/sha256/CMakeFiles/sha256.dir/common/sha256.cpp.o
 .PHONY : common/sha256.cpp.o
 
 common/sha256.i: common/sha256.cpp.i
@@ -188,7 +188,7 @@ common/sha256.i: common/sha256.cpp.i
 
 # target to preprocess a source file
 common/sha256.cpp.i:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/sha256/CMakeFiles/sha256.dir/build.make src/examples/sha256/CMakeFiles/sha256.dir/common/sha256.cpp.i
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/sha256/CMakeFiles/sha256.dir/build.make src/examples/sha256/CMakeFiles/sha256.dir/common/sha256.cpp.i
 .PHONY : common/sha256.cpp.i
 
 common/sha256.s: common/sha256.cpp.s
@@ -196,7 +196,7 @@ common/sha256.s: common/sha256.cpp.s
 
 # target to generate assembly for a file
 common/sha256.cpp.s:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/sha256/CMakeFiles/sha256.dir/build.make src/examples/sha256/CMakeFiles/sha256.dir/common/sha256.cpp.s
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/sha256/CMakeFiles/sha256.dir/build.make src/examples/sha256/CMakeFiles/sha256.dir/common/sha256.cpp.s
 .PHONY : common/sha256.cpp.s
 
 sha256_main.o: sha256_main.cpp.o
@@ -204,7 +204,7 @@ sha256_main.o: sha256_main.cpp.o
 
 # target to build an object file
 sha256_main.cpp.o:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/sha256/CMakeFiles/sha256.dir/build.make src/examples/sha256/CMakeFiles/sha256.dir/sha256_main.cpp.o
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/sha256/CMakeFiles/sha256.dir/build.make src/examples/sha256/CMakeFiles/sha256.dir/sha256_main.cpp.o
 .PHONY : sha256_main.cpp.o
 
 sha256_main.i: sha256_main.cpp.i
@@ -212,7 +212,7 @@ sha256_main.i: sha256_main.cpp.i
 
 # target to preprocess a source file
 sha256_main.cpp.i:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/sha256/CMakeFiles/sha256.dir/build.make src/examples/sha256/CMakeFiles/sha256.dir/sha256_main.cpp.i
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/sha256/CMakeFiles/sha256.dir/build.make src/examples/sha256/CMakeFiles/sha256.dir/sha256_main.cpp.i
 .PHONY : sha256_main.cpp.i
 
 sha256_main.s: sha256_main.cpp.s
@@ -220,7 +220,7 @@ sha256_main.s: sha256_main.cpp.s
 
 # target to generate assembly for a file
 sha256_main.cpp.s:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/sha256/CMakeFiles/sha256.dir/build.make src/examples/sha256/CMakeFiles/sha256.dir/sha256_main.cpp.s
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/sha256/CMakeFiles/sha256.dir/build.make src/examples/sha256/CMakeFiles/sha256.dir/sha256_main.cpp.s
 .PHONY : sha256_main.cpp.s
 
 # Help Target
@@ -253,6 +253,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

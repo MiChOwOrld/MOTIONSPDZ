@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/micho/CLionProjects/MOTIONSPDZ
+CMAKE_SOURCE_DIR = /home/micho/Documents/GitHub/MOTIONSPDZ
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/micho/CLionProjects/MOTIONSPDZ/build
+CMAKE_BINARY_DIR = /home/micho/Documents/GitHub/MOTIONSPDZ/build
 
 # Include any dependencies generated for this target.
 include src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/depend.make
@@ -70,32 +70,32 @@ include src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/pr
 include src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/flags.make
 
 src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/millionaires_problem_main.cpp.o: src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/flags.make
-src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/millionaires_problem_main.cpp.o: /home/micho/CLionProjects/MOTIONSPDZ/src/examples/millionaires_problem/millionaires_problem_main.cpp
+src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/millionaires_problem_main.cpp.o: /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/millionaires_problem/millionaires_problem_main.cpp
 src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/millionaires_problem_main.cpp.o: src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/millionaires_problem_main.cpp.o"
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/millionaires_problem && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/millionaires_problem_main.cpp.o -MF CMakeFiles/millionaires_problem.dir/millionaires_problem_main.cpp.o.d -o CMakeFiles/millionaires_problem.dir/millionaires_problem_main.cpp.o -c /home/micho/CLionProjects/MOTIONSPDZ/src/examples/millionaires_problem/millionaires_problem_main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/millionaires_problem_main.cpp.o"
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/millionaires_problem && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/millionaires_problem_main.cpp.o -MF CMakeFiles/millionaires_problem.dir/millionaires_problem_main.cpp.o.d -o CMakeFiles/millionaires_problem.dir/millionaires_problem_main.cpp.o -c /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/millionaires_problem/millionaires_problem_main.cpp
 
 src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/millionaires_problem_main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/millionaires_problem.dir/millionaires_problem_main.cpp.i"
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/millionaires_problem && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/micho/CLionProjects/MOTIONSPDZ/src/examples/millionaires_problem/millionaires_problem_main.cpp > CMakeFiles/millionaires_problem.dir/millionaires_problem_main.cpp.i
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/millionaires_problem && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/millionaires_problem/millionaires_problem_main.cpp > CMakeFiles/millionaires_problem.dir/millionaires_problem_main.cpp.i
 
 src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/millionaires_problem_main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/millionaires_problem.dir/millionaires_problem_main.cpp.s"
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/millionaires_problem && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/micho/CLionProjects/MOTIONSPDZ/src/examples/millionaires_problem/millionaires_problem_main.cpp -o CMakeFiles/millionaires_problem.dir/millionaires_problem_main.cpp.s
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/millionaires_problem && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/millionaires_problem/millionaires_problem_main.cpp -o CMakeFiles/millionaires_problem.dir/millionaires_problem_main.cpp.s
 
 src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/common/millionaires_problem.cpp.o: src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/flags.make
-src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/common/millionaires_problem.cpp.o: /home/micho/CLionProjects/MOTIONSPDZ/src/examples/millionaires_problem/common/millionaires_problem.cpp
+src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/common/millionaires_problem.cpp.o: /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/millionaires_problem/common/millionaires_problem.cpp
 src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/common/millionaires_problem.cpp.o: src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/common/millionaires_problem.cpp.o"
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/millionaires_problem && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/common/millionaires_problem.cpp.o -MF CMakeFiles/millionaires_problem.dir/common/millionaires_problem.cpp.o.d -o CMakeFiles/millionaires_problem.dir/common/millionaires_problem.cpp.o -c /home/micho/CLionProjects/MOTIONSPDZ/src/examples/millionaires_problem/common/millionaires_problem.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/common/millionaires_problem.cpp.o"
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/millionaires_problem && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/common/millionaires_problem.cpp.o -MF CMakeFiles/millionaires_problem.dir/common/millionaires_problem.cpp.o.d -o CMakeFiles/millionaires_problem.dir/common/millionaires_problem.cpp.o -c /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/millionaires_problem/common/millionaires_problem.cpp
 
 src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/common/millionaires_problem.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/millionaires_problem.dir/common/millionaires_problem.cpp.i"
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/millionaires_problem && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/micho/CLionProjects/MOTIONSPDZ/src/examples/millionaires_problem/common/millionaires_problem.cpp > CMakeFiles/millionaires_problem.dir/common/millionaires_problem.cpp.i
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/millionaires_problem && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/millionaires_problem/common/millionaires_problem.cpp > CMakeFiles/millionaires_problem.dir/common/millionaires_problem.cpp.i
 
 src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/common/millionaires_problem.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/millionaires_problem.dir/common/millionaires_problem.cpp.s"
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/millionaires_problem && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/micho/CLionProjects/MOTIONSPDZ/src/examples/millionaires_problem/common/millionaires_problem.cpp -o CMakeFiles/millionaires_problem.dir/common/millionaires_problem.cpp.s
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/millionaires_problem && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/millionaires_problem/common/millionaires_problem.cpp -o CMakeFiles/millionaires_problem.dir/common/millionaires_problem.cpp.s
 
 # Object files for target millionaires_problem
 millionaires_problem_OBJECTS = \
@@ -127,18 +127,18 @@ bin/millionaires_problem: /usr/lib/x86_64-linux-gnu/libcrypto.so
 bin/millionaires_problem: /usr/lib/x86_64-linux-gnu/libboost_json.so.1.83.0
 bin/millionaires_problem: /usr/lib/x86_64-linux-gnu/libboost_container.so.1.83.0
 bin/millionaires_problem: src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ../../../bin/millionaires_problem"
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/millionaires_problem && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/millionaires_problem.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ../../../bin/millionaires_problem"
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/millionaires_problem && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/millionaires_problem.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/build: bin/millionaires_problem
 .PHONY : src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/build
 
 src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/clean:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/millionaires_problem && $(CMAKE_COMMAND) -P CMakeFiles/millionaires_problem.dir/cmake_clean.cmake
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/millionaires_problem && $(CMAKE_COMMAND) -P CMakeFiles/millionaires_problem.dir/cmake_clean.cmake
 .PHONY : src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/clean
 
 src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/depend:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/micho/CLionProjects/MOTIONSPDZ /home/micho/CLionProjects/MOTIONSPDZ/src/examples/millionaires_problem /home/micho/CLionProjects/MOTIONSPDZ/build /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/millionaires_problem /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/micho/Documents/GitHub/MOTIONSPDZ /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/millionaires_problem /home/micho/Documents/GitHub/MOTIONSPDZ/build /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/millionaires_problem /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/depend
 

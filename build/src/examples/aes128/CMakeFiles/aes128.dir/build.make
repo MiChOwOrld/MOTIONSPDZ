@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/micho/CLionProjects/MOTIONSPDZ
+CMAKE_SOURCE_DIR = /home/micho/Documents/GitHub/MOTIONSPDZ
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/micho/CLionProjects/MOTIONSPDZ/build
+CMAKE_BINARY_DIR = /home/micho/Documents/GitHub/MOTIONSPDZ/build
 
 # Include any dependencies generated for this target.
 include src/examples/aes128/CMakeFiles/aes128.dir/depend.make
@@ -70,32 +70,32 @@ include src/examples/aes128/CMakeFiles/aes128.dir/progress.make
 include src/examples/aes128/CMakeFiles/aes128.dir/flags.make
 
 src/examples/aes128/CMakeFiles/aes128.dir/aes128_main.cpp.o: src/examples/aes128/CMakeFiles/aes128.dir/flags.make
-src/examples/aes128/CMakeFiles/aes128.dir/aes128_main.cpp.o: /home/micho/CLionProjects/MOTIONSPDZ/src/examples/aes128/aes128_main.cpp
+src/examples/aes128/CMakeFiles/aes128.dir/aes128_main.cpp.o: /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/aes128/aes128_main.cpp
 src/examples/aes128/CMakeFiles/aes128.dir/aes128_main.cpp.o: src/examples/aes128/CMakeFiles/aes128.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/examples/aes128/CMakeFiles/aes128.dir/aes128_main.cpp.o"
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/aes128 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/examples/aes128/CMakeFiles/aes128.dir/aes128_main.cpp.o -MF CMakeFiles/aes128.dir/aes128_main.cpp.o.d -o CMakeFiles/aes128.dir/aes128_main.cpp.o -c /home/micho/CLionProjects/MOTIONSPDZ/src/examples/aes128/aes128_main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/examples/aes128/CMakeFiles/aes128.dir/aes128_main.cpp.o"
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/aes128 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/examples/aes128/CMakeFiles/aes128.dir/aes128_main.cpp.o -MF CMakeFiles/aes128.dir/aes128_main.cpp.o.d -o CMakeFiles/aes128.dir/aes128_main.cpp.o -c /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/aes128/aes128_main.cpp
 
 src/examples/aes128/CMakeFiles/aes128.dir/aes128_main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/aes128.dir/aes128_main.cpp.i"
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/aes128 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/micho/CLionProjects/MOTIONSPDZ/src/examples/aes128/aes128_main.cpp > CMakeFiles/aes128.dir/aes128_main.cpp.i
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/aes128 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/aes128/aes128_main.cpp > CMakeFiles/aes128.dir/aes128_main.cpp.i
 
 src/examples/aes128/CMakeFiles/aes128.dir/aes128_main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/aes128.dir/aes128_main.cpp.s"
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/aes128 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/micho/CLionProjects/MOTIONSPDZ/src/examples/aes128/aes128_main.cpp -o CMakeFiles/aes128.dir/aes128_main.cpp.s
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/aes128 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/aes128/aes128_main.cpp -o CMakeFiles/aes128.dir/aes128_main.cpp.s
 
 src/examples/aes128/CMakeFiles/aes128.dir/common/aes128.cpp.o: src/examples/aes128/CMakeFiles/aes128.dir/flags.make
-src/examples/aes128/CMakeFiles/aes128.dir/common/aes128.cpp.o: /home/micho/CLionProjects/MOTIONSPDZ/src/examples/aes128/common/aes128.cpp
+src/examples/aes128/CMakeFiles/aes128.dir/common/aes128.cpp.o: /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/aes128/common/aes128.cpp
 src/examples/aes128/CMakeFiles/aes128.dir/common/aes128.cpp.o: src/examples/aes128/CMakeFiles/aes128.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/examples/aes128/CMakeFiles/aes128.dir/common/aes128.cpp.o"
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/aes128 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/examples/aes128/CMakeFiles/aes128.dir/common/aes128.cpp.o -MF CMakeFiles/aes128.dir/common/aes128.cpp.o.d -o CMakeFiles/aes128.dir/common/aes128.cpp.o -c /home/micho/CLionProjects/MOTIONSPDZ/src/examples/aes128/common/aes128.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/examples/aes128/CMakeFiles/aes128.dir/common/aes128.cpp.o"
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/aes128 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/examples/aes128/CMakeFiles/aes128.dir/common/aes128.cpp.o -MF CMakeFiles/aes128.dir/common/aes128.cpp.o.d -o CMakeFiles/aes128.dir/common/aes128.cpp.o -c /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/aes128/common/aes128.cpp
 
 src/examples/aes128/CMakeFiles/aes128.dir/common/aes128.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/aes128.dir/common/aes128.cpp.i"
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/aes128 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/micho/CLionProjects/MOTIONSPDZ/src/examples/aes128/common/aes128.cpp > CMakeFiles/aes128.dir/common/aes128.cpp.i
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/aes128 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/aes128/common/aes128.cpp > CMakeFiles/aes128.dir/common/aes128.cpp.i
 
 src/examples/aes128/CMakeFiles/aes128.dir/common/aes128.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/aes128.dir/common/aes128.cpp.s"
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/aes128 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/micho/CLionProjects/MOTIONSPDZ/src/examples/aes128/common/aes128.cpp -o CMakeFiles/aes128.dir/common/aes128.cpp.s
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/aes128 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/aes128/common/aes128.cpp -o CMakeFiles/aes128.dir/common/aes128.cpp.s
 
 # Object files for target aes128
 aes128_OBJECTS = \
@@ -127,18 +127,18 @@ bin/aes128: /usr/lib/x86_64-linux-gnu/libcrypto.so
 bin/aes128: /usr/lib/x86_64-linux-gnu/libboost_json.so.1.83.0
 bin/aes128: /usr/lib/x86_64-linux-gnu/libboost_container.so.1.83.0
 bin/aes128: src/examples/aes128/CMakeFiles/aes128.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ../../../bin/aes128"
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/aes128 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/aes128.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ../../../bin/aes128"
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/aes128 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/aes128.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/examples/aes128/CMakeFiles/aes128.dir/build: bin/aes128
 .PHONY : src/examples/aes128/CMakeFiles/aes128.dir/build
 
 src/examples/aes128/CMakeFiles/aes128.dir/clean:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/aes128 && $(CMAKE_COMMAND) -P CMakeFiles/aes128.dir/cmake_clean.cmake
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/aes128 && $(CMAKE_COMMAND) -P CMakeFiles/aes128.dir/cmake_clean.cmake
 .PHONY : src/examples/aes128/CMakeFiles/aes128.dir/clean
 
 src/examples/aes128/CMakeFiles/aes128.dir/depend:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/micho/CLionProjects/MOTIONSPDZ /home/micho/CLionProjects/MOTIONSPDZ/src/examples/aes128 /home/micho/CLionProjects/MOTIONSPDZ/build /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/aes128 /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/aes128/CMakeFiles/aes128.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/micho/Documents/GitHub/MOTIONSPDZ /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/aes128 /home/micho/Documents/GitHub/MOTIONSPDZ/build /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/aes128 /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/aes128/CMakeFiles/aes128.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : src/examples/aes128/CMakeFiles/aes128.dir/depend
 

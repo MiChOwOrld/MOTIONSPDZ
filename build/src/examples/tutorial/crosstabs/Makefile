@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/micho/CLionProjects/MOTIONSPDZ
+CMAKE_SOURCE_DIR = /home/micho/Documents/GitHub/MOTIONSPDZ
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/micho/CLionProjects/MOTIONSPDZ/build
+CMAKE_BINARY_DIR = /home/micho/Documents/GitHub/MOTIONSPDZ/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/tutorial/crosstabs//CMakeFiles/progress.marks
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/tutorial/crosstabs/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles 0
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/tutorial/crosstabs//CMakeFiles/progress.marks
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/tutorial/crosstabs/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/tutorial/crosstabs/clean
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/tutorial/crosstabs/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/tutorial/crosstabs/preinstall
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/tutorial/crosstabs/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/tutorial/crosstabs/preinstall
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/tutorial/crosstabs/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/rule:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/rule
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/rule
 .PHONY : src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ crosstabs: src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/rule
 
 # fast build rule for target.
 crosstabs/fast:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/build.make src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/build
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/build.make src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/build
 .PHONY : crosstabs/fast
 
 common/crosstabs.o: common/crosstabs.cpp.o
@@ -180,7 +180,7 @@ common/crosstabs.o: common/crosstabs.cpp.o
 
 # target to build an object file
 common/crosstabs.cpp.o:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/build.make src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/common/crosstabs.cpp.o
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/build.make src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/common/crosstabs.cpp.o
 .PHONY : common/crosstabs.cpp.o
 
 common/crosstabs.i: common/crosstabs.cpp.i
@@ -188,7 +188,7 @@ common/crosstabs.i: common/crosstabs.cpp.i
 
 # target to preprocess a source file
 common/crosstabs.cpp.i:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/build.make src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/common/crosstabs.cpp.i
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/build.make src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/common/crosstabs.cpp.i
 .PHONY : common/crosstabs.cpp.i
 
 common/crosstabs.s: common/crosstabs.cpp.s
@@ -196,7 +196,7 @@ common/crosstabs.s: common/crosstabs.cpp.s
 
 # target to generate assembly for a file
 common/crosstabs.cpp.s:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/build.make src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/common/crosstabs.cpp.s
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/build.make src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/common/crosstabs.cpp.s
 .PHONY : common/crosstabs.cpp.s
 
 crosstabs_main.o: crosstabs_main.cpp.o
@@ -204,7 +204,7 @@ crosstabs_main.o: crosstabs_main.cpp.o
 
 # target to build an object file
 crosstabs_main.cpp.o:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/build.make src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/crosstabs_main.cpp.o
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/build.make src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/crosstabs_main.cpp.o
 .PHONY : crosstabs_main.cpp.o
 
 crosstabs_main.i: crosstabs_main.cpp.i
@@ -212,7 +212,7 @@ crosstabs_main.i: crosstabs_main.cpp.i
 
 # target to preprocess a source file
 crosstabs_main.cpp.i:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/build.make src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/crosstabs_main.cpp.i
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/build.make src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/crosstabs_main.cpp.i
 .PHONY : crosstabs_main.cpp.i
 
 crosstabs_main.s: crosstabs_main.cpp.s
@@ -220,7 +220,7 @@ crosstabs_main.s: crosstabs_main.cpp.s
 
 # target to generate assembly for a file
 crosstabs_main.cpp.s:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/build.make src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/crosstabs_main.cpp.s
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/build.make src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/crosstabs_main.cpp.s
 .PHONY : crosstabs_main.cpp.s
 
 # Help Target
@@ -253,6 +253,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

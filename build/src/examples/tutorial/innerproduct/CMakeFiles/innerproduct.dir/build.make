@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/micho/CLionProjects/MOTIONSPDZ
+CMAKE_SOURCE_DIR = /home/micho/Documents/GitHub/MOTIONSPDZ
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/micho/CLionProjects/MOTIONSPDZ/build
+CMAKE_BINARY_DIR = /home/micho/Documents/GitHub/MOTIONSPDZ/build
 
 # Include any dependencies generated for this target.
 include src/examples/tutorial/innerproduct/CMakeFiles/innerproduct.dir/depend.make
@@ -70,32 +70,32 @@ include src/examples/tutorial/innerproduct/CMakeFiles/innerproduct.dir/progress.
 include src/examples/tutorial/innerproduct/CMakeFiles/innerproduct.dir/flags.make
 
 src/examples/tutorial/innerproduct/CMakeFiles/innerproduct.dir/innerproduct_main.cpp.o: src/examples/tutorial/innerproduct/CMakeFiles/innerproduct.dir/flags.make
-src/examples/tutorial/innerproduct/CMakeFiles/innerproduct.dir/innerproduct_main.cpp.o: /home/micho/CLionProjects/MOTIONSPDZ/src/examples/tutorial/innerproduct/innerproduct_main.cpp
+src/examples/tutorial/innerproduct/CMakeFiles/innerproduct.dir/innerproduct_main.cpp.o: /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/tutorial/innerproduct/innerproduct_main.cpp
 src/examples/tutorial/innerproduct/CMakeFiles/innerproduct.dir/innerproduct_main.cpp.o: src/examples/tutorial/innerproduct/CMakeFiles/innerproduct.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/examples/tutorial/innerproduct/CMakeFiles/innerproduct.dir/innerproduct_main.cpp.o"
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/tutorial/innerproduct && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/examples/tutorial/innerproduct/CMakeFiles/innerproduct.dir/innerproduct_main.cpp.o -MF CMakeFiles/innerproduct.dir/innerproduct_main.cpp.o.d -o CMakeFiles/innerproduct.dir/innerproduct_main.cpp.o -c /home/micho/CLionProjects/MOTIONSPDZ/src/examples/tutorial/innerproduct/innerproduct_main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/examples/tutorial/innerproduct/CMakeFiles/innerproduct.dir/innerproduct_main.cpp.o"
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/tutorial/innerproduct && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/examples/tutorial/innerproduct/CMakeFiles/innerproduct.dir/innerproduct_main.cpp.o -MF CMakeFiles/innerproduct.dir/innerproduct_main.cpp.o.d -o CMakeFiles/innerproduct.dir/innerproduct_main.cpp.o -c /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/tutorial/innerproduct/innerproduct_main.cpp
 
 src/examples/tutorial/innerproduct/CMakeFiles/innerproduct.dir/innerproduct_main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/innerproduct.dir/innerproduct_main.cpp.i"
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/tutorial/innerproduct && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/micho/CLionProjects/MOTIONSPDZ/src/examples/tutorial/innerproduct/innerproduct_main.cpp > CMakeFiles/innerproduct.dir/innerproduct_main.cpp.i
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/tutorial/innerproduct && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/tutorial/innerproduct/innerproduct_main.cpp > CMakeFiles/innerproduct.dir/innerproduct_main.cpp.i
 
 src/examples/tutorial/innerproduct/CMakeFiles/innerproduct.dir/innerproduct_main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/innerproduct.dir/innerproduct_main.cpp.s"
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/tutorial/innerproduct && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/micho/CLionProjects/MOTIONSPDZ/src/examples/tutorial/innerproduct/innerproduct_main.cpp -o CMakeFiles/innerproduct.dir/innerproduct_main.cpp.s
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/tutorial/innerproduct && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/tutorial/innerproduct/innerproduct_main.cpp -o CMakeFiles/innerproduct.dir/innerproduct_main.cpp.s
 
 src/examples/tutorial/innerproduct/CMakeFiles/innerproduct.dir/common/innerproduct.cpp.o: src/examples/tutorial/innerproduct/CMakeFiles/innerproduct.dir/flags.make
-src/examples/tutorial/innerproduct/CMakeFiles/innerproduct.dir/common/innerproduct.cpp.o: /home/micho/CLionProjects/MOTIONSPDZ/src/examples/tutorial/innerproduct/common/innerproduct.cpp
+src/examples/tutorial/innerproduct/CMakeFiles/innerproduct.dir/common/innerproduct.cpp.o: /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/tutorial/innerproduct/common/innerproduct.cpp
 src/examples/tutorial/innerproduct/CMakeFiles/innerproduct.dir/common/innerproduct.cpp.o: src/examples/tutorial/innerproduct/CMakeFiles/innerproduct.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/examples/tutorial/innerproduct/CMakeFiles/innerproduct.dir/common/innerproduct.cpp.o"
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/tutorial/innerproduct && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/examples/tutorial/innerproduct/CMakeFiles/innerproduct.dir/common/innerproduct.cpp.o -MF CMakeFiles/innerproduct.dir/common/innerproduct.cpp.o.d -o CMakeFiles/innerproduct.dir/common/innerproduct.cpp.o -c /home/micho/CLionProjects/MOTIONSPDZ/src/examples/tutorial/innerproduct/common/innerproduct.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/examples/tutorial/innerproduct/CMakeFiles/innerproduct.dir/common/innerproduct.cpp.o"
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/tutorial/innerproduct && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/examples/tutorial/innerproduct/CMakeFiles/innerproduct.dir/common/innerproduct.cpp.o -MF CMakeFiles/innerproduct.dir/common/innerproduct.cpp.o.d -o CMakeFiles/innerproduct.dir/common/innerproduct.cpp.o -c /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/tutorial/innerproduct/common/innerproduct.cpp
 
 src/examples/tutorial/innerproduct/CMakeFiles/innerproduct.dir/common/innerproduct.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/innerproduct.dir/common/innerproduct.cpp.i"
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/tutorial/innerproduct && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/micho/CLionProjects/MOTIONSPDZ/src/examples/tutorial/innerproduct/common/innerproduct.cpp > CMakeFiles/innerproduct.dir/common/innerproduct.cpp.i
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/tutorial/innerproduct && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/tutorial/innerproduct/common/innerproduct.cpp > CMakeFiles/innerproduct.dir/common/innerproduct.cpp.i
 
 src/examples/tutorial/innerproduct/CMakeFiles/innerproduct.dir/common/innerproduct.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/innerproduct.dir/common/innerproduct.cpp.s"
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/tutorial/innerproduct && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/micho/CLionProjects/MOTIONSPDZ/src/examples/tutorial/innerproduct/common/innerproduct.cpp -o CMakeFiles/innerproduct.dir/common/innerproduct.cpp.s
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/tutorial/innerproduct && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/tutorial/innerproduct/common/innerproduct.cpp -o CMakeFiles/innerproduct.dir/common/innerproduct.cpp.s
 
 # Object files for target innerproduct
 innerproduct_OBJECTS = \
@@ -127,18 +127,18 @@ bin/innerproduct: /usr/lib/x86_64-linux-gnu/libcrypto.so
 bin/innerproduct: /usr/lib/x86_64-linux-gnu/libboost_json.so.1.83.0
 bin/innerproduct: /usr/lib/x86_64-linux-gnu/libboost_container.so.1.83.0
 bin/innerproduct: src/examples/tutorial/innerproduct/CMakeFiles/innerproduct.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ../../../../bin/innerproduct"
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/tutorial/innerproduct && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/innerproduct.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ../../../../bin/innerproduct"
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/tutorial/innerproduct && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/innerproduct.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/examples/tutorial/innerproduct/CMakeFiles/innerproduct.dir/build: bin/innerproduct
 .PHONY : src/examples/tutorial/innerproduct/CMakeFiles/innerproduct.dir/build
 
 src/examples/tutorial/innerproduct/CMakeFiles/innerproduct.dir/clean:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/tutorial/innerproduct && $(CMAKE_COMMAND) -P CMakeFiles/innerproduct.dir/cmake_clean.cmake
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/tutorial/innerproduct && $(CMAKE_COMMAND) -P CMakeFiles/innerproduct.dir/cmake_clean.cmake
 .PHONY : src/examples/tutorial/innerproduct/CMakeFiles/innerproduct.dir/clean
 
 src/examples/tutorial/innerproduct/CMakeFiles/innerproduct.dir/depend:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/micho/CLionProjects/MOTIONSPDZ /home/micho/CLionProjects/MOTIONSPDZ/src/examples/tutorial/innerproduct /home/micho/CLionProjects/MOTIONSPDZ/build /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/tutorial/innerproduct /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/tutorial/innerproduct/CMakeFiles/innerproduct.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/micho/Documents/GitHub/MOTIONSPDZ /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/tutorial/innerproduct /home/micho/Documents/GitHub/MOTIONSPDZ/build /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/tutorial/innerproduct /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/tutorial/innerproduct/CMakeFiles/innerproduct.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : src/examples/tutorial/innerproduct/CMakeFiles/innerproduct.dir/depend
 

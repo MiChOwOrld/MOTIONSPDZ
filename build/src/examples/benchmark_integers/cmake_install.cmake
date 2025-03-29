@@ -1,4 +1,4 @@
-# Install script for directory: /home/micho/CLionProjects/MOTIONSPDZ/src/examples/benchmark_integers
+# Install script for directory: /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/benchmark_integers
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

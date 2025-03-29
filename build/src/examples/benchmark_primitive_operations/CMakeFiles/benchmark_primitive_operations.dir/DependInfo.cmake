@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/micho/CLionProjects/MOTIONSPDZ/src/examples/benchmark_primitive_operations/benchmark_primitive_operations_main.cpp" "src/examples/benchmark_primitive_operations/CMakeFiles/benchmark_primitive_operations.dir/benchmark_primitive_operations_main.cpp.o" "gcc" "src/examples/benchmark_primitive_operations/CMakeFiles/benchmark_primitive_operations.dir/benchmark_primitive_operations_main.cpp.o.d"
-  "/home/micho/CLionProjects/MOTIONSPDZ/src/examples/benchmark_primitive_operations/common/benchmark_primitive_operations.cpp" "src/examples/benchmark_primitive_operations/CMakeFiles/benchmark_primitive_operations.dir/common/benchmark_primitive_operations.cpp.o" "gcc" "src/examples/benchmark_primitive_operations/CMakeFiles/benchmark_primitive_operations.dir/common/benchmark_primitive_operations.cpp.o.d"
+  "/home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/benchmark_primitive_operations/benchmark_primitive_operations_main.cpp" "src/examples/benchmark_primitive_operations/CMakeFiles/benchmark_primitive_operations.dir/benchmark_primitive_operations_main.cpp.o" "gcc" "src/examples/benchmark_primitive_operations/CMakeFiles/benchmark_primitive_operations.dir/benchmark_primitive_operations_main.cpp.o.d"
+  "/home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/benchmark_primitive_operations/common/benchmark_primitive_operations.cpp" "src/examples/benchmark_primitive_operations/CMakeFiles/benchmark_primitive_operations.dir/common/benchmark_primitive_operations.cpp.o" "gcc" "src/examples/benchmark_primitive_operations/CMakeFiles/benchmark_primitive_operations.dir/common/benchmark_primitive_operations.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

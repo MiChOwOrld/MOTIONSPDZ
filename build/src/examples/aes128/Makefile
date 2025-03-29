@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/micho/CLionProjects/MOTIONSPDZ
+CMAKE_SOURCE_DIR = /home/micho/Documents/GitHub/MOTIONSPDZ
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/micho/CLionProjects/MOTIONSPDZ/build
+CMAKE_BINARY_DIR = /home/micho/Documents/GitHub/MOTIONSPDZ/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/aes128//CMakeFiles/progress.marks
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/aes128/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles 0
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/aes128//CMakeFiles/progress.marks
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/aes128/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/aes128/clean
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/aes128/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/aes128/preinstall
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/aes128/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/aes128/preinstall
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/aes128/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/examples/aes128/CMakeFiles/aes128.dir/rule:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/aes128/CMakeFiles/aes128.dir/rule
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/aes128/CMakeFiles/aes128.dir/rule
 .PHONY : src/examples/aes128/CMakeFiles/aes128.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ aes128: src/examples/aes128/CMakeFiles/aes128.dir/rule
 
 # fast build rule for target.
 aes128/fast:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/aes128/CMakeFiles/aes128.dir/build.make src/examples/aes128/CMakeFiles/aes128.dir/build
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/aes128/CMakeFiles/aes128.dir/build.make src/examples/aes128/CMakeFiles/aes128.dir/build
 .PHONY : aes128/fast
 
 aes128_main.o: aes128_main.cpp.o
@@ -180,7 +180,7 @@ aes128_main.o: aes128_main.cpp.o
 
 # target to build an object file
 aes128_main.cpp.o:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/aes128/CMakeFiles/aes128.dir/build.make src/examples/aes128/CMakeFiles/aes128.dir/aes128_main.cpp.o
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/aes128/CMakeFiles/aes128.dir/build.make src/examples/aes128/CMakeFiles/aes128.dir/aes128_main.cpp.o
 .PHONY : aes128_main.cpp.o
 
 aes128_main.i: aes128_main.cpp.i
@@ -188,7 +188,7 @@ aes128_main.i: aes128_main.cpp.i
 
 # target to preprocess a source file
 aes128_main.cpp.i:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/aes128/CMakeFiles/aes128.dir/build.make src/examples/aes128/CMakeFiles/aes128.dir/aes128_main.cpp.i
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/aes128/CMakeFiles/aes128.dir/build.make src/examples/aes128/CMakeFiles/aes128.dir/aes128_main.cpp.i
 .PHONY : aes128_main.cpp.i
 
 aes128_main.s: aes128_main.cpp.s
@@ -196,7 +196,7 @@ aes128_main.s: aes128_main.cpp.s
 
 # target to generate assembly for a file
 aes128_main.cpp.s:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/aes128/CMakeFiles/aes128.dir/build.make src/examples/aes128/CMakeFiles/aes128.dir/aes128_main.cpp.s
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/aes128/CMakeFiles/aes128.dir/build.make src/examples/aes128/CMakeFiles/aes128.dir/aes128_main.cpp.s
 .PHONY : aes128_main.cpp.s
 
 common/aes128.o: common/aes128.cpp.o
@@ -204,7 +204,7 @@ common/aes128.o: common/aes128.cpp.o
 
 # target to build an object file
 common/aes128.cpp.o:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/aes128/CMakeFiles/aes128.dir/build.make src/examples/aes128/CMakeFiles/aes128.dir/common/aes128.cpp.o
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/aes128/CMakeFiles/aes128.dir/build.make src/examples/aes128/CMakeFiles/aes128.dir/common/aes128.cpp.o
 .PHONY : common/aes128.cpp.o
 
 common/aes128.i: common/aes128.cpp.i
@@ -212,7 +212,7 @@ common/aes128.i: common/aes128.cpp.i
 
 # target to preprocess a source file
 common/aes128.cpp.i:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/aes128/CMakeFiles/aes128.dir/build.make src/examples/aes128/CMakeFiles/aes128.dir/common/aes128.cpp.i
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/aes128/CMakeFiles/aes128.dir/build.make src/examples/aes128/CMakeFiles/aes128.dir/common/aes128.cpp.i
 .PHONY : common/aes128.cpp.i
 
 common/aes128.s: common/aes128.cpp.s
@@ -220,7 +220,7 @@ common/aes128.s: common/aes128.cpp.s
 
 # target to generate assembly for a file
 common/aes128.cpp.s:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/aes128/CMakeFiles/aes128.dir/build.make src/examples/aes128/CMakeFiles/aes128.dir/common/aes128.cpp.s
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/aes128/CMakeFiles/aes128.dir/build.make src/examples/aes128/CMakeFiles/aes128.dir/common/aes128.cpp.s
 .PHONY : common/aes128.cpp.s
 
 # Help Target
@@ -253,6 +253,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

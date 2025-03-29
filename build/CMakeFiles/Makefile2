@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/micho/CLionProjects/MOTIONSPDZ
+CMAKE_SOURCE_DIR = /home/micho/Documents/GitHub/MOTIONSPDZ
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/micho/CLionProjects/MOTIONSPDZ/build
+CMAKE_BINARY_DIR = /home/micho/Documents/GitHub/MOTIONSPDZ/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -380,14 +380,14 @@ src/motioncore/clean: googletest-build/clean
 flatbuffers-build/CMakeFiles/flatc.dir/all:
 	$(MAKE) $(MAKESILENT) -f flatbuffers-build/CMakeFiles/flatc.dir/build.make flatbuffers-build/CMakeFiles/flatc.dir/depend
 	$(MAKE) $(MAKESILENT) -f flatbuffers-build/CMakeFiles/flatc.dir/build.make flatbuffers-build/CMakeFiles/flatc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles --progress-num=15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34 "Built target flatc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles --progress-num=15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34 "Built target flatc"
 .PHONY : flatbuffers-build/CMakeFiles/flatc.dir/all
 
 # Build rule for subdir invocation for target.
 flatbuffers-build/CMakeFiles/flatc.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles 20
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles 20
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 flatbuffers-build/CMakeFiles/flatc.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles 0
 .PHONY : flatbuffers-build/CMakeFiles/flatc.dir/rule
 
 # Convenience name for target.
@@ -406,14 +406,14 @@ flatbuffers-build/CMakeFiles/flatc.dir/clean:
 fbs/CMakeFiles/fbs-generation.dir/all: flatbuffers-build/CMakeFiles/flatc.dir/all
 	$(MAKE) $(MAKESILENT) -f fbs/CMakeFiles/fbs-generation.dir/build.make fbs/CMakeFiles/fbs-generation.dir/depend
 	$(MAKE) $(MAKESILENT) -f fbs/CMakeFiles/fbs-generation.dir/build.make fbs/CMakeFiles/fbs-generation.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles --progress-num=13,14 "Built target fbs-generation"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles --progress-num=13,14 "Built target fbs-generation"
 .PHONY : fbs/CMakeFiles/fbs-generation.dir/all
 
 # Build rule for subdir invocation for target.
 fbs/CMakeFiles/fbs-generation.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles 22
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 fbs/CMakeFiles/fbs-generation.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles 0
 .PHONY : fbs/CMakeFiles/fbs-generation.dir/rule
 
 # Convenience name for target.
@@ -432,14 +432,14 @@ fbs/CMakeFiles/fbs-generation.dir/clean:
 src/motioncore/CMakeFiles/motion.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/motioncore/CMakeFiles/motion.dir/build.make src/motioncore/CMakeFiles/motion.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles --progress-num=45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95 "Built target motion"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles --progress-num=45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95 "Built target motion"
 .PHONY : src/motioncore/CMakeFiles/motion.dir/all
 
 # Build rule for subdir invocation for target.
 src/motioncore/CMakeFiles/motion.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles 51
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles 51
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/motioncore/CMakeFiles/motion.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles 0
 .PHONY : src/motioncore/CMakeFiles/motion.dir/rule
 
 # Convenience name for target.
@@ -458,14 +458,14 @@ src/motioncore/CMakeFiles/motion.dir/clean:
 googletest-build/googlemock/CMakeFiles/gmock.dir/all: googletest-build/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f googletest-build/googlemock/CMakeFiles/gmock.dir/build.make googletest-build/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) $(MAKESILENT) -f googletest-build/googlemock/CMakeFiles/gmock.dir/build.make googletest-build/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles --progress-num=35,36 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles --progress-num=35,36 "Built target gmock"
 .PHONY : googletest-build/googlemock/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
 googletest-build/googlemock/CMakeFiles/gmock.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 googletest-build/googlemock/CMakeFiles/gmock.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles 0
 .PHONY : googletest-build/googlemock/CMakeFiles/gmock.dir/rule
 
 # Convenience name for target.
@@ -485,14 +485,14 @@ googletest-build/googlemock/CMakeFiles/gmock_main.dir/all: googletest-build/goog
 googletest-build/googlemock/CMakeFiles/gmock_main.dir/all: googletest-build/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f googletest-build/googlemock/CMakeFiles/gmock_main.dir/build.make googletest-build/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f googletest-build/googlemock/CMakeFiles/gmock_main.dir/build.make googletest-build/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles --progress-num=37 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles --progress-num=37 "Built target gmock_main"
 .PHONY : googletest-build/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
 googletest-build/googlemock/CMakeFiles/gmock_main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 googletest-build/googlemock/CMakeFiles/gmock_main.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles 0
 .PHONY : googletest-build/googlemock/CMakeFiles/gmock_main.dir/rule
 
 # Convenience name for target.
@@ -511,14 +511,14 @@ googletest-build/googlemock/CMakeFiles/gmock_main.dir/clean:
 googletest-build/googletest/CMakeFiles/gtest.dir/all:
 	$(MAKE) $(MAKESILENT) -f googletest-build/googletest/CMakeFiles/gtest.dir/build.make googletest-build/googletest/CMakeFiles/gtest.dir/depend
 	$(MAKE) $(MAKESILENT) -f googletest-build/googletest/CMakeFiles/gtest.dir/build.make googletest-build/googletest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles --progress-num=38 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles --progress-num=38 "Built target gtest"
 .PHONY : googletest-build/googletest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
 googletest-build/googletest/CMakeFiles/gtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 googletest-build/googletest/CMakeFiles/gtest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles 0
 .PHONY : googletest-build/googletest/CMakeFiles/gtest.dir/rule
 
 # Convenience name for target.
@@ -537,14 +537,14 @@ googletest-build/googletest/CMakeFiles/gtest.dir/clean:
 googletest-build/googletest/CMakeFiles/gtest_main.dir/all: googletest-build/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make googletest-build/googletest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make googletest-build/googletest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles --progress-num=39,40 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles --progress-num=39,40 "Built target gtest_main"
 .PHONY : googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
 googletest-build/googletest/CMakeFiles/gtest_main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 googletest-build/googletest/CMakeFiles/gtest_main.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles 0
 .PHONY : googletest-build/googletest/CMakeFiles/gtest_main.dir/rule
 
 # Convenience name for target.
@@ -563,14 +563,14 @@ googletest-build/googletest/CMakeFiles/gtest_main.dir/clean:
 src/examples/aes128/CMakeFiles/aes128.dir/all: src/motioncore/CMakeFiles/motion.dir/all
 	$(MAKE) $(MAKESILENT) -f src/examples/aes128/CMakeFiles/aes128.dir/build.make src/examples/aes128/CMakeFiles/aes128.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/examples/aes128/CMakeFiles/aes128.dir/build.make src/examples/aes128/CMakeFiles/aes128.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles --progress-num=1,2 "Built target aes128"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles --progress-num=1,2 "Built target aes128"
 .PHONY : src/examples/aes128/CMakeFiles/aes128.dir/all
 
 # Build rule for subdir invocation for target.
 src/examples/aes128/CMakeFiles/aes128.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles 53
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles 53
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/aes128/CMakeFiles/aes128.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles 0
 .PHONY : src/examples/aes128/CMakeFiles/aes128.dir/rule
 
 # Convenience name for target.
@@ -589,14 +589,14 @@ src/examples/aes128/CMakeFiles/aes128.dir/clean:
 src/examples/benchmark_integers/CMakeFiles/benchmark_integers.dir/all: src/motioncore/CMakeFiles/motion.dir/all
 	$(MAKE) $(MAKESILENT) -f src/examples/benchmark_integers/CMakeFiles/benchmark_integers.dir/build.make src/examples/benchmark_integers/CMakeFiles/benchmark_integers.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/examples/benchmark_integers/CMakeFiles/benchmark_integers.dir/build.make src/examples/benchmark_integers/CMakeFiles/benchmark_integers.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles --progress-num=3,4 "Built target benchmark_integers"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles --progress-num=3,4 "Built target benchmark_integers"
 .PHONY : src/examples/benchmark_integers/CMakeFiles/benchmark_integers.dir/all
 
 # Build rule for subdir invocation for target.
 src/examples/benchmark_integers/CMakeFiles/benchmark_integers.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles 53
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles 53
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/benchmark_integers/CMakeFiles/benchmark_integers.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles 0
 .PHONY : src/examples/benchmark_integers/CMakeFiles/benchmark_integers.dir/rule
 
 # Convenience name for target.
@@ -615,14 +615,14 @@ src/examples/benchmark_integers/CMakeFiles/benchmark_integers.dir/clean:
 src/examples/benchmark_primitive_operations/CMakeFiles/benchmark_primitive_operations.dir/all: src/motioncore/CMakeFiles/motion.dir/all
 	$(MAKE) $(MAKESILENT) -f src/examples/benchmark_primitive_operations/CMakeFiles/benchmark_primitive_operations.dir/build.make src/examples/benchmark_primitive_operations/CMakeFiles/benchmark_primitive_operations.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/examples/benchmark_primitive_operations/CMakeFiles/benchmark_primitive_operations.dir/build.make src/examples/benchmark_primitive_operations/CMakeFiles/benchmark_primitive_operations.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles --progress-num=5,6 "Built target benchmark_primitive_operations"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles --progress-num=5,6 "Built target benchmark_primitive_operations"
 .PHONY : src/examples/benchmark_primitive_operations/CMakeFiles/benchmark_primitive_operations.dir/all
 
 # Build rule for subdir invocation for target.
 src/examples/benchmark_primitive_operations/CMakeFiles/benchmark_primitive_operations.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles 53
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles 53
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/benchmark_primitive_operations/CMakeFiles/benchmark_primitive_operations.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles 0
 .PHONY : src/examples/benchmark_primitive_operations/CMakeFiles/benchmark_primitive_operations.dir/rule
 
 # Convenience name for target.
@@ -641,14 +641,14 @@ src/examples/benchmark_primitive_operations/CMakeFiles/benchmark_primitive_opera
 src/examples/benchmark_providers/CMakeFiles/benchmark_providers.dir/all: src/motioncore/CMakeFiles/motion.dir/all
 	$(MAKE) $(MAKESILENT) -f src/examples/benchmark_providers/CMakeFiles/benchmark_providers.dir/build.make src/examples/benchmark_providers/CMakeFiles/benchmark_providers.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/examples/benchmark_providers/CMakeFiles/benchmark_providers.dir/build.make src/examples/benchmark_providers/CMakeFiles/benchmark_providers.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles --progress-num=7,8 "Built target benchmark_providers"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles --progress-num=7,8 "Built target benchmark_providers"
 .PHONY : src/examples/benchmark_providers/CMakeFiles/benchmark_providers.dir/all
 
 # Build rule for subdir invocation for target.
 src/examples/benchmark_providers/CMakeFiles/benchmark_providers.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles 53
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles 53
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/benchmark_providers/CMakeFiles/benchmark_providers.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles 0
 .PHONY : src/examples/benchmark_providers/CMakeFiles/benchmark_providers.dir/rule
 
 # Convenience name for target.
@@ -667,14 +667,14 @@ src/examples/benchmark_providers/CMakeFiles/benchmark_providers.dir/clean:
 src/examples/example_template/CMakeFiles/example_template.dir/all: src/motioncore/CMakeFiles/motion.dir/all
 	$(MAKE) $(MAKESILENT) -f src/examples/example_template/CMakeFiles/example_template.dir/build.make src/examples/example_template/CMakeFiles/example_template.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/examples/example_template/CMakeFiles/example_template.dir/build.make src/examples/example_template/CMakeFiles/example_template.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles --progress-num=11,12 "Built target example_template"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles --progress-num=11,12 "Built target example_template"
 .PHONY : src/examples/example_template/CMakeFiles/example_template.dir/all
 
 # Build rule for subdir invocation for target.
 src/examples/example_template/CMakeFiles/example_template.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles 53
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles 53
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/example_template/CMakeFiles/example_template.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles 0
 .PHONY : src/examples/example_template/CMakeFiles/example_template.dir/rule
 
 # Convenience name for target.
@@ -693,14 +693,14 @@ src/examples/example_template/CMakeFiles/example_template.dir/clean:
 src/examples/sha256/CMakeFiles/sha256.dir/all: src/motioncore/CMakeFiles/motion.dir/all
 	$(MAKE) $(MAKESILENT) -f src/examples/sha256/CMakeFiles/sha256.dir/build.make src/examples/sha256/CMakeFiles/sha256.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/examples/sha256/CMakeFiles/sha256.dir/build.make src/examples/sha256/CMakeFiles/sha256.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles --progress-num=98,99,100 "Built target sha256"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles --progress-num=98,99,100 "Built target sha256"
 .PHONY : src/examples/sha256/CMakeFiles/sha256.dir/all
 
 # Build rule for subdir invocation for target.
 src/examples/sha256/CMakeFiles/sha256.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles 54
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles 54
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/sha256/CMakeFiles/sha256.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles 0
 .PHONY : src/examples/sha256/CMakeFiles/sha256.dir/rule
 
 # Convenience name for target.
@@ -719,14 +719,14 @@ src/examples/sha256/CMakeFiles/sha256.dir/clean:
 src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/all: src/motioncore/CMakeFiles/motion.dir/all
 	$(MAKE) $(MAKESILENT) -f src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/build.make src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/build.make src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles --progress-num=9,10 "Built target crosstabs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles --progress-num=9,10 "Built target crosstabs"
 .PHONY : src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/all
 
 # Build rule for subdir invocation for target.
 src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles 53
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles 53
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles 0
 .PHONY : src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/rule
 
 # Convenience name for target.
@@ -745,14 +745,14 @@ src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/clean:
 src/examples/tutorial/innerproduct/CMakeFiles/innerproduct.dir/all: src/motioncore/CMakeFiles/motion.dir/all
 	$(MAKE) $(MAKESILENT) -f src/examples/tutorial/innerproduct/CMakeFiles/innerproduct.dir/build.make src/examples/tutorial/innerproduct/CMakeFiles/innerproduct.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/examples/tutorial/innerproduct/CMakeFiles/innerproduct.dir/build.make src/examples/tutorial/innerproduct/CMakeFiles/innerproduct.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles --progress-num=41,42 "Built target innerproduct"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles --progress-num=41,42 "Built target innerproduct"
 .PHONY : src/examples/tutorial/innerproduct/CMakeFiles/innerproduct.dir/all
 
 # Build rule for subdir invocation for target.
 src/examples/tutorial/innerproduct/CMakeFiles/innerproduct.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles 53
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles 53
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/tutorial/innerproduct/CMakeFiles/innerproduct.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles 0
 .PHONY : src/examples/tutorial/innerproduct/CMakeFiles/innerproduct.dir/rule
 
 # Convenience name for target.
@@ -771,14 +771,14 @@ src/examples/tutorial/innerproduct/CMakeFiles/innerproduct.dir/clean:
 src/examples/tutorial/mult3/CMakeFiles/mult3.dir/all: src/motioncore/CMakeFiles/motion.dir/all
 	$(MAKE) $(MAKESILENT) -f src/examples/tutorial/mult3/CMakeFiles/mult3.dir/build.make src/examples/tutorial/mult3/CMakeFiles/mult3.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/examples/tutorial/mult3/CMakeFiles/mult3.dir/build.make src/examples/tutorial/mult3/CMakeFiles/mult3.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles --progress-num=96,97 "Built target mult3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles --progress-num=96,97 "Built target mult3"
 .PHONY : src/examples/tutorial/mult3/CMakeFiles/mult3.dir/all
 
 # Build rule for subdir invocation for target.
 src/examples/tutorial/mult3/CMakeFiles/mult3.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles 53
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles 53
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/tutorial/mult3/CMakeFiles/mult3.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles 0
 .PHONY : src/examples/tutorial/mult3/CMakeFiles/mult3.dir/rule
 
 # Convenience name for target.
@@ -797,14 +797,14 @@ src/examples/tutorial/mult3/CMakeFiles/mult3.dir/clean:
 src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/all: src/motioncore/CMakeFiles/motion.dir/all
 	$(MAKE) $(MAKESILENT) -f src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/build.make src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/build.make src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles --progress-num=43,44 "Built target millionaires_problem"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles --progress-num=43,44 "Built target millionaires_problem"
 .PHONY : src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/all
 
 # Build rule for subdir invocation for target.
 src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles 53
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles 53
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles 0
 .PHONY : src/examples/millionaires_problem/CMakeFiles/millionaires_problem.dir/rule
 
 # Convenience name for target.

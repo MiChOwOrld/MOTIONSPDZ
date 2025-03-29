@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/micho/CLionProjects/MOTIONSPDZ
+CMAKE_SOURCE_DIR = /home/micho/Documents/GitHub/MOTIONSPDZ
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/micho/CLionProjects/MOTIONSPDZ/build
+CMAKE_BINARY_DIR = /home/micho/Documents/GitHub/MOTIONSPDZ/build
 
 # Include any dependencies generated for this target.
 include src/examples/benchmark_integers/CMakeFiles/benchmark_integers.dir/depend.make
@@ -70,32 +70,32 @@ include src/examples/benchmark_integers/CMakeFiles/benchmark_integers.dir/progre
 include src/examples/benchmark_integers/CMakeFiles/benchmark_integers.dir/flags.make
 
 src/examples/benchmark_integers/CMakeFiles/benchmark_integers.dir/benchmark_integers_main.cpp.o: src/examples/benchmark_integers/CMakeFiles/benchmark_integers.dir/flags.make
-src/examples/benchmark_integers/CMakeFiles/benchmark_integers.dir/benchmark_integers_main.cpp.o: /home/micho/CLionProjects/MOTIONSPDZ/src/examples/benchmark_integers/benchmark_integers_main.cpp
+src/examples/benchmark_integers/CMakeFiles/benchmark_integers.dir/benchmark_integers_main.cpp.o: /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/benchmark_integers/benchmark_integers_main.cpp
 src/examples/benchmark_integers/CMakeFiles/benchmark_integers.dir/benchmark_integers_main.cpp.o: src/examples/benchmark_integers/CMakeFiles/benchmark_integers.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/examples/benchmark_integers/CMakeFiles/benchmark_integers.dir/benchmark_integers_main.cpp.o"
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/benchmark_integers && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/examples/benchmark_integers/CMakeFiles/benchmark_integers.dir/benchmark_integers_main.cpp.o -MF CMakeFiles/benchmark_integers.dir/benchmark_integers_main.cpp.o.d -o CMakeFiles/benchmark_integers.dir/benchmark_integers_main.cpp.o -c /home/micho/CLionProjects/MOTIONSPDZ/src/examples/benchmark_integers/benchmark_integers_main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/examples/benchmark_integers/CMakeFiles/benchmark_integers.dir/benchmark_integers_main.cpp.o"
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/benchmark_integers && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/examples/benchmark_integers/CMakeFiles/benchmark_integers.dir/benchmark_integers_main.cpp.o -MF CMakeFiles/benchmark_integers.dir/benchmark_integers_main.cpp.o.d -o CMakeFiles/benchmark_integers.dir/benchmark_integers_main.cpp.o -c /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/benchmark_integers/benchmark_integers_main.cpp
 
 src/examples/benchmark_integers/CMakeFiles/benchmark_integers.dir/benchmark_integers_main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/benchmark_integers.dir/benchmark_integers_main.cpp.i"
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/benchmark_integers && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/micho/CLionProjects/MOTIONSPDZ/src/examples/benchmark_integers/benchmark_integers_main.cpp > CMakeFiles/benchmark_integers.dir/benchmark_integers_main.cpp.i
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/benchmark_integers && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/benchmark_integers/benchmark_integers_main.cpp > CMakeFiles/benchmark_integers.dir/benchmark_integers_main.cpp.i
 
 src/examples/benchmark_integers/CMakeFiles/benchmark_integers.dir/benchmark_integers_main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/benchmark_integers.dir/benchmark_integers_main.cpp.s"
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/benchmark_integers && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/micho/CLionProjects/MOTIONSPDZ/src/examples/benchmark_integers/benchmark_integers_main.cpp -o CMakeFiles/benchmark_integers.dir/benchmark_integers_main.cpp.s
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/benchmark_integers && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/benchmark_integers/benchmark_integers_main.cpp -o CMakeFiles/benchmark_integers.dir/benchmark_integers_main.cpp.s
 
 src/examples/benchmark_integers/CMakeFiles/benchmark_integers.dir/common/benchmark_integers.cpp.o: src/examples/benchmark_integers/CMakeFiles/benchmark_integers.dir/flags.make
-src/examples/benchmark_integers/CMakeFiles/benchmark_integers.dir/common/benchmark_integers.cpp.o: /home/micho/CLionProjects/MOTIONSPDZ/src/examples/benchmark_integers/common/benchmark_integers.cpp
+src/examples/benchmark_integers/CMakeFiles/benchmark_integers.dir/common/benchmark_integers.cpp.o: /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/benchmark_integers/common/benchmark_integers.cpp
 src/examples/benchmark_integers/CMakeFiles/benchmark_integers.dir/common/benchmark_integers.cpp.o: src/examples/benchmark_integers/CMakeFiles/benchmark_integers.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/examples/benchmark_integers/CMakeFiles/benchmark_integers.dir/common/benchmark_integers.cpp.o"
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/benchmark_integers && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/examples/benchmark_integers/CMakeFiles/benchmark_integers.dir/common/benchmark_integers.cpp.o -MF CMakeFiles/benchmark_integers.dir/common/benchmark_integers.cpp.o.d -o CMakeFiles/benchmark_integers.dir/common/benchmark_integers.cpp.o -c /home/micho/CLionProjects/MOTIONSPDZ/src/examples/benchmark_integers/common/benchmark_integers.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/examples/benchmark_integers/CMakeFiles/benchmark_integers.dir/common/benchmark_integers.cpp.o"
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/benchmark_integers && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/examples/benchmark_integers/CMakeFiles/benchmark_integers.dir/common/benchmark_integers.cpp.o -MF CMakeFiles/benchmark_integers.dir/common/benchmark_integers.cpp.o.d -o CMakeFiles/benchmark_integers.dir/common/benchmark_integers.cpp.o -c /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/benchmark_integers/common/benchmark_integers.cpp
 
 src/examples/benchmark_integers/CMakeFiles/benchmark_integers.dir/common/benchmark_integers.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/benchmark_integers.dir/common/benchmark_integers.cpp.i"
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/benchmark_integers && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/micho/CLionProjects/MOTIONSPDZ/src/examples/benchmark_integers/common/benchmark_integers.cpp > CMakeFiles/benchmark_integers.dir/common/benchmark_integers.cpp.i
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/benchmark_integers && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/benchmark_integers/common/benchmark_integers.cpp > CMakeFiles/benchmark_integers.dir/common/benchmark_integers.cpp.i
 
 src/examples/benchmark_integers/CMakeFiles/benchmark_integers.dir/common/benchmark_integers.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/benchmark_integers.dir/common/benchmark_integers.cpp.s"
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/benchmark_integers && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/micho/CLionProjects/MOTIONSPDZ/src/examples/benchmark_integers/common/benchmark_integers.cpp -o CMakeFiles/benchmark_integers.dir/common/benchmark_integers.cpp.s
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/benchmark_integers && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/benchmark_integers/common/benchmark_integers.cpp -o CMakeFiles/benchmark_integers.dir/common/benchmark_integers.cpp.s
 
 # Object files for target benchmark_integers
 benchmark_integers_OBJECTS = \
@@ -127,18 +127,18 @@ bin/benchmark_integers: /usr/lib/x86_64-linux-gnu/libcrypto.so
 bin/benchmark_integers: /usr/lib/x86_64-linux-gnu/libboost_json.so.1.83.0
 bin/benchmark_integers: /usr/lib/x86_64-linux-gnu/libboost_container.so.1.83.0
 bin/benchmark_integers: src/examples/benchmark_integers/CMakeFiles/benchmark_integers.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ../../../bin/benchmark_integers"
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/benchmark_integers && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/benchmark_integers.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ../../../bin/benchmark_integers"
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/benchmark_integers && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/benchmark_integers.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/examples/benchmark_integers/CMakeFiles/benchmark_integers.dir/build: bin/benchmark_integers
 .PHONY : src/examples/benchmark_integers/CMakeFiles/benchmark_integers.dir/build
 
 src/examples/benchmark_integers/CMakeFiles/benchmark_integers.dir/clean:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/benchmark_integers && $(CMAKE_COMMAND) -P CMakeFiles/benchmark_integers.dir/cmake_clean.cmake
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/benchmark_integers && $(CMAKE_COMMAND) -P CMakeFiles/benchmark_integers.dir/cmake_clean.cmake
 .PHONY : src/examples/benchmark_integers/CMakeFiles/benchmark_integers.dir/clean
 
 src/examples/benchmark_integers/CMakeFiles/benchmark_integers.dir/depend:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/micho/CLionProjects/MOTIONSPDZ /home/micho/CLionProjects/MOTIONSPDZ/src/examples/benchmark_integers /home/micho/CLionProjects/MOTIONSPDZ/build /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/benchmark_integers /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/benchmark_integers/CMakeFiles/benchmark_integers.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/micho/Documents/GitHub/MOTIONSPDZ /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/benchmark_integers /home/micho/Documents/GitHub/MOTIONSPDZ/build /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/benchmark_integers /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/benchmark_integers/CMakeFiles/benchmark_integers.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : src/examples/benchmark_integers/CMakeFiles/benchmark_integers.dir/depend
 

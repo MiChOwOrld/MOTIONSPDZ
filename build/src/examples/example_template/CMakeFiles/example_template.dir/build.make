@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/micho/CLionProjects/MOTIONSPDZ
+CMAKE_SOURCE_DIR = /home/micho/Documents/GitHub/MOTIONSPDZ
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/micho/CLionProjects/MOTIONSPDZ/build
+CMAKE_BINARY_DIR = /home/micho/Documents/GitHub/MOTIONSPDZ/build
 
 # Include any dependencies generated for this target.
 include src/examples/example_template/CMakeFiles/example_template.dir/depend.make
@@ -70,32 +70,32 @@ include src/examples/example_template/CMakeFiles/example_template.dir/progress.m
 include src/examples/example_template/CMakeFiles/example_template.dir/flags.make
 
 src/examples/example_template/CMakeFiles/example_template.dir/example_template_main.cpp.o: src/examples/example_template/CMakeFiles/example_template.dir/flags.make
-src/examples/example_template/CMakeFiles/example_template.dir/example_template_main.cpp.o: /home/micho/CLionProjects/MOTIONSPDZ/src/examples/example_template/example_template_main.cpp
+src/examples/example_template/CMakeFiles/example_template.dir/example_template_main.cpp.o: /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/example_template/example_template_main.cpp
 src/examples/example_template/CMakeFiles/example_template.dir/example_template_main.cpp.o: src/examples/example_template/CMakeFiles/example_template.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/examples/example_template/CMakeFiles/example_template.dir/example_template_main.cpp.o"
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/example_template && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/examples/example_template/CMakeFiles/example_template.dir/example_template_main.cpp.o -MF CMakeFiles/example_template.dir/example_template_main.cpp.o.d -o CMakeFiles/example_template.dir/example_template_main.cpp.o -c /home/micho/CLionProjects/MOTIONSPDZ/src/examples/example_template/example_template_main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/examples/example_template/CMakeFiles/example_template.dir/example_template_main.cpp.o"
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/example_template && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/examples/example_template/CMakeFiles/example_template.dir/example_template_main.cpp.o -MF CMakeFiles/example_template.dir/example_template_main.cpp.o.d -o CMakeFiles/example_template.dir/example_template_main.cpp.o -c /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/example_template/example_template_main.cpp
 
 src/examples/example_template/CMakeFiles/example_template.dir/example_template_main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/example_template.dir/example_template_main.cpp.i"
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/example_template && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/micho/CLionProjects/MOTIONSPDZ/src/examples/example_template/example_template_main.cpp > CMakeFiles/example_template.dir/example_template_main.cpp.i
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/example_template && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/example_template/example_template_main.cpp > CMakeFiles/example_template.dir/example_template_main.cpp.i
 
 src/examples/example_template/CMakeFiles/example_template.dir/example_template_main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/example_template.dir/example_template_main.cpp.s"
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/example_template && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/micho/CLionProjects/MOTIONSPDZ/src/examples/example_template/example_template_main.cpp -o CMakeFiles/example_template.dir/example_template_main.cpp.s
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/example_template && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/example_template/example_template_main.cpp -o CMakeFiles/example_template.dir/example_template_main.cpp.s
 
 src/examples/example_template/CMakeFiles/example_template.dir/common/example_template.cpp.o: src/examples/example_template/CMakeFiles/example_template.dir/flags.make
-src/examples/example_template/CMakeFiles/example_template.dir/common/example_template.cpp.o: /home/micho/CLionProjects/MOTIONSPDZ/src/examples/example_template/common/example_template.cpp
+src/examples/example_template/CMakeFiles/example_template.dir/common/example_template.cpp.o: /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/example_template/common/example_template.cpp
 src/examples/example_template/CMakeFiles/example_template.dir/common/example_template.cpp.o: src/examples/example_template/CMakeFiles/example_template.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/examples/example_template/CMakeFiles/example_template.dir/common/example_template.cpp.o"
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/example_template && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/examples/example_template/CMakeFiles/example_template.dir/common/example_template.cpp.o -MF CMakeFiles/example_template.dir/common/example_template.cpp.o.d -o CMakeFiles/example_template.dir/common/example_template.cpp.o -c /home/micho/CLionProjects/MOTIONSPDZ/src/examples/example_template/common/example_template.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/examples/example_template/CMakeFiles/example_template.dir/common/example_template.cpp.o"
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/example_template && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/examples/example_template/CMakeFiles/example_template.dir/common/example_template.cpp.o -MF CMakeFiles/example_template.dir/common/example_template.cpp.o.d -o CMakeFiles/example_template.dir/common/example_template.cpp.o -c /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/example_template/common/example_template.cpp
 
 src/examples/example_template/CMakeFiles/example_template.dir/common/example_template.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/example_template.dir/common/example_template.cpp.i"
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/example_template && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/micho/CLionProjects/MOTIONSPDZ/src/examples/example_template/common/example_template.cpp > CMakeFiles/example_template.dir/common/example_template.cpp.i
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/example_template && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/example_template/common/example_template.cpp > CMakeFiles/example_template.dir/common/example_template.cpp.i
 
 src/examples/example_template/CMakeFiles/example_template.dir/common/example_template.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/example_template.dir/common/example_template.cpp.s"
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/example_template && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/micho/CLionProjects/MOTIONSPDZ/src/examples/example_template/common/example_template.cpp -o CMakeFiles/example_template.dir/common/example_template.cpp.s
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/example_template && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/example_template/common/example_template.cpp -o CMakeFiles/example_template.dir/common/example_template.cpp.s
 
 # Object files for target example_template
 example_template_OBJECTS = \
@@ -127,18 +127,18 @@ bin/example_template: /usr/lib/x86_64-linux-gnu/libcrypto.so
 bin/example_template: /usr/lib/x86_64-linux-gnu/libboost_json.so.1.83.0
 bin/example_template: /usr/lib/x86_64-linux-gnu/libboost_container.so.1.83.0
 bin/example_template: src/examples/example_template/CMakeFiles/example_template.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ../../../bin/example_template"
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/example_template && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/example_template.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ../../../bin/example_template"
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/example_template && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/example_template.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/examples/example_template/CMakeFiles/example_template.dir/build: bin/example_template
 .PHONY : src/examples/example_template/CMakeFiles/example_template.dir/build
 
 src/examples/example_template/CMakeFiles/example_template.dir/clean:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/example_template && $(CMAKE_COMMAND) -P CMakeFiles/example_template.dir/cmake_clean.cmake
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/example_template && $(CMAKE_COMMAND) -P CMakeFiles/example_template.dir/cmake_clean.cmake
 .PHONY : src/examples/example_template/CMakeFiles/example_template.dir/clean
 
 src/examples/example_template/CMakeFiles/example_template.dir/depend:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/micho/CLionProjects/MOTIONSPDZ /home/micho/CLionProjects/MOTIONSPDZ/src/examples/example_template /home/micho/CLionProjects/MOTIONSPDZ/build /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/example_template /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/example_template/CMakeFiles/example_template.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/micho/Documents/GitHub/MOTIONSPDZ /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/example_template /home/micho/Documents/GitHub/MOTIONSPDZ/build /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/example_template /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/example_template/CMakeFiles/example_template.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : src/examples/example_template/CMakeFiles/example_template.dir/depend
 

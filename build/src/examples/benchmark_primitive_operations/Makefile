@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/micho/CLionProjects/MOTIONSPDZ
+CMAKE_SOURCE_DIR = /home/micho/Documents/GitHub/MOTIONSPDZ
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/micho/CLionProjects/MOTIONSPDZ/build
+CMAKE_BINARY_DIR = /home/micho/Documents/GitHub/MOTIONSPDZ/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/benchmark_primitive_operations//CMakeFiles/progress.marks
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/benchmark_primitive_operations/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles 0
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/benchmark_primitive_operations//CMakeFiles/progress.marks
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/benchmark_primitive_operations/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/benchmark_primitive_operations/clean
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/benchmark_primitive_operations/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/benchmark_primitive_operations/preinstall
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/benchmark_primitive_operations/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/benchmark_primitive_operations/preinstall
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/benchmark_primitive_operations/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/examples/benchmark_primitive_operations/CMakeFiles/benchmark_primitive_operations.dir/rule:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/benchmark_primitive_operations/CMakeFiles/benchmark_primitive_operations.dir/rule
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/examples/benchmark_primitive_operations/CMakeFiles/benchmark_primitive_operations.dir/rule
 .PHONY : src/examples/benchmark_primitive_operations/CMakeFiles/benchmark_primitive_operations.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ benchmark_primitive_operations: src/examples/benchmark_primitive_operations/CMak
 
 # fast build rule for target.
 benchmark_primitive_operations/fast:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/benchmark_primitive_operations/CMakeFiles/benchmark_primitive_operations.dir/build.make src/examples/benchmark_primitive_operations/CMakeFiles/benchmark_primitive_operations.dir/build
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/benchmark_primitive_operations/CMakeFiles/benchmark_primitive_operations.dir/build.make src/examples/benchmark_primitive_operations/CMakeFiles/benchmark_primitive_operations.dir/build
 .PHONY : benchmark_primitive_operations/fast
 
 benchmark_primitive_operations_main.o: benchmark_primitive_operations_main.cpp.o
@@ -180,7 +180,7 @@ benchmark_primitive_operations_main.o: benchmark_primitive_operations_main.cpp.o
 
 # target to build an object file
 benchmark_primitive_operations_main.cpp.o:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/benchmark_primitive_operations/CMakeFiles/benchmark_primitive_operations.dir/build.make src/examples/benchmark_primitive_operations/CMakeFiles/benchmark_primitive_operations.dir/benchmark_primitive_operations_main.cpp.o
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/benchmark_primitive_operations/CMakeFiles/benchmark_primitive_operations.dir/build.make src/examples/benchmark_primitive_operations/CMakeFiles/benchmark_primitive_operations.dir/benchmark_primitive_operations_main.cpp.o
 .PHONY : benchmark_primitive_operations_main.cpp.o
 
 benchmark_primitive_operations_main.i: benchmark_primitive_operations_main.cpp.i
@@ -188,7 +188,7 @@ benchmark_primitive_operations_main.i: benchmark_primitive_operations_main.cpp.i
 
 # target to preprocess a source file
 benchmark_primitive_operations_main.cpp.i:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/benchmark_primitive_operations/CMakeFiles/benchmark_primitive_operations.dir/build.make src/examples/benchmark_primitive_operations/CMakeFiles/benchmark_primitive_operations.dir/benchmark_primitive_operations_main.cpp.i
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/benchmark_primitive_operations/CMakeFiles/benchmark_primitive_operations.dir/build.make src/examples/benchmark_primitive_operations/CMakeFiles/benchmark_primitive_operations.dir/benchmark_primitive_operations_main.cpp.i
 .PHONY : benchmark_primitive_operations_main.cpp.i
 
 benchmark_primitive_operations_main.s: benchmark_primitive_operations_main.cpp.s
@@ -196,7 +196,7 @@ benchmark_primitive_operations_main.s: benchmark_primitive_operations_main.cpp.s
 
 # target to generate assembly for a file
 benchmark_primitive_operations_main.cpp.s:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/benchmark_primitive_operations/CMakeFiles/benchmark_primitive_operations.dir/build.make src/examples/benchmark_primitive_operations/CMakeFiles/benchmark_primitive_operations.dir/benchmark_primitive_operations_main.cpp.s
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/benchmark_primitive_operations/CMakeFiles/benchmark_primitive_operations.dir/build.make src/examples/benchmark_primitive_operations/CMakeFiles/benchmark_primitive_operations.dir/benchmark_primitive_operations_main.cpp.s
 .PHONY : benchmark_primitive_operations_main.cpp.s
 
 common/benchmark_primitive_operations.o: common/benchmark_primitive_operations.cpp.o
@@ -204,7 +204,7 @@ common/benchmark_primitive_operations.o: common/benchmark_primitive_operations.c
 
 # target to build an object file
 common/benchmark_primitive_operations.cpp.o:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/benchmark_primitive_operations/CMakeFiles/benchmark_primitive_operations.dir/build.make src/examples/benchmark_primitive_operations/CMakeFiles/benchmark_primitive_operations.dir/common/benchmark_primitive_operations.cpp.o
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/benchmark_primitive_operations/CMakeFiles/benchmark_primitive_operations.dir/build.make src/examples/benchmark_primitive_operations/CMakeFiles/benchmark_primitive_operations.dir/common/benchmark_primitive_operations.cpp.o
 .PHONY : common/benchmark_primitive_operations.cpp.o
 
 common/benchmark_primitive_operations.i: common/benchmark_primitive_operations.cpp.i
@@ -212,7 +212,7 @@ common/benchmark_primitive_operations.i: common/benchmark_primitive_operations.c
 
 # target to preprocess a source file
 common/benchmark_primitive_operations.cpp.i:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/benchmark_primitive_operations/CMakeFiles/benchmark_primitive_operations.dir/build.make src/examples/benchmark_primitive_operations/CMakeFiles/benchmark_primitive_operations.dir/common/benchmark_primitive_operations.cpp.i
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/benchmark_primitive_operations/CMakeFiles/benchmark_primitive_operations.dir/build.make src/examples/benchmark_primitive_operations/CMakeFiles/benchmark_primitive_operations.dir/common/benchmark_primitive_operations.cpp.i
 .PHONY : common/benchmark_primitive_operations.cpp.i
 
 common/benchmark_primitive_operations.s: common/benchmark_primitive_operations.cpp.s
@@ -220,7 +220,7 @@ common/benchmark_primitive_operations.s: common/benchmark_primitive_operations.c
 
 # target to generate assembly for a file
 common/benchmark_primitive_operations.cpp.s:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/benchmark_primitive_operations/CMakeFiles/benchmark_primitive_operations.dir/build.make src/examples/benchmark_primitive_operations/CMakeFiles/benchmark_primitive_operations.dir/common/benchmark_primitive_operations.cpp.s
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(MAKE) $(MAKESILENT) -f src/examples/benchmark_primitive_operations/CMakeFiles/benchmark_primitive_operations.dir/build.make src/examples/benchmark_primitive_operations/CMakeFiles/benchmark_primitive_operations.dir/common/benchmark_primitive_operations.cpp.s
 .PHONY : common/benchmark_primitive_operations.cpp.s
 
 # Help Target
@@ -253,6 +253,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

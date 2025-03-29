@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/micho/CLionProjects/MOTIONSPDZ/src/examples/tutorial/crosstabs/common/crosstabs.cpp" "src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/common/crosstabs.cpp.o" "gcc" "src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/common/crosstabs.cpp.o.d"
-  "/home/micho/CLionProjects/MOTIONSPDZ/src/examples/tutorial/crosstabs/crosstabs_main.cpp" "src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/crosstabs_main.cpp.o" "gcc" "src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/crosstabs_main.cpp.o.d"
+  "/home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/tutorial/crosstabs/common/crosstabs.cpp" "src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/common/crosstabs.cpp.o" "gcc" "src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/common/crosstabs.cpp.o.d"
+  "/home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/tutorial/crosstabs/crosstabs_main.cpp" "src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/crosstabs_main.cpp.o" "gcc" "src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/crosstabs_main.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

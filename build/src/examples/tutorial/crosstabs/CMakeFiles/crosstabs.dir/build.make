@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/micho/CLionProjects/MOTIONSPDZ
+CMAKE_SOURCE_DIR = /home/micho/Documents/GitHub/MOTIONSPDZ
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/micho/CLionProjects/MOTIONSPDZ/build
+CMAKE_BINARY_DIR = /home/micho/Documents/GitHub/MOTIONSPDZ/build
 
 # Include any dependencies generated for this target.
 include src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/depend.make
@@ -70,32 +70,32 @@ include src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/progress.make
 include src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/flags.make
 
 src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/crosstabs_main.cpp.o: src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/flags.make
-src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/crosstabs_main.cpp.o: /home/micho/CLionProjects/MOTIONSPDZ/src/examples/tutorial/crosstabs/crosstabs_main.cpp
+src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/crosstabs_main.cpp.o: /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/tutorial/crosstabs/crosstabs_main.cpp
 src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/crosstabs_main.cpp.o: src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/crosstabs_main.cpp.o"
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/tutorial/crosstabs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/crosstabs_main.cpp.o -MF CMakeFiles/crosstabs.dir/crosstabs_main.cpp.o.d -o CMakeFiles/crosstabs.dir/crosstabs_main.cpp.o -c /home/micho/CLionProjects/MOTIONSPDZ/src/examples/tutorial/crosstabs/crosstabs_main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/crosstabs_main.cpp.o"
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/tutorial/crosstabs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/crosstabs_main.cpp.o -MF CMakeFiles/crosstabs.dir/crosstabs_main.cpp.o.d -o CMakeFiles/crosstabs.dir/crosstabs_main.cpp.o -c /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/tutorial/crosstabs/crosstabs_main.cpp
 
 src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/crosstabs_main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/crosstabs.dir/crosstabs_main.cpp.i"
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/tutorial/crosstabs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/micho/CLionProjects/MOTIONSPDZ/src/examples/tutorial/crosstabs/crosstabs_main.cpp > CMakeFiles/crosstabs.dir/crosstabs_main.cpp.i
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/tutorial/crosstabs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/tutorial/crosstabs/crosstabs_main.cpp > CMakeFiles/crosstabs.dir/crosstabs_main.cpp.i
 
 src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/crosstabs_main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/crosstabs.dir/crosstabs_main.cpp.s"
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/tutorial/crosstabs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/micho/CLionProjects/MOTIONSPDZ/src/examples/tutorial/crosstabs/crosstabs_main.cpp -o CMakeFiles/crosstabs.dir/crosstabs_main.cpp.s
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/tutorial/crosstabs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/tutorial/crosstabs/crosstabs_main.cpp -o CMakeFiles/crosstabs.dir/crosstabs_main.cpp.s
 
 src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/common/crosstabs.cpp.o: src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/flags.make
-src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/common/crosstabs.cpp.o: /home/micho/CLionProjects/MOTIONSPDZ/src/examples/tutorial/crosstabs/common/crosstabs.cpp
+src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/common/crosstabs.cpp.o: /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/tutorial/crosstabs/common/crosstabs.cpp
 src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/common/crosstabs.cpp.o: src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/common/crosstabs.cpp.o"
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/tutorial/crosstabs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/common/crosstabs.cpp.o -MF CMakeFiles/crosstabs.dir/common/crosstabs.cpp.o.d -o CMakeFiles/crosstabs.dir/common/crosstabs.cpp.o -c /home/micho/CLionProjects/MOTIONSPDZ/src/examples/tutorial/crosstabs/common/crosstabs.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/common/crosstabs.cpp.o"
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/tutorial/crosstabs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/common/crosstabs.cpp.o -MF CMakeFiles/crosstabs.dir/common/crosstabs.cpp.o.d -o CMakeFiles/crosstabs.dir/common/crosstabs.cpp.o -c /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/tutorial/crosstabs/common/crosstabs.cpp
 
 src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/common/crosstabs.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/crosstabs.dir/common/crosstabs.cpp.i"
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/tutorial/crosstabs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/micho/CLionProjects/MOTIONSPDZ/src/examples/tutorial/crosstabs/common/crosstabs.cpp > CMakeFiles/crosstabs.dir/common/crosstabs.cpp.i
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/tutorial/crosstabs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/tutorial/crosstabs/common/crosstabs.cpp > CMakeFiles/crosstabs.dir/common/crosstabs.cpp.i
 
 src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/common/crosstabs.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/crosstabs.dir/common/crosstabs.cpp.s"
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/tutorial/crosstabs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/micho/CLionProjects/MOTIONSPDZ/src/examples/tutorial/crosstabs/common/crosstabs.cpp -o CMakeFiles/crosstabs.dir/common/crosstabs.cpp.s
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/tutorial/crosstabs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/tutorial/crosstabs/common/crosstabs.cpp -o CMakeFiles/crosstabs.dir/common/crosstabs.cpp.s
 
 # Object files for target crosstabs
 crosstabs_OBJECTS = \
@@ -127,18 +127,18 @@ bin/crosstabs: /usr/lib/x86_64-linux-gnu/libcrypto.so
 bin/crosstabs: /usr/lib/x86_64-linux-gnu/libboost_json.so.1.83.0
 bin/crosstabs: /usr/lib/x86_64-linux-gnu/libboost_container.so.1.83.0
 bin/crosstabs: src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/micho/CLionProjects/MOTIONSPDZ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ../../../../bin/crosstabs"
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/tutorial/crosstabs && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/crosstabs.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/micho/Documents/GitHub/MOTIONSPDZ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ../../../../bin/crosstabs"
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/tutorial/crosstabs && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/crosstabs.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/build: bin/crosstabs
 .PHONY : src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/build
 
 src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/clean:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/tutorial/crosstabs && $(CMAKE_COMMAND) -P CMakeFiles/crosstabs.dir/cmake_clean.cmake
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/tutorial/crosstabs && $(CMAKE_COMMAND) -P CMakeFiles/crosstabs.dir/cmake_clean.cmake
 .PHONY : src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/clean
 
 src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/depend:
-	cd /home/micho/CLionProjects/MOTIONSPDZ/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/micho/CLionProjects/MOTIONSPDZ /home/micho/CLionProjects/MOTIONSPDZ/src/examples/tutorial/crosstabs /home/micho/CLionProjects/MOTIONSPDZ/build /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/tutorial/crosstabs /home/micho/CLionProjects/MOTIONSPDZ/build/src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/micho/Documents/GitHub/MOTIONSPDZ/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/micho/Documents/GitHub/MOTIONSPDZ /home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/tutorial/crosstabs /home/micho/Documents/GitHub/MOTIONSPDZ/build /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/tutorial/crosstabs /home/micho/Documents/GitHub/MOTIONSPDZ/build/src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : src/examples/tutorial/crosstabs/CMakeFiles/crosstabs.dir/depend
 

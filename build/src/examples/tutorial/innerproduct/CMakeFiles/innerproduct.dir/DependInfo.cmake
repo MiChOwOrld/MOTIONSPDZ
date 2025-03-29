@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/micho/CLionProjects/MOTIONSPDZ/src/examples/tutorial/innerproduct/common/innerproduct.cpp" "src/examples/tutorial/innerproduct/CMakeFiles/innerproduct.dir/common/innerproduct.cpp.o" "gcc" "src/examples/tutorial/innerproduct/CMakeFiles/innerproduct.dir/common/innerproduct.cpp.o.d"
-  "/home/micho/CLionProjects/MOTIONSPDZ/src/examples/tutorial/innerproduct/innerproduct_main.cpp" "src/examples/tutorial/innerproduct/CMakeFiles/innerproduct.dir/innerproduct_main.cpp.o" "gcc" "src/examples/tutorial/innerproduct/CMakeFiles/innerproduct.dir/innerproduct_main.cpp.o.d"
+  "/home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/tutorial/innerproduct/common/innerproduct.cpp" "src/examples/tutorial/innerproduct/CMakeFiles/innerproduct.dir/common/innerproduct.cpp.o" "gcc" "src/examples/tutorial/innerproduct/CMakeFiles/innerproduct.dir/common/innerproduct.cpp.o.d"
+  "/home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/tutorial/innerproduct/innerproduct_main.cpp" "src/examples/tutorial/innerproduct/CMakeFiles/innerproduct.dir/innerproduct_main.cpp.o" "gcc" "src/examples/tutorial/innerproduct/CMakeFiles/innerproduct.dir/innerproduct_main.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/micho/CLionProjects/MOTIONSPDZ/src/examples/benchmark_integers/benchmark_integers_main.cpp" "src/examples/benchmark_integers/CMakeFiles/benchmark_integers.dir/benchmark_integers_main.cpp.o" "gcc" "src/examples/benchmark_integers/CMakeFiles/benchmark_integers.dir/benchmark_integers_main.cpp.o.d"
-  "/home/micho/CLionProjects/MOTIONSPDZ/src/examples/benchmark_integers/common/benchmark_integers.cpp" "src/examples/benchmark_integers/CMakeFiles/benchmark_integers.dir/common/benchmark_integers.cpp.o" "gcc" "src/examples/benchmark_integers/CMakeFiles/benchmark_integers.dir/common/benchmark_integers.cpp.o.d"
+  "/home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/benchmark_integers/benchmark_integers_main.cpp" "src/examples/benchmark_integers/CMakeFiles/benchmark_integers.dir/benchmark_integers_main.cpp.o" "gcc" "src/examples/benchmark_integers/CMakeFiles/benchmark_integers.dir/benchmark_integers_main.cpp.o.d"
+  "/home/micho/Documents/GitHub/MOTIONSPDZ/src/examples/benchmark_integers/common/benchmark_integers.cpp" "src/examples/benchmark_integers/CMakeFiles/benchmark_integers.dir/common/benchmark_integers.cpp.o" "gcc" "src/examples/benchmark_integers/CMakeFiles/benchmark_integers.dir/common/benchmark_integers.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
