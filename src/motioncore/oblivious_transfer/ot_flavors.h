@@ -23,9 +23,7 @@
 #pragma once
 
 #include "ot_provider.h"
-
 #include <span>
-
 #include "communication/message_manager.h"
 #include "data_storage/ot_extension_data.h" //NEW
 #include "utility/bit_vector.h"

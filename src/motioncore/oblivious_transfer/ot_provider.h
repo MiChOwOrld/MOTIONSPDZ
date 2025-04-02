@@ -31,7 +31,6 @@
 
 #include <flatbuffers/flatbuffers.h>
 #include "utility/fiber_waitable.h"
-#include "ot_flavors.h"
 
 namespace encrypto::motion::communication {
     class CommunicationLayer;
