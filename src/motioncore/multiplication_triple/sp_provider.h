@@ -46,7 +46,6 @@ template <typename T, typename = std::enable_if_t<std::is_unsigned_v<T>>>
 struct SpVector {
   std::vector<T> a, c;  // c[i] = a[i]^2
 };
-
 // Provider for Square Pairs (SPs),
 // sharings of random (a, c) s.t. a^2 = c
 class SpProvider {
@@ -167,7 +166,6 @@ class SpProvider {
                        std::vector<T>(sps.c.begin() + offset, sps.c.begin() + offset + n)};
   }
 };
-
 class SpProviderFromOts final : public SpProvider {
  public:
   SpProviderFromOts(std::vector<std::unique_ptr<OtProvider>>& ot_providers, const std::size_t my_id,
@@ -177,6 +175,8 @@ class SpProviderFromOts final : public SpProvider {
   void DistributeGlobalMacKey();  // OT-based sharing of global alpha //NEW
   std::uint64_t GetAlphaShare() const { return alpha_share_; } //NEW
   // needs completed OTExtension
+  const std::vector<AcOtSender<std::uint64_t>*>& GetOtsAlphaSender() const { return ots_alpha_sender_; }
+  const std::vector<AcOtReceiver<std::uint64_t>*>& GetOtsAlphaReceiver() const { return ots_alpha_receiver_; }
   void Setup() final override;
 
  private:
@@ -186,6 +186,9 @@ class SpProviderFromOts final : public SpProvider {
 
   std::vector<std::unique_ptr<OtProvider>>& ot_providers_;
   std::uint64_t alpha_share_{0}; //NEW
+  std::vector<AcOtSender<std::uint64_t>*> ots_alpha_sender_; //NEW
+  std::vector<AcOtReceiver<std::uint64_t>*> ots_alpha_receiver_; //NEW
+  std::size_t number_of_parties_;  // NEW
 
   // use alternating party roles for load balancing
   std::vector<std::list<std::unique_ptr<BasicOtReceiver>>> ots_receiver_8_;

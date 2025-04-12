@@ -30,6 +30,7 @@
 
 #include "config.h"
 #include "typedefs.h"
+constexpr bool kDebug = true;
 
 namespace encrypto::motion {
 // abbreviation for megabytes

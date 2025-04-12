@@ -77,21 +77,9 @@ add_library(motion
     utility/runtime_info.cpp
     utility/thread.cpp
 )
-
 add_library(MOTION::motion ALIAS motion)
 
-# Προσθήκη GoogleTest
-set(GTEST_SOURCE_DIR "/home/micho/libraries/googletest")
-
-# Εισαγωγή του GoogleTest στο project
-if(EXISTS ${GTEST_SOURCE_DIR})
-    add_subdirectory(${GTEST_SOURCE_DIR} ${CMAKE_BINARY_DIR}/googletest-build)
-    include_directories(${GTEST_SOURCE_DIR}/googletest/include)
-    include_directories(${GTEST_SOURCE_DIR}/googlemock/include)
-else()
-    message(FATAL_ERROR "GoogleTest directory not found: ${GTEST_SOURCE_DIR}")
-endif()
-
+add_dependencies(motion fbs-generation)
 
 
 # Ρυθμίσεις Build

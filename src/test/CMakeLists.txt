@@ -26,6 +26,7 @@ add_executable(motiontest
         test_sb.cpp
         test_simdify_gate.cpp
         test_sp.cpp
+        test_spdz.cpp
         test_subset_gate.cpp
         test_tcp_transport.cpp
         test_unsimdify_gate.cpp
@@ -34,5 +35,5 @@ add_executable(motiontest
 target_link_libraries(motiontest PRIVATE
         MOTION::motion
         OpenMP::OpenMP_CXX
-        gtest dl
+        GTest::gtest_main
         )

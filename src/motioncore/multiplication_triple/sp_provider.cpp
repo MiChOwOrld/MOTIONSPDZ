@@ -28,7 +28,7 @@
 #include "statistics/run_time_statistics.h"
 #include "utility/constants.h"
 #include "utility/logger.h"
-#include <random> //NEW
+#include "utility/helpers.h" //NEW
 
 namespace encrypto::motion {
   bool SpProvider::NeedSps() const noexcept {
@@ -45,6 +45,7 @@ namespace encrypto::motion {
                                        RunTimeStatistics &run_time_statistics)
     : SpProvider(my_id),
       ot_providers_(ot_providers),
+      number_of_parties_(ot_providers.size()), //NEW
       ots_receiver_8_(ot_providers_.size()),
       ots_sender_8_(ot_providers_.size()),
       ots_receiver_16_(ot_providers_.size()),
@@ -87,6 +88,8 @@ namespace encrypto::motion {
     }
     run_time_statistics_.RecordStart<RunTimeStatistics::StatisticsId::kSpSetup>();
 
+    DistributeGlobalMacKey();
+
 #pragma omp parallel for
     for (auto i = 0ull; i < ot_providers_.size(); ++i) {
       if (i == my_id_) {
@@ -125,6 +128,87 @@ namespace encrypto::motion {
       logger_->LogDebug("Finished computing setup for SPs");
     }
   }
+  void SpProviderFromOts::DistributeGlobalMacKey() {
+    std::cout << "Party " << my_id_ << " entered DistributeGlobalMacKey()" << std::endl;
+
+    if constexpr (kDebug) {
+      logger_->LogDebug(fmt::format("[GLOBAL] DistributeGlobalMacKey: party {} executing among {} parties", my_id_, number_of_parties_));
+    }
+
+  // Μόνο το party 0 παράγει το alpha
+  if (my_id_ == 0) {
+    alpha_share_ = RandomVector<std::uint64_t>(1).at(0);
+    std::cout << "Party 0 generated alpha_share = " << alpha_share_ << std::endl;
+  }
+
+  for (std::size_t party_id = 0; party_id < number_of_parties_; ++party_id) {
+    if (party_id == my_id_) continue;
+    std::cout << "Party " << my_id_ << " iterating over party_id = " << party_id << std::endl;
+    auto& ot_provider = *ot_providers_.at(party_id);
+
+    if (my_id_ == 0) {
+      std::cout << "Party 0: calling RegisterSendAcOt() for party " << party_id << std::endl;
+      auto sender = dynamic_cast<AcOtSender<std::uint64_t>*>(ot_provider.RegisterSendAcOt(1, 64).release());
+      std::cout << "Party 0: done RegisterSendAcOt() for party " << party_id << std::endl;
+
+      std::vector<std::uint64_t> correlation = {alpha_share_};
+      sender->SetCorrelations(std::move(correlation));
+      ots_alpha_sender_.emplace_back(sender);
+
+      if constexpr (kDebug) {
+        logger_->LogDebug(fmt::format("Party {}: Registered SendAcOt to party {}", my_id_, party_id));
+      }
+
+    } else if (party_id == 0) {
+      std::cout << "Party " << my_id_ << ": calling RegisterReceiveAcOt() from party 0" << std::endl;
+      auto receiver = dynamic_cast<AcOtReceiver<std::uint64_t>*>(ot_provider.RegisterReceiveAcOt(1, 64).release());
+      std::cout << "Party " << my_id_ << ": done RegisterReceiveAcOt()" << std::endl;
+
+      BitVector<> choices(64, false);  // receive α directly
+      receiver->SetChoices(std::move(choices));
+      ots_alpha_receiver_.emplace_back(receiver);
+
+      if constexpr (kDebug) {
+        logger_->LogDebug(fmt::format("Party {}: Registered ReceiveAcOt from party {}", my_id_, party_id));
+        logger_->LogDebug(fmt::format("Party {}: Receiver choices set to all false", my_id_));
+      }
+    }
+  }
+
+  std::cout << "Party " << my_id_ << " starting ComputeOutputs" << std::endl;
+
+  if constexpr (kDebug) {
+    logger_->LogDebug(fmt::format("Party {}: Finished OT registration", my_id_));
+  }
+
+  if (my_id_ == 0) {
+    for (auto& sender : ots_alpha_sender_) {
+      std::cout << "Party 0 starting ComputeOutputs() for sender" << std::endl;
+      sender->ComputeOutputs();
+      std::cout << "Party 0 finished ComputeOutputs() for sender" << std::endl;
+
+      if constexpr (kDebug) {
+        logger_->LogDebug(fmt::format("Party 0: Sender called ComputeOutputs()"));
+      }
+    }
+  } else {
+    for (auto& receiver : ots_alpha_receiver_) {
+      std::cout << "Party " << my_id_ << " starting ComputeOutputs() for receiver" << std::endl;
+      receiver->ComputeOutputs();
+      std::cout << "Party " << my_id_ << " finished ComputeOutputs() for receiver" << std::endl;
+
+      if constexpr (kDebug) {
+        logger_->LogDebug(fmt::format("Party {}: Receiver called ComputeOutputs()", my_id_));
+      }
+    }
+  }
+
+  std::cout << "Party " << my_id_ << " finished DistributeGlobalMacKey()" << std::endl;
+
+  if constexpr (kDebug) {
+    logger_->LogDebug(fmt::format("Party {}: Exiting DistributeGlobalMacKey()", my_id_));
+  }
+}
 
   template<typename T>
   static void GenerateRandomPairs(SpVector<T> &sps, std::size_t number_of_sps) {
