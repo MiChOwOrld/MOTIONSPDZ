@@ -27,6 +27,7 @@ add_executable(motiontest
         test_simdify_gate.cpp
         test_sp.cpp
         test_spdz.cpp
+        test_spdz2.cpp
         test_subset_gate.cpp
         test_tcp_transport.cpp
         test_unsimdify_gate.cpp
