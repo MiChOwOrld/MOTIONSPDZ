@@ -175,27 +175,6 @@ static void GenerateRandomTriplesBool(BinaryMtVector& bit_mts, std::size_t numbe
   }
 }
 
-template <typename T> //NEW
-static void GenerateRandomTriplesWithMacs(IntegerMtVector<T>& mts, std::size_t number_of_mts, T alpha) { //NEW
-  if (number_of_mts > 0u) {//NEW
-    mts.a = RandomVector<T>(number_of_mts); //NEW
-    mts.b = RandomVector<T>(number_of_mts); //NEW
-    mts.c.resize(number_of_mts); //NEW
-    mts.mac_a.resize(number_of_mts); //NEW
-    mts.mac_b.resize(number_of_mts); //NEW
-    mts.mac_c.resize(number_of_mts); //NEW
-
-    std::transform(mts.a.cbegin(), mts.a.cend(), mts.b.cbegin(), mts.c.begin(), //NEW
-                   [](const auto& a_i, const auto& b_i) { return a_i * b_i; }); //NEW
-
-    std::transform(mts.a.cbegin(), mts.a.cend(), mts.mac_a.begin(), //NEW
-                   [alpha](const auto& a_i) { return alpha * a_i; }); //NEW
-    std::transform(mts.b.cbegin(), mts.b.cend(), mts.mac_b.begin(), //NEW
-                   [alpha](const auto& b_i) { return alpha * b_i; }); //NEW
-    std::transform(mts.c.cbegin(), mts.c.cend(), mts.mac_c.begin(), //NEW
-                   [alpha](const auto& c_i) { return alpha * c_i; }); //NEW
-  } //NEW
-} //NEW
 
 static void RegisterHelperBool(OtProvider& ot_provider, std::unique_ptr<XcOtBitSender>& ots_sender,
                                std::unique_ptr<XcOtBitReceiver>& ots_receiver,
