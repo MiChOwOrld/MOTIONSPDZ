@@ -30,8 +30,9 @@
 #include <stdexcept>
 #include <type_traits>
 #include <vector>
-
+#include "base//backend.h"
 #include "oblivious_transfer/ot_flavors.h"
+#include "protocols/share_wrapper.h"
 #include "utility/fiber_condition.h"
 
 namespace encrypto::motion {
@@ -175,6 +176,7 @@ class SpProviderFromOts final : public SpProvider {
   void DistributeGlobalMacKey();  // OT-based sharing of global alpha //NEW
   std::uint64_t GetAlphaShare() const { return alpha_share_; } //NEW
   // needs completed OTExtension
+  encrypto::motion::ShareWrapper InputShareWithMac(std::uint64_t input_value, std::size_t input_owner, std::size_t bit_length, Backend& backend);
   const std::vector<AcOtSender<std::uint64_t>*>& GetOtsAlphaSender() const { return ots_alpha_sender_; }
   const std::vector<AcOtReceiver<std::uint64_t>*>& GetOtsAlphaReceiver() const { return ots_alpha_receiver_; }
   void Setup() final override;

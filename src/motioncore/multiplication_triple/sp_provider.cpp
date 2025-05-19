@@ -25,10 +25,18 @@
 #include "sp_provider.h"
 #include "oblivious_transfer/ot_provider.h"
 #include "oblivious_transfer/ot_flavors.h" //NEW
+#include "protocols/constant/constant_wire.h"
+#include "protocols/constant/constant_share.h"
+#include "protocols/share_wrapper.h"
+#include "protocols/share.h"
+#include "protocols/arithmetic_gmw/arithmetic_gmw_wire.h"
 #include "statistics/run_time_statistics.h"
 #include "utility/constants.h"
 #include "utility/logger.h"
 #include "utility/helpers.h" //NEW
+#include "utility/random.h" //NEW
+#include "utility/typedefs.h" //NEW
+#include <random>
 
 namespace encrypto::motion {
   bool SpProvider::NeedSps() const noexcept {
@@ -208,6 +216,85 @@ namespace encrypto::motion {
   if constexpr (kDebug) {
     logger_->LogDebug(fmt::format("Party {}: Exiting DistributeGlobalMacKey()", my_id_));
   }
+}
+  std::uint64_t SampleRandomUint64() {
+    std::random_device rd;
+    std::mt19937_64 gen(rd());
+    std::uniform_int_distribution<std::uint64_t> dis;
+    return dis(gen);
+  }
+ShareWrapper SpProviderFromOts::InputShareWithMac(
+    std::uint64_t input_value, std::size_t input_owner,
+    std::size_t bit_length, Backend& backend) {
+
+  assert(alpha_share_ != 0);
+
+  const std::size_t num_parties = number_of_parties_;
+  const std::size_t my_id = my_id_;
+
+  std::uint64_t local_share = 0;
+  std::uint64_t local_mac = 0;
+
+  if (my_id == input_owner) {
+    std::vector<std::uint64_t> input_shares(num_parties, 0);
+    std::vector<std::uint64_t> mac_shares(num_parties, 0);
+
+    std::uint64_t sum = 0, mac_sum = 0;
+
+    for (std::size_t i = 0; i < num_parties; ++i) {
+      if (i == my_id) continue;
+      input_shares[i] = SampleRandomUint64();
+      mac_shares[i] = input_shares[i] * alpha_share_;
+      sum += input_shares[i];
+      mac_sum += mac_shares[i];
+    }
+
+    input_shares[my_id] = input_value - sum;
+    mac_shares[my_id] = input_shares[my_id] * alpha_share_;
+
+    local_share = input_shares[my_id];
+    local_mac = mac_shares[my_id];
+
+    for (std::size_t party_id = 0; party_id < num_parties; ++party_id) {
+      if (party_id == my_id) continue;
+
+      auto& ot_provider = *ot_providers_.at(party_id);
+
+      auto sender_input = dynamic_cast<AcOtSender<std::uint64_t>*>(
+        ot_provider.RegisterSendAcOt(1, bit_length).release());
+      sender_input->SetCorrelations({input_shares[party_id]});
+      sender_input->ComputeOutputs();
+
+      auto sender_mac = dynamic_cast<AcOtSender<std::uint64_t>*>(
+        ot_provider.RegisterSendAcOt(1, bit_length).release());
+      sender_mac->SetCorrelations({mac_shares[party_id]});
+      sender_mac->ComputeOutputs();
+    }
+  } else {
+    auto& ot_provider = *ot_providers_.at(input_owner);
+
+    auto receiver_input = dynamic_cast<AcOtReceiver<std::uint64_t>*>(
+      ot_provider.RegisterReceiveAcOt(1, bit_length).release());
+    receiver_input->SetChoices(BitVector<>(bit_length, false));
+    receiver_input->ComputeOutputs();
+    local_share = receiver_input->GetOutputs()[0];
+
+    auto receiver_mac = dynamic_cast<AcOtReceiver<std::uint64_t>*>(
+      ot_provider.RegisterReceiveAcOt(1, bit_length).release());
+    receiver_mac->SetChoices(BitVector<>(bit_length, false));
+    receiver_mac->ComputeOutputs();
+    local_mac = receiver_mac->GetOutputs()[0];
+  }
+
+  auto wire_input = std::make_shared<encrypto::motion::proto::ConstantArithmeticWire<std::uint64_t>>(
+      std::vector<std::uint64_t>{local_share}, backend);
+  auto wire_mac = std::make_shared<encrypto::motion::proto::ConstantArithmeticWire<std::uint64_t>>(
+      std::vector<std::uint64_t>{local_mac}, backend);
+
+  std::vector<std::shared_ptr<encrypto::motion::Wire>> wires = {wire_input, wire_mac};
+
+  auto share = std::make_shared<encrypto::motion::proto::ConstantArithmeticShare<std::uint64_t>>(std::move(wires));
+  return ShareWrapper(share);
 }
 
   template<typename T>

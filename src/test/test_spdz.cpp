@@ -1,4 +1,7 @@
 #include "base/party.h"
+#include "base/backend.h"
+#include "protocols/constant/constant_wire.h"
+#include "protocols/share_wrapper.h"
 #include "multiplication_triple/sp_provider.h"
 #include "multiplication_triple/mt_provider.h"
 #include "statistics/run_time_statistics.h"
@@ -267,3 +270,86 @@ TEST(SpdzTests, FullPreprocessingIntegrationTest) {
 
   std::cout << "\n[SUCCESS] Full SPDZ Preprocessing Integration Test Completed!" << std::endl;
 }
+// ------------------------------------------------------------
+// Test 5: InputShareWithMac Validation (Input & MAC correctness)
+// ------------------------------------------------------------
+TEST(SpdzTests, InputShareWithMacValidation) {
+  constexpr std::size_t number_of_parties = 2;
+  constexpr std::uint64_t input_value = 12345;
+  constexpr std::size_t input_owner = 0;
+  constexpr std::size_t bit_length = 64;
+  std::cout << "\n[TEST 5] Starting InputShareWithMac validation test..." << std::endl;
+
+  auto parties = MakeLocallyConnectedParties(number_of_parties, /*port=*/16000, /*logging=*/true);
+  ASSERT_EQ(parties.size(), number_of_parties);
+  std::cout << "[INFO] Created and connected " << number_of_parties << " parties." << std::endl;
+
+  for (auto& party : parties) {
+    party->GetConfiguration()->SetOnlineAfterSetup(false);
+  }
+
+  std::vector<ShareWrapper> results(number_of_parties);
+  std::vector<std::thread> threads;
+
+  for (std::size_t i = 0; i < number_of_parties; ++i) {
+    threads.emplace_back([i, &parties, &results]() {
+      std::cout << "[THREAD] Party " << i << ": Preparing input share..." << std::endl;
+      auto& backend = *parties[i]->GetBackend();
+      auto& sp_provider = dynamic_cast<SpProviderFromOts&>(backend.GetSpProvider());
+
+      auto share = sp_provider.InputShareWithMac(input_value, input_owner, bit_length, backend);
+      results[i] = share;
+
+      parties[i]->Run();
+      parties[i]->Finish();
+      std::cout << "[THREAD] Party " << i << ": Finished Run and Finish." << std::endl;
+    });
+  }
+  for (auto& t : threads) {
+    t.join();
+  }
+
+  std::cout << "[INFO] All parties completed InputShareWithMac. Checking results..." << std::endl;
+
+  for (std::size_t i = 0; i < number_of_parties; ++i) {
+    const auto& share = results[i];
+    const auto& wires = share->GetWires();
+
+    ASSERT_EQ(wires.size(), 2u) << "[ERROR] Party " << i << ": Expected 2 wires (input, MAC)";
+
+    const auto& input_wire_ptr = wires.at(0);
+    const auto& mac_wire_ptr = wires.at(1);
+
+    if(input_wire_ptr == nullptr) { std::cerr << "[ERROR] Party " << i << ": Input wire is null" << std::endl;
+      FAIL();
+      }
+    if(mac_wire_ptr == nullptr) { std::cerr << "[ERROR] Party " << i << ": MAC wire is null" << std::endl;
+      FAIL();
+    }
+
+    auto* input_wire = dynamic_cast<proto::ConstantArithmeticWire<std::uint64_t>*>(input_wire_ptr.get());
+    auto* mac_wire = dynamic_cast<proto::ConstantArithmeticWire<std::uint64_t>*>(mac_wire_ptr.get());
+
+    ASSERT_NE(input_wire, nullptr) << "[ERROR] Party " << i << ": Input wire is not ConstantArithmeticWire";
+    ASSERT_NE(mac_wire, nullptr) << "[ERROR] Party " << i << ": MAC wire is not ConstantArithmeticWire";
+
+    ASSERT_EQ(input_wire->GetValues().size(), 1u);
+    ASSERT_EQ(mac_wire->GetValues().size(), 1u);
+
+    const auto input_result = input_wire->GetValues().at(0);
+    const auto mac_result = mac_wire->GetValues().at(0);
+
+    std::cout << "[RESULT] Party " << i << ": input = " << input_result
+              << ", mac = " << mac_result << std::endl;
+
+    if (i == input_owner) {
+      EXPECT_EQ(input_result, input_value) << "[ERROR] Input owner received wrong value";
+      EXPECT_NE(mac_result, 0u) << "[ERROR] Input owner has zero MAC value";
+    } else {
+      EXPECT_EQ(input_result, 0u) << "[ERROR] Non-owner should receive 0 as input value";
+    }
+  }
+
+  std::cout << "[SUCCESS] InputShareWithMacValidation passed for all parties." << std::endl;
+}
+
