@@ -381,6 +381,7 @@ namespace encrypto::motion {
             assert(correlations.size() == number_of_ots_ * vector_size_);
             correlations_ = correlations;
         }
+        void SetMacKey(const T& key) { mac_key_ = key; }
 
         // get the correlations for the OTs in this batch
         const std::vector<T> &GetCorrelations() const { return correlations_; }
@@ -431,7 +432,7 @@ namespace encrypto::motion {
         void ComputeOutputs();
 
         void VerifyMacs() const; // NEW MAC verification //NEW
-
+        void SetMacKey(const T& key) { mac_key_ = key; } //NEW
         // get the receiver's outputs
         std::vector<T> &GetOutputs() {
             assert(outputs_computed_);

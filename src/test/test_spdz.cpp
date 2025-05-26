@@ -278,11 +278,12 @@ TEST(SpdzTests, InputShareWithMacValidation) {
   constexpr std::uint64_t input_value = 12345;
   constexpr std::size_t input_owner = 0;
   constexpr std::size_t bit_length = 64;
-  std::cout << "\n[TEST 5] Starting InputShareWithMac validation test..." << std::endl;
+
+  std::cout << "\n[TEST 5 - DEBUG] Starting InputShareWithMac validation test..." << std::endl << std::flush;
 
   auto parties = MakeLocallyConnectedParties(number_of_parties, /*port=*/16000, /*logging=*/true);
   ASSERT_EQ(parties.size(), number_of_parties);
-  std::cout << "[INFO] Created and connected " << number_of_parties << " parties." << std::endl;
+  std::cout << "[INFO] Created and connected " << number_of_parties << " parties.\n" << std::flush;
 
   for (auto& party : parties) {
     party->GetConfiguration()->SetOnlineAfterSetup(false);
@@ -293,37 +294,57 @@ TEST(SpdzTests, InputShareWithMacValidation) {
 
   for (std::size_t i = 0; i < number_of_parties; ++i) {
     threads.emplace_back([i, &parties, &results]() {
-      std::cout << "[THREAD] Party " << i << ": Preparing input share..." << std::endl;
-      auto& backend = *parties[i]->GetBackend();
-      auto& sp_provider = dynamic_cast<SpProviderFromOts&>(backend.GetSpProvider());
+      try {
+        std::cout << "[THREAD] Party " << i << ": Starting thread.\n" << std::flush;
 
-      auto share = sp_provider.InputShareWithMac(input_value, input_owner, bit_length, backend);
-      results[i] = share;
+        auto& backend = *parties[i]->GetBackend();
+        auto& comm_layer = backend.GetCommunicationLayer();
+        comm_layer.Start();
+        std::cout << "[THREAD] Party " << i << ": CommunicationLayer started.\n" << std::flush;
 
-      parties[i]->Run();
-      parties[i]->Finish();
-      std::cout << "[THREAD] Party " << i << ": Finished Run and Finish." << std::endl;
+        auto& sp_provider = dynamic_cast<SpProviderFromOts&>(backend.GetSpProvider());
+        std::cout << "[THREAD] Party " << i << ": Calling DistributeGlobalMacKey()\n" << std::flush;
+        sp_provider.DistributeGlobalMacKey();
+
+        std::cout << "[THREAD] Party " << i << ": Calling Run()...\n" << std::flush;
+        parties[i]->Run();
+        std::cout << "[THREAD] Party " << i << ": Run() completed.\n" << std::flush;
+
+        std::cout << "[THREAD] Party " << i << ": Calling InputShareWithMac()...\n" << std::flush;
+        auto share = sp_provider.InputShareWithMac(input_value, input_owner, bit_length, backend);
+        results[i] = share;
+        std::cout << "[THREAD] Party " << i << ": Finished InputShareWithMac().\n" << std::flush;
+
+        parties[i]->Finish();
+        std::cout << "[THREAD] Party " << i << ": Finish() completed.\n" << std::flush;
+
+      } catch (const std::exception& e) {
+        std::cerr << "[ERROR] Party " << i << ": Exception occurred: " << e.what() << std::endl << std::flush;
+        FAIL();
+      }
     });
   }
+
   for (auto& t : threads) {
     t.join();
   }
 
-  std::cout << "[INFO] All parties completed InputShareWithMac. Checking results..." << std::endl;
+  std::cout << "[CHECKPOINT] All threads joined. Proceeding to validation...\n" << std::flush;
 
   for (std::size_t i = 0; i < number_of_parties; ++i) {
     const auto& share = results[i];
     const auto& wires = share->GetWires();
 
     ASSERT_EQ(wires.size(), 2u) << "[ERROR] Party " << i << ": Expected 2 wires (input, MAC)";
-
     const auto& input_wire_ptr = wires.at(0);
     const auto& mac_wire_ptr = wires.at(1);
 
-    if(input_wire_ptr == nullptr) { std::cerr << "[ERROR] Party " << i << ": Input wire is null" << std::endl;
+    if (input_wire_ptr == nullptr) {
+      std::cerr << "[ERROR] Party " << i << ": Input wire is null" << std::endl;
       FAIL();
-      }
-    if(mac_wire_ptr == nullptr) { std::cerr << "[ERROR] Party " << i << ": MAC wire is null" << std::endl;
+    }
+    if (mac_wire_ptr == nullptr) {
+      std::cerr << "[ERROR] Party " << i << ": MAC wire is null" << std::endl;
       FAIL();
     }
 
@@ -340,7 +361,7 @@ TEST(SpdzTests, InputShareWithMacValidation) {
     const auto mac_result = mac_wire->GetValues().at(0);
 
     std::cout << "[RESULT] Party " << i << ": input = " << input_result
-              << ", mac = " << mac_result << std::endl;
+              << ", mac = " << mac_result << std::endl << std::flush;
 
     if (i == input_owner) {
       EXPECT_EQ(input_result, input_value) << "[ERROR] Input owner received wrong value";
@@ -350,6 +371,7 @@ TEST(SpdzTests, InputShareWithMacValidation) {
     }
   }
 
-  std::cout << "[SUCCESS] InputShareWithMacValidation passed for all parties." << std::endl;
+  std::cout << "[SUCCESS] InputShareWithMacValidation passed for all parties.\n" << std::flush;
 }
+
 

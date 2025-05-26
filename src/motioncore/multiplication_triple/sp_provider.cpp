@@ -137,86 +137,64 @@ namespace encrypto::motion {
     }
   }
   void SpProviderFromOts::DistributeGlobalMacKey() {
-    std::cout << "Party " << my_id_ << " entered DistributeGlobalMacKey()" << std::endl;
-
-    if constexpr (kDebug) {
-      logger_->LogDebug(fmt::format("[GLOBAL] DistributeGlobalMacKey: party {} executing among {} parties", my_id_, number_of_parties_));
-    }
-
-  // Μόνο το party 0 παράγει το alpha
-  if (my_id_ == 0) {
-    alpha_share_ = RandomVector<std::uint64_t>(1).at(0);
-    std::cout << "Party 0 generated alpha_share = " << alpha_share_ << std::endl;
-  }
-
-  for (std::size_t party_id = 0; party_id < number_of_parties_; ++party_id) {
-    if (party_id == my_id_) continue;
-    std::cout << "Party " << my_id_ << " iterating over party_id = " << party_id << std::endl;
-    auto& ot_provider = *ot_providers_.at(party_id);
-
-    if (my_id_ == 0) {
-      std::cout << "Party 0: calling RegisterSendAcOt() for party " << party_id << std::endl;
-      auto sender = dynamic_cast<AcOtSender<std::uint64_t>*>(ot_provider.RegisterSendAcOt(1, 64).release());
-      std::cout << "Party 0: done RegisterSendAcOt() for party " << party_id << std::endl;
-
-      std::vector<std::uint64_t> correlation = {alpha_share_};
-      sender->SetCorrelations(std::move(correlation));
-      ots_alpha_sender_.emplace_back(sender);
-
-      if constexpr (kDebug) {
-        logger_->LogDebug(fmt::format("Party {}: Registered SendAcOt to party {}", my_id_, party_id));
-      }
-
-    } else if (party_id == 0) {
-      std::cout << "Party " << my_id_ << ": calling RegisterReceiveAcOt() from party 0" << std::endl;
-      auto receiver = dynamic_cast<AcOtReceiver<std::uint64_t>*>(ot_provider.RegisterReceiveAcOt(1, 64).release());
-      std::cout << "Party " << my_id_ << ": done RegisterReceiveAcOt()" << std::endl;
-
-      BitVector<> choices(64, false);  // receive α directly
-      receiver->SetChoices(std::move(choices));
-      ots_alpha_receiver_.emplace_back(receiver);
-
-      if constexpr (kDebug) {
-        logger_->LogDebug(fmt::format("Party {}: Registered ReceiveAcOt from party {}", my_id_, party_id));
-        logger_->LogDebug(fmt::format("Party {}: Receiver choices set to all false", my_id_));
-      }
-    }
-  }
-
-  std::cout << "Party " << my_id_ << " starting ComputeOutputs" << std::endl;
+  std::cout << "[GLOBAL] Party " << my_id_ << ": entered DistributeGlobalMacKey()" << std::endl;
 
   if constexpr (kDebug) {
-    logger_->LogDebug(fmt::format("Party {}: Finished OT registration", my_id_));
+    logger_->LogDebug(fmt::format("[GLOBAL] DistributeGlobalMacKey: party {} executing among {} parties", my_id_, number_of_parties_));
   }
 
+  // Μόνο ο party 0 δημιουργεί το alpha και το στέλνει στους υπόλοιπους
+  if (my_id_ == 0) {
+    alpha_share_ = RandomVector<std::uint64_t>(1).at(0);
+    std::cout << "[GLOBAL] Party 0 generated alpha_share = " << alpha_share_ << std::endl;
+  }
+
+  // Διανομή του alpha μέσω OT
+  for (std::size_t party_id = 0; party_id < number_of_parties_; ++party_id) {
+    if (party_id == my_id_) continue;
+
+    auto& ot_provider = *ot_providers_.at(party_id);
+    std::cout << "[GLOBAL] Party " << my_id_ << ": setting up OT with party " << party_id << std::endl;
+
+    if (my_id_ == 0) {
+      auto sender = dynamic_cast<AcOtSender<std::uint64_t>*>(ot_provider.RegisterSendAcOt(1, 64).release());
+      sender->SetCorrelations({alpha_share_});
+      sender->SetMacKey(alpha_share_);  // ΚΡΙΣΙΜΟ ΒΗΜΑ — να οριστεί το MAC key
+      ots_alpha_sender_.emplace_back(sender);
+
+      std::cout << "[GLOBAL] Party 0: Registered SendAcOt to party " << party_id << std::endl;
+
+    } else if (party_id == 0) {
+      auto receiver = dynamic_cast<AcOtReceiver<std::uint64_t>*>(ot_provider.RegisterReceiveAcOt(1, 64).release());
+      BitVector<> choices(64, false);  // Επιλέγουμε το 0 για να λάβουμε απευθείας το alpha
+      receiver->SetChoices(std::move(choices));
+      receiver->SetMacKey(alpha_share_);  // ΚΡΙΣΙΜΟ ΒΗΜΑ — να οριστεί το MAC key
+      ots_alpha_receiver_.emplace_back(receiver);
+
+      std::cout << "[GLOBAL] Party " << my_id_ << ": Registered ReceiveAcOt from party 0" << std::endl;
+    }
+  }
+
+  // Εκτέλεση του ComputeOutputs για να ολοκληρωθούν τα OT
   if (my_id_ == 0) {
     for (auto& sender : ots_alpha_sender_) {
-      std::cout << "Party 0 starting ComputeOutputs() for sender" << std::endl;
+      std::cout << "[GLOBAL] Party 0: Calling ComputeOutputs() for sender..." << std::endl;
       sender->ComputeOutputs();
-      std::cout << "Party 0 finished ComputeOutputs() for sender" << std::endl;
-
-      if constexpr (kDebug) {
-        logger_->LogDebug(fmt::format("Party 0: Sender called ComputeOutputs()"));
-      }
     }
   } else {
     for (auto& receiver : ots_alpha_receiver_) {
-      std::cout << "Party " << my_id_ << " starting ComputeOutputs() for receiver" << std::endl;
+      std::cout << "[GLOBAL] Party " << my_id_ << ": Calling ComputeOutputs() for receiver..." << std::endl;
       receiver->ComputeOutputs();
-      std::cout << "Party " << my_id_ << " finished ComputeOutputs() for receiver" << std::endl;
-
-      if constexpr (kDebug) {
-        logger_->LogDebug(fmt::format("Party {}: Receiver called ComputeOutputs()", my_id_));
-      }
     }
   }
 
-  std::cout << "Party " << my_id_ << " finished DistributeGlobalMacKey()" << std::endl;
+  std::cout << "[GLOBAL] Party " << my_id_ << ": finished DistributeGlobalMacKey()" << std::endl;
 
   if constexpr (kDebug) {
-    logger_->LogDebug(fmt::format("Party {}: Exiting DistributeGlobalMacKey()", my_id_));
+    logger_->LogDebug(fmt::format("[GLOBAL] Party {}: Completed DistributeGlobalMacKey()", my_id_));
   }
 }
+
   std::uint64_t SampleRandomUint64() {
     std::random_device rd;
     std::mt19937_64 gen(rd());
@@ -232,10 +210,16 @@ ShareWrapper SpProviderFromOts::InputShareWithMac(
   const std::size_t num_parties = number_of_parties_;
   const std::size_t my_id = my_id_;
 
+
+    std::cout << "[DEBUG] Party " << my_id << ": Entered InputShareWithMac. Input value = "
+                << input_value << ", owner = " << input_owner << ", bit_length = " << bit_length << std::endl;
+
   std::uint64_t local_share = 0;
   std::uint64_t local_mac = 0;
 
   if (my_id == input_owner) {
+    std::cout << "[DEBUG] Party " << my_id << ": Is input owner. Generating random shares..." << std::endl;
+
     std::vector<std::uint64_t> input_shares(num_parties, 0);
     std::vector<std::uint64_t> mac_shares(num_parties, 0);
 
@@ -247,44 +231,63 @@ ShareWrapper SpProviderFromOts::InputShareWithMac(
       mac_shares[i] = input_shares[i] * alpha_share_;
       sum += input_shares[i];
       mac_sum += mac_shares[i];
+      std::cout << "[DEBUG] Party " << my_id << ": Random share to party " << i << " = " << input_shares[i] << ", MAC = " << mac_shares[i] << "\n";
     }
 
     input_shares[my_id] = input_value - sum;
     mac_shares[my_id] = input_shares[my_id] * alpha_share_;
 
+    std::cout << "[DEBUG] Party " << my_id << ": Local input_share = " << input_shares[my_id]
+             << ", local mac_share = " << mac_shares[my_id] << std::endl;
+
     local_share = input_shares[my_id];
     local_mac = mac_shares[my_id];
+    std::cout << "[DEBUG] Party " << my_id << ": Local input_share = " << local_share << ", mac_share = " << local_mac << "\n";
 
     for (std::size_t party_id = 0; party_id < num_parties; ++party_id) {
       if (party_id == my_id) continue;
+
+      std::cout << "[DEBUG] Party " << my_id << ": RegisterSendAcOt() to party " << party_id << "...\n";
 
       auto& ot_provider = *ot_providers_.at(party_id);
 
       auto sender_input = dynamic_cast<AcOtSender<std::uint64_t>*>(
         ot_provider.RegisterSendAcOt(1, bit_length).release());
+      sender_input->SetMacKey(alpha_share_);
       sender_input->SetCorrelations({input_shares[party_id]});
       sender_input->ComputeOutputs();
+      std::cout << "[DEBUG] Party " << my_id << ": Finished ComputeOutputs for input_sender to " << party_id << "\n";
 
       auto sender_mac = dynamic_cast<AcOtSender<std::uint64_t>*>(
         ot_provider.RegisterSendAcOt(1, bit_length).release());
+      sender_mac->SetMacKey(alpha_share_);
       sender_mac->SetCorrelations({mac_shares[party_id]});
       sender_mac->ComputeOutputs();
+
+      std::cout << "[DEBUG] Party " << my_id << ": Finished ComputeOutputs for mac_sender to " << party_id << "\n";
     }
   } else {
+    std::cout << "[DEBUG] Party " << my_id << ": Not input owner. Receiving shares from " << input_owner << std::endl;
+
     auto& ot_provider = *ot_providers_.at(input_owner);
 
     auto receiver_input = dynamic_cast<AcOtReceiver<std::uint64_t>*>(
       ot_provider.RegisterReceiveAcOt(1, bit_length).release());
+    receiver_input->SetMacKey(alpha_share_);
     receiver_input->SetChoices(BitVector<>(bit_length, false));
     receiver_input->ComputeOutputs();
+    std::cout << "[DEBUG] Party " << my_id << ": Finished ComputeOutputs for input_receiver\n";
     local_share = receiver_input->GetOutputs()[0];
 
     auto receiver_mac = dynamic_cast<AcOtReceiver<std::uint64_t>*>(
       ot_provider.RegisterReceiveAcOt(1, bit_length).release());
+    receiver_mac->SetMacKey(alpha_share_);
     receiver_mac->SetChoices(BitVector<>(bit_length, false));
     receiver_mac->ComputeOutputs();
+    std::cout << "[DEBUG] Party " << my_id << ": Finished ComputeOutputs for mac_receiver\n";
     local_mac = receiver_mac->GetOutputs()[0];
   }
+    std::cout << "[DEBUG] Party " << my_id << ": Finished ComputeOutputs for mac_receiver\n";
 
   auto wire_input = std::make_shared<encrypto::motion::proto::ConstantArithmeticWire<std::uint64_t>>(
       std::vector<std::uint64_t>{local_share}, backend);
